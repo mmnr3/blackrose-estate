@@ -9,7 +9,12 @@ EventStartGreta.button1,Continue
 EventStartViktorPainting.text,Viktor goes up and stands before a big painting of his uncle. You put down your lugade and look around.
 EventStartGreta.text,Greta walks in and when Viktor sees her he lights up and runs over and gives her a big hug. “Greta! How good it is to see you again, it has been too long” he says happily, releasing the woman from his embrace. “Goodness grace Viktor, you have grown. And still not respecting you uncle I see.” she says glancing at the overturned photo. Viktor laughs and turns to you. “Friends, this is Greta the housekeeper. She was like a mother to me when I grew up.” He introduces you to her with great enthusiasm. “Well” Greta says, “You are a bit early, I have not lunch ready for you. But there is a bar in the lounge if you want to have a drink before dinner. If you excuse me, I will go get things ready”. Greta quickly leaves for the kitchen.
 EventStartViktorPainting.button1,Continue
-TokenEntrencePainting.text,Description of painting
-TokenEntrencePainting.button1,Continue
-EventEntrenceAddPainting.text,Description of painting
-EventEntrenceAddPainting.button1,Continue
+TokenEntrancePhoto.button1,Leave the photo on it’s side
+TokenEntrancePhoto.text,The photo of Viktors uncle lies on it’s side on the hall-table.
+EventEntrencePhotoAdd.button1,Continue
+EventEntrencePhotoAdd.text,The photo of Viktors uncle lies on it’s side on the hall-table.
+TokenEntrancePhoto.button2,Turn the photo upright
+EventEntrencePhotoLeft.text,You feel a soft breeze on your neck and can almost hear a voice whisper, “No respect” Gain one horror ({will} negates)
+EventEntrencePhotoLeft.button1,Continue
+EventEntrencePhotoUpright.text,You feel a soft breeze on your neck and can almost hear a voice whisper, “This one shows respect” Gain one facedown horror ({will} negates).
+EventEntrencePhotoUpright.button1,Continue
