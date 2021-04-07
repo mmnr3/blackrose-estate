@@ -9,18 +9,26 @@ EventStartGreta.button1,Continue
 EventStartViktorPainting.text,Viktor goes up and stands before a big painting of his uncle. You put down your lugade and look around.
 EventStartGreta.text,Greta walks in and when Viktor sees her he lights up and runs over and gives her a big hug. “Greta! How good it is to see you again, it has been too long” he says happily, releasing the woman from his embrace. “Goodness grace Viktor, you have grown. And still not respecting you uncle I see.” she says glancing at the overturned photo. Viktor laughs and turns to you. “Friends, this is Greta the housekeeper. She was like a mother to me when I grew up.” He introduces you to her with great enthusiasm. “Well” Greta says, “You are a bit early, I have not lunch ready for you. But there is a bar in the lounge if you want to have a drink before dinner. If you excuse me, I will go get things ready”. Greta quickly leaves for the kitchen.
 EventStartViktorPainting.button1,Continue
-TokenEntrancePhoto.button1,Leave the photo on it’s side
+TokenEntrancePhoto.button1,Leave the photo on it’s side {action}
 TokenEntrancePhoto.text,The photo of Viktors uncle lies on it’s side on the hall-table.
 EventEntrencePhotoAdd.button1,Continue
 EventEntrencePhotoAdd.text,The photo of Viktors uncle lies on it’s side on the hall-table.
-TokenEntrancePhoto.button2,Turn the photo upright
+TokenEntrancePhoto.button2,Turn the photo upright {action}
 EventEntrencePhotoLeft.text,You feel a soft breeze on your neck and can almost hear a voice whisper, “No respect” Gain one horror ({will} negates)
 EventEntrencePhotoLeft.button1,Continue
 EventEntrencePhotoUpright.text,You feel a soft breeze on your neck and can almost hear a voice whisper, “This one shows respect” Gain one facedown horror ({will} negates).
 EventEntrencePhotoUpright.button1,Continue
 EventEntrenceDoorLounge.button1,Continue
-TokenEntrenceDoorLounge.text,A heavy dark oak door is leading to the lounge. This must have cost a pretty penny.
-TokenEntrenceDoorLounge.button1,Enter lounge {action}
+TokenEntrenceExploreLounge.button1,Enter lounge {action}
 EventEntrenceDoorLounge.text,A heavy dark oak door is leading to the lounge. This must have cost a pretty penny.
 EventLoungeAddTile.text,"Description of the lounge.\nPlace the {c:TileLounge} tile"
 EventLoungeAddTile.button1,Continue
+TokenEntrenceExploreStairs.button1,Open {action}
+TokenEntrenceExploreStairs.text,The door leads to the stairs to the upper floor.
+TokenEntrenceExplorationKitchen.button1,Continue
+TokenEntrenceExplorationKitchen.text,This is the door to the diningroom.
+TokenEntrenceExploreLounge.text,A heavy dark oak door is leading to the lounge. This must have cost a pretty penny.
+EventStairsEventEnter.text,The stairs leads to the upper floor. This floor contains the guest bedrooms and Viktors old boy-room.
+EventStairsEventEnter.button1,Continue
+EventStairsEnter.text,You may move 1 space into the explored area.
+EventStairsEnter.button1,Continue
