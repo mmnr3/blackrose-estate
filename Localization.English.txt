@@ -32,3 +32,7 @@ EventStairsEventEnter.text,The stairs leads to the upper floor. This floor conta
 EventStairsEventEnter.button1,Continue
 EventStairsEnter.text,You may move 1 space into the explored area.
 EventStairsEnter.button1,Continue
+TokenSearchGuestroom2PocketWatch.text,A pocket watch is wedged between two books. Your old man is collecting these and you have never seen one like this before.
+TokenSearchGuestroom2PocketWatch.button1,Take the watch
+EventGuestroom2PocketWatchEventTake.button1,Continue
+EventGuestroom2PocketWatchEventTake.text,"This would make a great present for your father. You can ask Viktor later if you can buy it off him.\nTake the pocket watch common item.\n"
