@@ -36,3 +36,13 @@ TokenSearchGuestroom2PocketWatch.text,A pocket watch is wedged between two books
 TokenSearchGuestroom2PocketWatch.button1,Take the watch
 EventGuestroom2PocketWatchEventTake.button1,Continue
 EventGuestroom2PocketWatchEventTake.text,"This would make a great present for your father. You can ask Viktor later if you can buy it off him.\nTake the pocket watch common item.\n"
+TokenStairsSearchPaintings.text,There are a lot of paintings of the Blackrose family hanging on the wall. The head of the family looks eerily similar on all the paintings despite them being several years apart.
+TokenStairsSearchPaintings.button1,Take a closer look {action}
+EventStairsCheckPaintings_fail.button1,Continue
+EventStairsCheckPaintings.button1,Continue
+EventStairsCheckPaintings_pass.text,Pass
+EventStairsCheckPaintings_pass.button1,Continue
+EventStairsCheckPaintings_fail.text,Fail
+EventStairsCheckPaintings_placetoken.text,There are a lot of paintings of the Blackrose family hanging on the wall.
+EventStairsCheckPaintings_placetoken.button1,Continue
+EventStairsCheckPaintings.text,Is it the same person? No, that can’t be true. Do a {observation} check.
