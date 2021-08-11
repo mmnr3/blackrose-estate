@@ -46,3 +46,9 @@ EventStairsCheckPaintings_fail.text,Fail
 EventStairsCheckPaintings_placetoken.text,There are a lot of paintings of the Blackrose family hanging on the wall.
 EventStairsCheckPaintings_placetoken.button1,Continue
 EventStairsCheckPaintings.text,Is it the same person? No, that can’t be true. Do a {observation} check.
+TokenEntryExploreStudy.button1,Enter Study
+TokenEntryExploreStudy.text,A sturdy oak door. On the door is a plaque with the text “Study”.
+EventStudyEnter.text,Description of the study.
+EventStudyEnter.button1,Continue
+EventStudyGeorgePlace.text,"A man is sitting at a desk lit by a lamp. He looks up when you enter the room. “I’m sorry but I’m stacked with a ton of paperwork and need my peace.” He shows you out and back to the lobby.\nMove the investigator back to the lobby and remove the Study tile."
+EventStudyGeorgePlace.button1,Continue
