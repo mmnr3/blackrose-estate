@@ -3,21 +3,12 @@ quest.name,Blackrose Estate
 quest.description,Scenario 1...
 quest.authors,Magnus Mattsson
 quest.authors_short,Magnus Mattsson
-EventStart.text,"You enter the estate through the main entrance. The hall was once lavishly decorated but now most of the furniture has its color faded and the wooden part is scuffed and bruised. “I was never allowed to enter through this door, only the servants door. My uncle was very strict” Viktor exclaims. “But you are no longer here” he says as he deliberately knocks over an old photo of the man.\nPlace the {c:TileEntry} tile."
+EventStart.text,"You enter the estate through the main entrance. The hall was once lavishly decorated but after years of neglect most of the furniture has its color faded and the wooden part is scuffed and bruised.\nPlace the {c:TileEntry} tile."
 EventStart.button1,Continue
 EventStartGreta.button1,Continue
 EventStartViktorPainting.text,Viktor goes up and stands before a big painting of his uncle. You put down your lugade and look around.
-EventStartGreta.text,Greta walks in and when Viktor sees her he lights up and runs over and gives her a big hug. “Greta! How good it is to see you again, it has been too long” he says happily, releasing the woman from his embrace. “Goodness grace Viktor, you have grown. And still not respecting you uncle I see.” she says glancing at the overturned photo. Viktor laughs and turns to you. “Friends, this is Greta the housekeeper. She was like a mother to me when I grew up.” He introduces you to her with great enthusiasm. “Well” Greta says, “You are a bit early, I have not lunch ready for you. But there is a bar in the lounge if you want to have a drink before dinner. If you excuse me, I will go get things ready”. Greta quickly leaves for the kitchen.
+EventStartGreta.text,A door opens and a woman walks in. When Duncan sees her he lights up and runs over and gives her a big hug. “Greta! How good it is to see you again, it has been too long” he says happily, releasing the woman from his embrace. “Goodness grace Duncan, you certainly have not changed. ” Duncan laughs and turns to you. “Friends, this is Greta the housekeeper. She was like a mother to me when I grew up.” He introduces you to her with great enthusiasm. “Well” Greta says, “You are a bit early, the dinner is not ready. But there is a bar in the lounge if you want to have a drink before dinner and relax. The guest rooms are upstairs. You have to take the luggage yourself, William would do it but I’m afraid he is a bit under the weather of late. Now, If you excuse me, I will go get things ready”. Greta quickly leaves for the kitchen.
 EventStartViktorPainting.button1,Continue
-TokenEntrancePhoto.button1,Leave the photo on it’s side {action}
-TokenEntrancePhoto.text,The photo of Viktors uncle lies on it’s side on the hall-table.
-EventEntrencePhotoAdd.button1,Continue
-EventEntrencePhotoAdd.text,The photo of Viktors uncle lies on it’s side on the hall-table.
-TokenEntrancePhoto.button2,Turn the photo upright {action}
-EventEntrencePhotoLeft.text,You feel a soft breeze on your neck and can almost hear a voice whisper, “No respect” Gain one horror ({will} negates)
-EventEntrencePhotoLeft.button1,Continue
-EventEntrencePhotoUpright.text,You feel a soft breeze on your neck and can almost hear a voice whisper, “This one shows respect” Gain one facedown horror ({will} negates).
-EventEntrencePhotoUpright.button1,Continue
 EventEntrenceDoorLounge.button1,Continue
 TokenEntrenceExploreLounge.button1,Enter lounge {action}
 EventEntrenceDoorLounge.text,A heavy dark oak door is leading to the lounge. This must have cost a pretty penny.
@@ -52,3 +43,14 @@ EventStudyEnter.text,Description of the study.
 EventStudyEnter.button1,Continue
 EventStudyGeorgePlace.text,"A man is sitting at a desk lit by a lamp. He looks up when you enter the room. “I’m sorry but I’m stacked with a ton of paperwork and need my peace.” He shows you out and back to the lobby.\nMove the investigator back to the lobby and remove the Study tile."
 EventStudyGeorgePlace.button1,Continue
+TokenEntranceViktor.text,Duncan is staring at a large painting of his uncle standing in front of the house.
+TokenEntranceViktor.button1,Continue
+EventEntranceViktorDialog01.text,“Did you know, the house is built on an old coal mine that collapsed something like 100 years ago.” Duncan says with a sigh. “A Lot of miners and even their families died that day. It is said that the blood and coal is the reason that the roses in the garden are black. Even if you plant red or white roses they come up black. But I think the black roses were brought over when the family migrated from England some 20 years before that.” Duncan stares at the painting a few moments more before making a quick turn and walks towards the lounge. “I need a stiff drink” he states.
+EventEntranceViktorDialog01.button1,Continue
+TokenEntranceViktor.button2,Ask about the painting {action}
+EventLoungeAddViktor.text,Viktor stands at the bar.
+EventLoungeAddViktor.button1,Continue
+EventLoungeEnterDone.text,You may move one space into the room.
+EventLoungeEnterDone.button1,Continue
+EventStartPlaceInvestigators.text,Place investigators in the lobby.
+EventStartPlaceInvestigators.button1,Continue
