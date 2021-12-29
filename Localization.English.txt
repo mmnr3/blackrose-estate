@@ -54,3 +54,19 @@ EventLoungeEnterDone.text,You may move one space into the room.
 EventLoungeEnterDone.button1,Continue
 EventStartPlaceInvestigators.text,Place investigators in the lobby.
 EventStartPlaceInvestigators.button1,Continue
+TokenLoungeViktor.text,|||Viktor is sipping on a whiskey. "For all his faults, my uncle have good taste when it comes to whiskey. It is the only spirit I drink"|||
+TokenLoungeViktor.button1,Continue
+TokenLoungeViktor.button2,Are you ok? {action}
+EventLoungeViktorDialog01.button1,Continue
+EventEntranceViktorDialog01.button2,Continue
+EventEntrenceMoveViktorToLounge.text,Viktor moves to the bar in the lounge and starts looking for something to drink.
+EventEntrenceMoveViktorToLounge.button1,Continue
+TokenLoungeViktor.button3,What strange things? {action}
+EventLoungeViktorDialog02.text,"“I could swear that I heard crying coming from one of the guest rooms.” He glances at you. “Nothing ever happened so I’m sure it's safe to sleep there” Duncan continues. I heard scraping from the cellar and even experienced different seasons the same day in different parts of the garden. Summer on one side and winter on the other. I thought I was going mad and when I told my uncle he got very angry and even beat me. So I started to act like everything was normal until I was old enough to get out of this place.”\nDuncan downs the drink and pours himself another.\n"
+EventLoungeViktorDialog02.button1,Continue
+EventLoungeViktorMove.text,Viktor leaves
+EventLoungeViktorMove.button1,Continue
+TokenLoungeViktor.button4,Ask about the history of the Blackrose. {action}
+EventLoungeViktorDialog03.text,"“I found some books about the family in my uncle's study. According to them the name goes back as far as when the Romans left England. After a plague that killed a whole village except for one man. He later found a silver vein under the place where the village once stood. He took the family name blackrose after the black roses that started to grow around the mine. Everytime a new family member took over the business there was a big accident, killing a lot of people and then they found a new rich vein. Almost like it was connected.”\nDuncan downs the drink and pours himself another.\n"
+EventLoungeViktorDialog03.button1,Continue
+EventLoungeViktorDialog01.text,|||“As you can see, I’m not handling being back here all that well. When my parents died in that accident I was only 8 years old. I had no other family so I was sent here for my uncle to raise me. He was very cold to me and I’m not even sure he really is my uncle. Greta was like a mother to me but always had a hint of sadness in her eyes. Like she knew something bad was going to happen to me. After a while I started to notice strange things around the house."|||
