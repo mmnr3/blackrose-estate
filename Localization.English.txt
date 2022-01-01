@@ -16,8 +16,8 @@ EventLoungeAddTile.text,"Description of the lounge.\nPlace the {c:TileLounge} ti
 EventLoungeAddTile.button1,Continue
 TokenEntrenceExploreStairs.button1,{action} Open
 TokenEntrenceExploreStairs.text,The door leads to the stairs to the upper floor.
-TokenEntrenceExplorationKitchen.button1,Continue
-TokenEntrenceExplorationKitchen.text,This is the door to the diningroom.
+TokenEntrenceExploreKitchen.text,This is the door to the diningroom.
+EventKitchenPlaceTile.text,Place the {c:TileKitchen}
 TokenEntrenceExploreLounge.text,A heavy dark oak door is leading to the lounge. This must have cost a pretty penny.
 EventStairsPlaceTile.button1,Continue
 EventStairsEnter.text,You may move 1 space into the explored area.
@@ -89,3 +89,5 @@ EventBedroomsEnter.text,You may move 1 space into the explored area.
 EventBedroomsEnter.button1,Continue
 EventBedroom01PlaceTile.text,Viktors old beldroom. It looks just like he left it when he ran away.
 EventBedroom01PlaceTile.button1,Continue
+TokenEntrenceExploreKitchen.button1,{action} Open
+EventKitchenPlaceTile.button1,Continue
