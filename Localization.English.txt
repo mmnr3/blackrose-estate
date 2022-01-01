@@ -3,32 +3,29 @@ quest.name,Blackrose Estate
 quest.description,Scenario 1...
 quest.authors,Magnus Mattsson
 quest.authors_short,Magnus Mattsson
-EventStart.text,"You enter the estate through the main entrance. The hall was once lavishly decorated but after years of neglect most of the furniture has its color faded and the wooden part is scuffed and bruised.\nPlace the {c:TileEntry} tile."
-EventStart.button1,Continue
+EventStartIntro.button1,Continue
+EventStartDistributeClues.text,Each investigator start with 2 clues
 EventStartGreta.button1,Continue
 EventStartViktorPainting.text,Viktor goes up and stands before a big painting of his uncle. You put down your lugade and look around.
 EventStartGreta.text,A door opens and a woman walks in. When Duncan sees her he lights up and runs over and gives her a big hug. “Greta! How good it is to see you again, it has been too long” he says happily, releasing the woman from his embrace. “Goodness grace Duncan, you certainly have not changed. ” Duncan laughs and turns to you. “Friends, this is Greta the housekeeper. She was like a mother to me when I grew up.” He introduces you to her with great enthusiasm. “Well” Greta says, “You are a bit early, the dinner is not ready. But there is a bar in the lounge if you want to have a drink before dinner and relax. The guest rooms are upstairs. You have to take the luggage yourself, William would do it but I’m afraid he is a bit under the weather of late. Now, If you excuse me, I will go get things ready”. Greta quickly leaves for the kitchen.
 EventStartViktorPainting.button1,Continue
-EventEntrenceDoorLounge.button1,Continue
+EventEntrenceExplorationLounge.text,A heavy dark oak door is leading to the lounge. This must have cost a pretty penny.
 TokenEntrenceExploreLounge.button1,Enter lounge {action}
-EventEntrenceDoorLounge.text,A heavy dark oak door is leading to the lounge. This must have cost a pretty penny.
+EventStairsPlaceTile.text,"The stairs leads to the upper floor. This floor contains the guest bedrooms and Viktors old boy-room.\nAdd the tiles {c:TileStairs} and {c:TileBathroomCorner}."
 EventLoungeAddTile.text,"Description of the lounge.\nPlace the {c:TileLounge} tile"
 EventLoungeAddTile.button1,Continue
-TokenEntrenceExploreStairs.button1,Open {action}
+TokenEntrenceExploreStairs.button1,{action} Open
 TokenEntrenceExploreStairs.text,The door leads to the stairs to the upper floor.
 TokenEntrenceExplorationKitchen.button1,Continue
 TokenEntrenceExplorationKitchen.text,This is the door to the diningroom.
 TokenEntrenceExploreLounge.text,A heavy dark oak door is leading to the lounge. This must have cost a pretty penny.
-EventStairsEventEnter.text,The stairs leads to the upper floor. This floor contains the guest bedrooms and Viktors old boy-room.
-EventStairsEventEnter.button1,Continue
+EventStairsPlaceTile.button1,Continue
 EventStairsEnter.text,You may move 1 space into the explored area.
 EventStairsEnter.button1,Continue
 TokenSearchGuestroom2PocketWatch.text,A pocket watch is wedged between two books. Your old man is collecting these and you have never seen one like this before.
 TokenSearchGuestroom2PocketWatch.button1,Take the watch
 EventGuestroom2PocketWatchEventTake.button1,Continue
 EventGuestroom2PocketWatchEventTake.text,"This would make a great present for your father. You can ask Viktor later if you can buy it off him.\nTake the pocket watch common item.\n"
-TokenStairsSearchPaintings.text,There are a lot of paintings of the Blackrose family hanging on the wall. The head of the family looks eerily similar on all the paintings despite them being several years apart.
-TokenStairsSearchPaintings.button1,Take a closer look {action}
 EventStairsCheckPaintings_fail.button1,Continue
 EventStairsCheckPaintings.button1,Continue
 EventStairsCheckPaintings_pass.text,Pass
@@ -73,3 +70,22 @@ EventLoungeViktorDialog01.text,|||“As you can see, I’m not handling being ba
 EventTestLoungeViktorMove.button1,Continue
 EventTestLoungeViktorMove.text,Viktor sighs and moves to the lounge.
 EventTestLoungeViktorMove.button2,Continue
+EventStartDistributeClues.button1,Continue
+EventStartIntro.text,"You enter the estate through the main entrance. The hall was once lavishly decorated but after years of neglect most of the furniture has its color faded and the wooden part is scuffed and bruised.\nPlace the {c:TileEntry} tile."
+EventEntrenceExplorationLounge.button1,Continue
+EventMythosLight01Animals.button1,Continue
+EventMythosLight01Animals.text,You notice an increase of animal noises coming from the outside. When you look outside you see shadows moving in the wooden parts of the estate. Like they are wathing but don't dare to come closer to the house.
+EventStairsPlaceExploreGuestroom.button1,Continue
+EventStairsPlaceExploreGuestroom.text,A door leads to the bedrooms.
+TokenStairsExploreGuestrooms.text,A door leads to the bedrooms.
+TokenStairsExploreGuestrooms.button1,{action} Open
+EventBedroomsPlaceTile.text,You arrive at the upper floor. The guestbedrooms are on the right.
+EventBedroomsPlaceTile.button1,Continue
+TokenBedroomExploreBedroom01.text,This is Viktors old room.
+TokenBedroomExploreBedroom01.button1,{action} Open
+EventBedroomsExloreBedroom01.text,|||Viktors old room is on the left. It even has an old faded sign. "Keep out!"|||
+EventBedroomsExloreBedroom01.button1,Continue
+EventBedroomsEnter.text,You may move 1 space into the explored area.
+EventBedroomsEnter.button1,Continue
+EventBedroom01PlaceTile.text,Viktors old beldroom. It looks just like he left it when he ran away.
+EventBedroom01PlaceTile.button1,Continue
