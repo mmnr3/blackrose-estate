@@ -91,3 +91,15 @@ EventBedroom01PlaceTile.text,Viktors old beldroom. It looks just like he left it
 EventBedroom01PlaceTile.button1,Continue
 TokenEntrenceExploreKitchen.button1,{action} Open
 EventKitchenPlaceTile.button1,Continue
+EventSideHallEndPlaceTile.button1,Continue
+TokenLoungeExploreSideHallEnd.text,The door to the kitchen hall.
+EventSideHallEndEnter.text,You may move one space into the room.
+TokenSideHallEndExploreBasement.button1,Enter basement {action}
+TokenLoungeExploreSideHallEnd.button1,Open {action}
+EventBasementPlaceTile.text,Place {c:TileBasement}
+EventBasementPlaceTile.button1,Continue
+EventBasementEnter.text,You may move one space into the basement.
+EventBasementEnter.button1,Continue
+EventSideHallEndEnter.button1,Continue
+EventSideHallEndPlaceTile.text,Place {c:TileSideHallEnd}
+TokenSideHallEndExploreBasement.text,This is the basement door.
