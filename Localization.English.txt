@@ -1,105 +1,106 @@
 .,English
-quest.name,Blackrose Estate
+quest.name,Black Rose Estate
 quest.description,Scenario 1...
-quest.authors,Magnus Mattsson
-quest.authors_short,Magnus Mattsson
-EventStartIntro.button1,Continue
-EventStartDistributeClues.text,Each investigator start with 2 clues
-EventStartGreta.button1,Continue
-EventStartViktorPainting.text,Viktor goes up and stands before a big painting of his uncle. You put down your lugade and look around.
-EventStartGreta.text,A door opens and a woman walks in. When Duncan sees her he lights up and runs over and gives her a big hug. “Greta! How good it is to see you again, it has been too long” he says happily, releasing the woman from his embrace. “Goodness grace Duncan, you certainly have not changed. ” Duncan laughs and turns to you. “Friends, this is Greta the housekeeper. She was like a mother to me when I grew up.” He introduces you to her with great enthusiasm. “Well” Greta says, “You are a bit early, the dinner is not ready. But there is a bar in the lounge if you want to have a drink before dinner and relax. The guest rooms are upstairs. You have to take the luggage yourself, William would do it but I’m afraid he is a bit under the weather of late. Now, If you excuse me, I will go get things ready”. Greta quickly leaves for the kitchen.
-EventStartViktorPainting.button1,Continue
-EventEntrenceExplorationLounge.text,A heavy dark oak door is leading to the lounge. This must have cost a pretty penny.
-TokenEntrenceExploreLounge.button1,Enter lounge {action}
-EventStairsPlaceTile.text,"The stairs leads to the upper floor. This floor contains the guest bedrooms and Viktors old boy-room.\nAdd the tiles {c:TileStairs} and {c:TileBathroomCorner}."
-EventLoungeAddTile.text,"Description of the lounge.\nPlace the {c:TileLounge} tile"
-EventLoungeAddTile.button1,Continue
-TokenEntrenceExploreStairs.button1,{action} Open
-TokenEntrenceExploreStairs.text,The door leads to the stairs to the upper floor.
-TokenEntrenceExploreKitchen.text,This is the door to the diningroom.
-EventKitchenPlaceTile.text,Place the {c:TileKitchen}
-TokenEntrenceExploreLounge.text,A heavy dark oak door is leading to the lounge. This must have cost a pretty penny.
-EventStairsPlaceTile.button1,Continue
-EventStairsEnter.text,You may move 1 space into the explored area.
-EventStairsEnter.button1,Continue
-TokenSearchGuestroom2PocketWatch.text,A pocket watch is wedged between two books. Your old man is collecting these and you have never seen one like this before.
-TokenSearchGuestroom2PocketWatch.button1,Take the watch
-EventGuestroom2PocketWatchEventTake.button1,Continue
-EventGuestroom2PocketWatchEventTake.text,"This would make a great present for your father. You can ask Viktor later if you can buy it off him.\nTake the pocket watch common item.\n"
-EventStairsCheckPaintings_fail.button1,Continue
-EventStairsCheckPaintings.button1,Continue
-EventStairsCheckPaintings_pass.text,Pass
-EventStairsCheckPaintings_pass.button1,Continue
-EventStairsCheckPaintings_fail.text,Fail
-EventStairsCheckPaintings_placetoken.text,There are a lot of paintings of the Blackrose family hanging on the wall.
-EventStairsCheckPaintings_placetoken.button1,Continue
-EventStairsCheckPaintings.text,Is it the same person? No, that can’t be true. Do a {observation} check.
-TokenEntryExploreStudy.button1,Enter Study
-TokenEntryExploreStudy.text,A sturdy oak door. On the door is a plaque with the text “Study”.
-EventStudyEnter.text,Description of the study.
-EventStudyEnter.button1,Continue
-EventStudyGeorgePlace.text,"A man is sitting at a desk lit by a lamp. He looks up when you enter the room. “I’m sorry but I’m stacked with a ton of paperwork and need my peace.” He shows you out and back to the lobby.\nMove the investigator back to the lobby and remove the Study tile."
-EventStudyGeorgePlace.button1,Continue
-TokenEntranceViktor.text,Duncan is staring at a large painting of his uncle standing in front of the house.
-TokenEntranceViktor.button1,Continue
-EventEntranceViktorDialog01.text,“Did you know, the house is built on an old coal mine that collapsed something like 100 years ago.” Duncan says with a sigh. “A Lot of miners and even their families died that day. It is said that the blood and coal is the reason that the roses in the garden are black. Even if you plant red or white roses they come up black. But I think the black roses were brought over when the family migrated from England some 20 years before that.” Duncan stares at the painting a few moments more before making a quick turn and walks towards the lounge. “I need a stiff drink” he states.
-EventEntranceViktorDialog01.button1,Continue
-TokenEntranceViktor.button2,Ask about the painting {action}
-EventLoungeAddViktor.text,Viktor stands at the bar.
-EventLoungeAddViktor.button1,Continue
-EventLoungeEnterDone.text,You may move one space into the room.
-EventLoungeEnterDone.button1,Continue
-EventStartPlaceInvestigators.text,Place investigators in the lobby.
-EventStartPlaceInvestigators.button1,Continue
-TokenLoungeViktor.text,|||Viktor is sipping on a whiskey. "For all his faults, my uncle have good taste when it comes to whiskey. It is the only spirit I drink"|||
-TokenLoungeViktor.button1,Continue
-TokenLoungeViktor.button2,Are you ok? {action}
-EventLoungeViktorDialog01.button1,Continue
-EventEntranceViktorDialog01.button2,Continue
-EventEntrenceMoveViktorToLounge.text,Viktor moves to the bar in the lounge and starts looking for something to drink.
-EventEntrenceMoveViktorToLounge.button1,Continue
-TokenLoungeViktor.button3,What strange things? {action}
-EventLoungeViktorDialog02.text,"“I could swear that I heard crying coming from one of the guest rooms.” He glances at you. “Nothing ever happened so I’m sure it's safe to sleep there” Duncan continues. I heard scraping from the cellar and even experienced different seasons the same day in different parts of the garden. Summer on one side and winter on the other. I thought I was going mad and when I told my uncle he got very angry and even beat me. So I started to act like everything was normal until I was old enough to get out of this place.”\nDuncan downs the drink and pours himself another.\n"
-EventLoungeViktorDialog02.button1,Continue
-EventLoungeViktorMove.text,Viktor leaves
-EventLoungeViktorMove.button1,Continue
-TokenLoungeViktor.button4,Ask about the history of the Blackrose. {action}
-EventLoungeViktorDialog03.text,"“I found some books about the family in my uncle's study. According to them the name goes back as far as when the Romans left England. After a plague that killed a whole village except for one man. He later found a silver vein under the place where the village once stood. He took the family name blackrose after the black roses that started to grow around the mine. Everytime a new family member took over the business there was a big accident, killing a lot of people and then they found a new rich vein. Almost like it was connected.”\nDuncan downs the drink and pours himself another.\n"
-EventLoungeViktorDialog03.button1,Continue
-EventLoungeViktorDialog01.text,|||“As you can see, I’m not handling being back here all that well. When my parents died in that accident I was only 8 years old. I had no other family so I was sent here for my uncle to raise me. He was very cold to me and I’m not even sure he really is my uncle. Greta was like a mother to me but always had a hint of sadness in her eyes. Like she knew something bad was going to happen to me. After a while I started to notice strange things around the house."|||
-EventTestLoungeViktorMove.button1,Continue
-EventTestLoungeViktorMove.text,Viktor sighs and moves to the lounge.
-EventTestLoungeViktorMove.button2,Continue
-EventStartDistributeClues.button1,Continue
-EventStartIntro.text,"You enter the estate through the main entrance. The hall was once lavishly decorated but after years of neglect most of the furniture has its color faded and the wooden part is scuffed and bruised.\nPlace the {c:TileEntry} tile."
-EventEntrenceExplorationLounge.button1,Continue
-EventMythosLight01Animals.button1,Continue
-EventMythosLight01Animals.text,You notice an increase of animal noises coming from the outside. When you look outside you see shadows moving in the wooden parts of the estate. Like they are wathing but don't dare to come closer to the house.
-EventStairsPlaceExploreGuestroom.button1,Continue
-EventStairsPlaceExploreGuestroom.text,A door leads to the bedrooms.
-TokenStairsExploreGuestrooms.text,A door leads to the bedrooms.
-TokenStairsExploreGuestrooms.button1,{action} Open
-EventBedroomsPlaceTile.text,You arrive at the upper floor. The guestbedrooms are on the right.
-EventBedroomsPlaceTile.button1,Continue
-TokenBedroomExploreBedroom01.text,This is Viktors old room.
-TokenBedroomExploreBedroom01.button1,{action} Open
-EventBedroomsExloreBedroom01.text,|||Viktors old room is on the left. It even has an old faded sign. "Keep out!"|||
-EventBedroomsExloreBedroom01.button1,Continue
-EventBedroomsEnter.text,You may move 1 space into the explored area.
-EventBedroomsEnter.button1,Continue
-EventBedroom01PlaceTile.text,Viktors old beldroom. It looks just like he left it when he ran away.
-EventBedroom01PlaceTile.button1,Continue
-TokenEntrenceExploreKitchen.button1,{action} Open
-EventKitchenPlaceTile.button1,Continue
-EventSideHallEndPlaceTile.button1,Continue
-TokenLoungeExploreSideHallEnd.text,The door to the kitchen hall.
-EventSideHallEndEnter.text,You may move one space into the room.
-TokenSideHallEndExploreBasement.button1,Enter basement {action}
-TokenLoungeExploreSideHallEnd.button1,Open {action}
-EventBasementPlaceTile.text,Place {c:TileBasement}
-EventBasementPlaceTile.button1,Continue
-EventBasementEnter.text,You may move one space into the basement.
-EventBasementEnter.button1,Continue
-EventSideHallEndEnter.button1,Continue
-EventSideHallEndPlaceTile.text,Place {c:TileSideHallEnd}
-TokenSideHallEndExploreBasement.text,This is the basement door.
+quest.authors,Magnifico
+quest.synopsys,Your old friend Viktor has inherited his uncle's mansion, Blackrose, and wants all of you to come 
+UIPrologueText1.uitext,|||After a long day you sit down by the fireplace and begin sorting through the mail. Bills, advertisements, work letters — the usual pile. Then something catches your eye.\n\nThe return address on one of the envelopes reads:\n\n"Viktor Blackrose\n42235A Black Rose Estate"\n\nViktor. Your childhood friend. He once mentioned that he would eventually inherit his uncle's old manor. It seems that day has finally come.\n\nInside the envelope is a short invitation to what Viktor calls a “mansion warming party.” The date is set for this weekend.\n\nYou sigh and smile.\nThat sounds exactly like Viktor — impulsive as ever.\n|||
+UIPrologueContinueText1.uitext,Continue
+UIPrologueText2.uitext,"Later that week you are relaxing in your local bar when the door suddenly bursts open.\n\nViktor storms in with a wide grin.\n\n“Are you ready to go?” he announces loudly. “This weekend is going to be great. I have planned all sorts of activities for us.”\n\nBefore you can respond he grabs your freshly delivered drink and empties it in one long gulp.\n\n“And Greta is an amazing cook,” he adds with a laugh. “So be prepared to gain a few pounds.”\n\nViktor claps you on the shoulder.\n\n“Come on! We need to catch the next train if we want to arrive tomorrow around noon.”\n"
+EventProloguePart2.button1,Continue
+UIPrologueContinueText1.button1,ContinueToPart2
+UIPrologueContinueText2.uitext,Continue
+UIPrologueContinueText2.button1,ContinueToPart3
+UIPrologueText3.uitext,"After a short train ride and a pleasant drive through the countryside you finally arrive at the estate late the next afternoon.\n\nThe old mansion looms over the surrounding fields.\n\nViktor jumps out of the car and spreads his arms dramatically.\n\n“Welcome to Black Rose Estate — home to my childhood misery,” he says with a crooked smile.\n\n“It got its name from the coal-black roses that grow here. Though personally I think it might also come from my uncle’s black heart.”\n\nWith that Viktor marches through the heavy oak doors and disappears inside.\n\nAmused, you shake your head, grab the luggage, and follow him into the mansion.\n"
+UIPrologueContinueText3.uitext,Continue
+UIPrologueContinueText3.button1,ContinueToFirstTile
+Event_place_starting_tile.button1,Continue
+Token_explore_lobby_kitchen.button1,Enter
+Token_explore_lobby_lounge.button1,Open door {action}
+Event_Place_Lounge_Door.button1,Continue
+Event_Intro_Greta_Introduction.button1,Continue
+Event_Viktor_Moves_To_Painting.text,Viktor goes up and stands before a big painting of his uncle. You put down your luggage and look around.
+Event_Intro_Greta_Introduction.text,A door opens and a woman walks in. When Viktor sees her he lights up and runs over and gives her a big hug. “Greta! How good it is to see you again, it has been too long” he says happily, releasing the woman from his embrace. “Goodness grace Viktor, you certainly have not changed. ” Viktor laughs and turns to you. “Friends, this is Greta the housekeeper. She was like a mother to me when I grew up.” He introduces you to her with great enthusiasm. “Well” Greta says, “You are a bit early, the dinner is not ready. But there is a bar in the lounge if you want to have a drink before dinner and relax. The guest rooms are upstairs. You have to take the luggage yourself, William would do it but I’m afraid he is a bit under the weather of late. Now, If you excuse me, I will go get things ready”. Greta quickly leaves for the kitchen.
+Event_Viktor_Moves_To_Painting.button1,Continue
+Event_Place_Investigator.text,Place investigators
+Event_Place_Investigator.button1,Continue
+Token_Viktor_BlackRose_Painting.text,"{action}Viktor is staring at a large painting of his uncle standing in front of the house.\n"
+Token_Viktor_BlackRose_Painting.button1,Ask about the painting {action}
+Event_act1_viktor_bar_dialogue_04_history2.button2,Continue
+Event_Viktor_Blackrose_Dialogue_Painting.text,"“Did you know the house is built on top of an old coal mine?” Viktor says with a quiet sigh. “It collapsed about a hundred and twenty years ago. A lot of miners died that day… even some of their families.”\n\nHe glances up at the painting.\n\n“People say the blood and coal in the soil are the reason the roses in the garden grow black. It doesn’t matter if you plant red or white ones. They all turn black eventually.”\n\nViktor studies the portrait of his uncle for a moment longer.\n\n“But personally, I think the roses were brought over from England when the family moved here. That was about twenty years before the mine collapse.”\n\nHe looks away from the painting and suddenly turns toward the lounge.\n\n“I need a stiff drink.”\n"
+Event_Viktor_Painting_Token_Remove.text,Viktor goes to the lounge.
+Event_Viktor_Move_To_Lounge.text,Viktor moves to the bar in the lounge.
+Event_Viktor_Move_To_Lounge.button1,Continue
+Token_explore_lobby_lounge.text,A heavy dark and beautifully ornamented oak door is leading to the lounge.
+Event_Place_Lounge_Door.text,A heavy dark and beautifully ornamented oak door is leading to the lounge.
+quest.authors_short,Magnifico
+Event_Viktor_Blackrose_Dialogue_Painting.button1,Continue
+Event_Viktor_Painting_Token_Remove.button1,Continue
+Event_place_starting_tile.text,"You enter the estate through the main entrance.\nThe hall was once lavishly decorated, but years of neglect have faded the furniture and left the wooden floors scuffed and worn.\nPlace the {c:Tile_T1_Entry} tile and walls."
+Event_act1_place_explore_lobby_kitchen.text,This is the door to the kitchen. You can hear Grete humming a tune in there.
+Token_explore_lobby_kitchen.text,This is the door to the kitchen. You can hear Grete humming a tune in there.
+Token_explore_lobby_stairs.button1,Explore
+Event_place_tile_stairs.text,"Some old stair leads to the upper floor.\nPlace {c:Tile_stairs} and {c:Tile_bathroom}"
+Event_act1_place_explore_lobby_stair.text,This door leads to the upper floor. Greta said the guestroom is this way.
+Event_act1_place_explore_lobby_stair.button1,Continue
+Event_act1_place_explore_lobby_kitchen.button1,Continue
+Token_explore_lobby_office.text,A sturdy oak door. On the door is a plaque with the text “Office”.
+Token_explore_lobby_office.button1,Continue
+Event_act1_place_explore_lobby_office.text,A sturdy oak door. On the door is a plaque with the text “Office”.
+Event_act1_place_explore_lobby_office.button1,Continue
+Token_search_lobby_boots.text,A pair of old work boots rest by the door. Something about them catches your attention.
+Token_search_lobby_boots.button1,Look closer {action}
+Event_act1_place_search_lobby_boots.button1,Continue
+Event_search_lobby_boots.text,"The soles and leather are coated in a fine black dust. When you touch it, the powder smears across your fingers like soot.\n\nCoal dust.\n\nStrange. The mine beneath the estate has supposedly been abandoned for many years.\nGain 1 clue"
+Event_act1_place_search_lobby_boots.text,Near the entrance stands a small wooden rack for umbrellas and walking sticks. Beneath it sits a pair of worn leather boots.
+Event_search_lobby_boots.button1,Continue
+Token_viktor_blackrose_bar.button1,Are you ok? {action}
+Token_viktor_blackrose_bar.button2,What strange things? {action}
+Event_act1_viktor_dialogue_bar_01_are_you_ok.text,"Viktor lets out a tired laugh and leans against the bar.\n\n“As you can see… I’m not handling being back here very well.”\n\nHe swirls the whiskey in his glass before taking a slow drink.\n\n“My parents died in an accident when I was eight. I didn’t have any other family, so I was sent here for my uncle to raise me.”\n\nHe glances around the lounge with a faint grimace.\n\n“He was… a cold man. Truth be told, I’m not even sure he really was my uncle.”\n\nViktor sighs and looks down into his glass.\n\n“Greta was the only warm thing in this house. She treated me like a son. But even she always seemed a little sad… like she knew something bad was waiting for me here.”\n\nHe pauses for a moment.\n\n“And after a while… I started to notice strange things.”\n\nGain 1 clue"
+Event_act1_viktor_dialogue_bar_01_are_you_ok.button1,Continue
+Token_viktor_blackrose_bar.text,Viktor stands at the bar, already with another whiskey in his hand.
+Event_act1_viktor_bar_dialogue_02_strange_things.text,"“What kind of strange things?”\n\nViktor hesitates for a moment.\n\n“I used to hear crying sometimes… coming from one of the guest rooms upstairs.”\n\nHe shrugs uneasily.\n\n“Nothing ever happened when I checked, so I guess it’s safe enough to sleep there.”\n\nHe takes a slow drink before continuing.\n\n“The strangest thing was the garden. I remember walking outside and seeing different seasons at the same time. Summer on one side of the garden… winter on the other.”\n\nViktor shakes his head.\n\n“I thought I was going mad. When I told my uncle about it he became furious.”\n\nHe empties his glass and pours himself another.\n\n“So I stopped talking about it… and pretended everything was normal until I was old enough to leave.”\n\nGain 1 clue"
+Event_act1_viktor_bar_dialogue_02_strange_things.button1,Continue
+Token_viktor_blackrose_bar.button3,What can you tell me of the history of Blackrose? {action}
+Eventact1_viktor_bar_dialogue_03_history.text,"Viktor nods slowly.\n\n“I found a few old books in my uncle’s study. According to them, the family name goes back centuries — all the way to when the Romans left Britain.”\n\nHe takes a sip of whiskey before continuing.\n\n“The story says that after a terrible plague wiped out an entire village, only one man survived. Later he discovered a rich silver vein beneath the ruins and started a mining business.”\n\nViktor shrugs.\n"
+Eventact1_viktor_bar_dialogue_03_history.button1,Continue
+Event_act1_viktor_bar_dialogue_04_history2.button1,Continue
+Event_act1_viktor_bar_dialogue_04_history2.text,"“He took the name Blackrose after the strange black roses that began growing around the mine.”\n\nHe pauses, staring into his glass.\n\n“The odd part is what happened afterward. Every time a new generation took over the mines, there was always some kind of disaster. Collapses… accidents… people dying.”\n\nViktor glances toward the painting of his uncle.\n\n“And somehow, right after every tragedy, they always seemed to discover a new rich vein of ore.”\n\nGain 1 clue"
+Event_act1_viktor_bar_dialogue_02_strange_things.button2,Continue
+Event_act1_viktor_bar_dialogue_05_leaving.button1,Continue
+Event_act1_place_item_whiskey.button1,Continue
+Event_act1_viktor_bar_dialogue_05_leaving.text,"Viktor finishes his drink and exhales slowly.\n\n“Sorry… being back here brings up a lot of old memories.”\n\nHe rubs his eyes and sets the glass down.\n\n“I think I’m going to lie down for a while before dinner.”\n\nViktor moves toward the stairs.\n\n“Make yourselves at home.”\n"
+Event_act1_place_item_whiskey.text,Viktor left a bottle of whiskey at the bar.
+Event_place_lounge.button1,Continue
+Event_place_lounge.text,"You see a spacious lounge furnished with comfortable sofas and armchairs arranged around low wooden tables.\n\nThe furniture is elegant but worn with age, and the carpets show signs of many years of use. Tall windows along the outer wall are covered by heavy curtains, letting in only dim afternoon light.\n\nPlace {c:Tile_T2_Lounge}"
+Event_place_explore_lounge_sidehall.text,A door that leads furhter into the mansion.
+Event_place_explore_lounge_sidehall.button1,Continue
+Event_act1_place_search_lounge_cigarette_case.text,A silver cigarette case lies forgotten on a small side table near the armchairs.
+Event_act1_place_search_lounge_cigarette_case.button1,Continue
+Token_explore_lobby_stairs.text,This door leads to the upper floor. Greta said the guestroom is this way.
+Event_place_tile_stairs.button1,Continue
+Token_search_stairs_family_photos.text,Portraits of the Blackrose family hang in neat rows along the wall.
+Event_act1_stairs_family_photos.text,"You stop and study the portraits more closely.\n\nEach painting shows a different generation of the Blackrose family, dressed in the fashion of their time. At first glance, nothing seems out of the ordinary.\n\nBut the longer you look, the more something feels… wrong.\n\nThe head of the family — the man standing at the center of each portrait — looks almost identical in every painting.\n\nDecades pass between them. The clothes change. The surroundings change.\n\nBut the face…\n\nYou lean closer.\n\nFor a brief moment, the features seem to blur, as if the paint itself refuses to hold a fixed shape.\n\nTest {observation} 2"
+Event_place_search_family_photos.text,A series of old family portraits line the wall along the staircase.
+Event_place_search_family_photos.button1,Continue
+Token_explore_bathroom.text,A plain wooden door bears a small carved sign: Guest Bathroom.
+Event_act1_stairs_family_photos.button1,Pass
+Event_act1_stairs_family_photos.button2,Fail
+Event_act1_stairs_family_photo_pass.text,No… that can’t be right. There are small differences. You are sure of it. It must just be a strong family resemblance.
+Event_act1_stairs_family_photo_pass.button1,Continue
+Event_act1_stairs_family_photo_fail.text,"The face is the same.\nIt has to be... the same person.\nA cold feeling settles in your chest.\n\nGain 1 horror."
+Event_act1_stairs_family_photo_fail.button1,Continue
+Token_search_stairs_family_photos.button1,Look closer
+Token_explore_bathroom.button1,Explore {action}
+Event_act1_guest_bathroom_enter.button1,Continue
+Event_act1_guest_bathroom_place_search_mirror.button1,Continue
+Event_act1_guest_bathroom_enter.text,"You step into a small guest bathroom.\n\nThe room is clean, but oddly bare. There are no towels, no soap, and no signs that anyone has used it in quite some time.\n\nA faint smell of damp air clings to the room."
+Token_act1_bathroom_search_mirror.button1,Search {action}
+Event_act1_bathroom_search_mirror_fail.text,"Your reflection does not follow your movement.\n\nIt stares back at you — unmoving.\n\nThen the mirror suddenly cracks with a sharp snap.\n\nYou recoil as shards of glass cut into your skin.\n\nA heartbeat later, the mirror is whole again.\n\nAs if nothing ever happened. But your injury stays behind.\n\nGain 1 damage."
+Event_act1_guest_bathroom_search_mirror.text,"You step closer to the mirror and open the cabinet.\n\nInside, you find a few old toiletries — neatly arranged, but untouched.\n\nAs you close the cabinet, your eyes drift back to the mirror.\n\nFor a brief moment… your reflection lags behind.\n\nMake a {observation} 2 test."
+Event_act1_guest_bathroom_place_search_mirror.text,A small mirror hangs above the sink, with a narrow cabinet built into the wall behind it.
+Event_act1_guest_bathroom_search_mirror.button1,Pass
+Event_act1_guest_bathroom_search_mirror.button2,Fail
+Event_act1_bathroom_search_mirror_pass.text,"You blink and the feeling passes.\n\nJust your imagination.\n\nStill… it felt very real.\n\nGain 1 facedown horror."
+Event_act1_bathroom_search_mirror_pass.button1,Continue
+Token_act1_bathroom_search_mirror.text,The mirror is slightly clouded, and the cabinet door stands just a little ajar.
+Event_act1_bathroom_search_mirror_fail.button1,Continue
