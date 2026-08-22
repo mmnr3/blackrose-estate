@@ -1,0 +1,5245 @@
+﻿Content
+Installing Prerequisites        5
+Select Content        6
+Downloading Premade Scenarios        6
+Creating a Scenario - The Basics        7
+Scenario main screen        7
+Editor Navigation        12
+Creating Tiles and Tokens        14
+Create a Tile        14
+Create Tokens        15
+Basic Start Event and Placing Tiles & Tokens        18
+Create an Event        18
+Place the Tile        19
+Place the Token        20
+Configure Tokens        21
+Adding a new token and placing it        22
+Configuring a new token with an interact button        24
+Puzzles        26
+Making it flow        28
+Spawn (a monster)        31
+See it all in action!        35
+Items        41
+Regular items - Giving a random item        41
+Unique Items - Giving a single item        42
+Starting Items - Giving a random Starting Item (and excluding specific items)        44
+Interacting with Items        45
+Add Items using Events        47
+Let’s see Items in action        48
+Set Variables to flag that an item is obtained        49
+Creating a Scenario - Advanced Functions        50
+Copy an Existing Scenario        50
+UI Elements        53
+Using built-in sound effects and music        59
+Audio        59
+Music        59
+Custom Content        60
+Custom Images        60
+Custom Audio        61
+Language specific UI and Audio        62
+Triggers        63
+Variables        64
+Variable Types        64
+How are they used        65
+More advanced uses        67
+Assigning a random number to a variable        67
+Selecting a random hero and calling them later        68
+Mythos Events        69
+How Mythos Events work in the App        69
+Create a Mythos Event        70
+Mythos Events Based on Player Numbers        72
+Testing your Mythos events        74
+Now we have a working mythos event we can use Save & Test to test that it's all working.        74
+Advanced Events        76
+Single Token/Event with Random Outcomes        76
+Single Event with Multiple Outcomes controlled by Variables        78
+Let us see it in action        85
+Single Event with outcome based on test.        87
+Person Token with Several questions        89
+Event Loops        105
+See it in action        114
+Creating Custom Puzzles using UI        119
+Create your puzzle images        120
+Creating a Combination Lock Puzzle        122
+Singling out an Investigator        149
+Tile Placement and Planning        154
+Start-up behavior of a scenario        154
+Systematic and robust tile placement.        154
+EventQMoveOneSpace        157
+Multiple entry possibilities to a tile        158
+Organizing your events        159
+Systematic naming convention        159
+Multiple event*.ini files        159
+Custom Monsters        161
+Create framework of the monster        161
+Activations        162
+Evade        168
+Horror        168
+Spawn the monster:        169
+Trigger the Monster        169
+Add a Test to stop it from spawning every round!        170
+Completed Monster:        170
+How the monster looks in game        171
+Use cases        173
+Custom Monster Images        174
+Interactive System / Puzzles        175
+Special Symbols        206
+Using Special symbols for components        206
+Translating a Scenario        208
+Set Language        208
+Download and Copy the Scenario        209
+Translation Tips        210
+Alternative Translation Method (Advanced)        214
+Making your scenario ready for translation        220
+General Tips        222
+Alternate Endings        222
+Late game events        222
+Story is Key        222
+Useful Tools        222
+Publishing your Scenario        224
+GitHub        225
+Create an Account        226
+Install the Windows GitHub Desktop Application        226
+Create a Local and Remote Repository        226
+Create a Valkyrie Package for your Scenario        229
+Add your Scenario to your Repository        232
+Request that your Scenario be linked to the Valkyrie Application        234
+Adding a Translation file        235
+Appendix; Code Snippets and Templates        236
+3 Question Dialogue template:        236
+Introduction UI - the prologue        239
+Prologue Layout        239
+UIIntroducitonBackground        240
+UIIntroductionTextTop        240
+UIIntroductionContinueBackground        240
+UIIntroductionContinueText        241
+UIIntroductionImage        241
+UIIntroductionText        242
+User Created Triggers        243
+Doing more than one thing at the same time.        243
+Example 1: Assigning Roles to Allies        243
+The Event Combination Explosion Problem        244
+Example 2: Multiple Door\Sight Tokens        246
+The Event Combination Explosion Problem Again        247
+Example 3: Placement of Multiple Optional Tokens        247
+User Defined Triggers Conclusion        248
+Monster Statistics        249
+Base        249
+Call of the Wild        249
+Fatal Alchemy        250
+Mansions of Madness 1st Edition        250
+Beyond the Threshold        250
+Horrific Journeys        250
+Path of the Serpent        251
+Streets of Arkham        251
+Sanctum of Twilight        251
+Finishing comments and Shout Outs        252
+
+
+
+
+________________
+
+
+Guide Translations
+
+
+This guide is now available in Spanish.
+
+
+https://docs.google.com/document/d/1yogKLaSEFFZvnJ0VdVDMKzohv2k0XPsHlVxW30qha8g/edit?usp=sharing
+
+
+Credit to EtiCarasoft, thank you!
+
+
+Getting Set up
+
+
+Installing Prerequisites
+First off install Steam and download the Mansions of Madness App, from here:
+http://store.steampowered.com/app/478980/Mansions_of_Madness/
+Go to the GitHub for Valkyrie and install it:
+https://github.com/NPBruce/valkyrie/wiki
+
+
+Fire up Valkyrie and under Mansions of Madness Second Edition hit Import Content
+  
+
+You should see this after the import is complete.
+
+
+It can take some time as it collects all of the data from the Steam App, so be patient.
+
+
+Once done click Mansions of Madness Second Edition.
+
+
+
+
+Select Content
+In this section you can select all of the game components you own. It is assumed that you own the main game (MoM Second Edition).
+
+
+If you own an expansion, figure packs or even Mansions of Madness First Edition, you can select them here. Don’t forget to do this as it will open up more options for Scenarios when you come to download them (now and in the future as people add them).
+Downloading Premade Scenarios
+If you’re not interested in making a Scenario just yet you can play some of the awesome Scenarios that the community has already made and published.
+
+
+To do this click on Start Scenario then click Download
+  
+
+Select the Scenario that you want to download, any that are already downloaded will be greyed out.
+Tip - You can use this section to Delete any Scenarios that you have downloaded from your machine.
+Click Back once you have downloaded all the Scenarios that you want and you should have a list available.
+Click the one you want to play:
+  
+
+Playing the Scenario works exactly like the Official App from this point on. 
+Creating a Scenario - The Basics
+
+
+Right let’s get down to the fun stuff! Making your own Scenario!
+
+
+First off read what Bruce (and the Valkyrie team) has to say about it, there are some great guides here and they know this editor much better than I do:
+https://github.com/NPBruce/valkyrie/wiki/TutorialScenarioCreation
+
+
+I’ll refer back to each of the Wiki entries where relevant, then give my insights on each topic. I am still learning the nuances of the Editor, so will try to keep this updated and relevant as I learn more (or as new content is added).
+Scenario main screen
+From the main menu hit Scenario Editor and hit New. 
+This will create a new Scenario called Scenario 1, click it to begin. 
+
+
+Tip - You can also delete your own Scenarios from here, if you desire. Click Delete and then click the Scenario you wish to delete.
+
+
+The first screen that will greet you is the main screen, it will be pre-populated with some generic information.
+  
+
+
+
+
+
+Change the Scenario 1 name and give it a name fitting your ideas of the Scenario.
+
+
+You can also select an Image for the Scenario, by clicking the box next to Image. This will be a thumbnail next to the Scenario name, on the Download/Select Scenario page.
+
+
+  
+
+
+
+Keep this image small (200 x 200px for example) and in JPEG or PNG format.
+
+
+Save it to the Scenarios content files location:
+%appdata%Valkyrie\MoM\Editor\Scenario1
+
+
+Tip - JPEG is advised for this to keep the image small (since no Transparency or Text is required).
+
+
+Fill in a Descriptive for the Scenario and the Author's name (or an alias you secretive devils!). 
+Ignore the Icons for this part, they are used in game to display icons for skills tests.
+  
+
+
+
+Tip -  Don’t give too much away here, use it to entice players in. Treat it like a good movie trailer, just enough to make people excited, but not enough to spoil the ending.
+
+
+Next to Required Expansions click the + and add any expansion that are mandatory for your scenario. Check which icon is displayed on the tilesets you intend to use, then select the corresponding expansions in this list. The Mansions of Madness First Edition tiles (which have no Icons) are “MoM1ET” pack. Remember that the Tentacle Icon (or saxophone as my wife calls it) is the base (second edition) game, so you won’t need to select a pack if you only use those tiles.
+You don't need to select Recurring Nightmares (RN) if you've selected MoM1ET/MoM1EM since they are the same content.
+
+
+
+
+________________
+
+
+Also remember that some Monsters are custom to some expansions, so be sure to include the correct expansions for any monsters you use. The Thrall for example is from BtT!
+  
+
+
+
+This confused me so I'll explain what each acronym is:
+
+
+BtT - Beyond the Threshold (2nd Edition expansion)
+CotW1I - Call of the Wild Investigators (1st Edition expansion, same as Suppressed Memories)
+CoTWM - Call of the Wild Monsters (1st Edition expansion, same as Suppressed Memories)
+CoTWT - Call of the Wild Tiles (1st Edition expansion, same as Suppressed Memories)
+FAI - Forbidden Academy Investigators (1st Edition expansion, same as Suppressed Memories)
+FAM - Forbidden Academy Monsters (1st Edition expansion, same as Suppressed Memories)
+FAT - Forbidden Academy Tiles (1st Edition expansion, same as Suppressed Memories)
+MoM1EI - Mansions of Madness 1st Edition Investigators (same as Recurring Nightmares)
+MoM1EM - Mansions of Madness 1st Edition Monsters (same as Recurring Nightmares)
+MoM1ET - Mansions of Madness 1st Edition Tiles (same as Recurring Nightmares)
+RN - Recurring Nightmares Expansion (2nd Edition expansion)
+SM - Suppressed Memories Expansion (2nd Edition expansion)
+
+
+Set the minimum and maximum number of Investigators, assuming you want to limit the number of players. 
+
+
+Tip - There are loads of tricks we can use to scale monsters and events to cater for more players, so try to keep it 2-5 to avoid excluding people. I also believe Valkyrie can cater for larger player groups, give it a try it you’re feeling brave.
+
+
+Enter the number of minutes you think the game will last. I have no idea of a good algorithm for this, I would suggest play testing your scenario once it’s complete, then adding a bit extra, remembering that people will be reading every dialog and talking amongst themselves when playing for the first time. 
+
+
+Tip: Valkyrie now collects statistics in game. Keep an eye on the stats sheet to get live data on your scenarios plays. There is a handy section and graphs that show average play times. Over time this will become very accurate.
+https://goo.gl/xgxdMb
+
+
+
+
+
+
+Set the Difficulty, the scale is 0 to 1 using decimals. So, for example if you want your Scenario to show as 3 stars, then you would put 0.6.
+
+
+Here’s a quick reference to make it easier:
+
+
+0                0 Stars
+0.2                1 Star
+0.4                2 Star
+0.6                3 Stars
+0.8                4 Stars
+1                5 Stars
+
+
+Tip - If you want to be a smart-arse, you can set the difficulty to part of a star using fractions in between. For example 0.5 will be 2 and a half stars!
+
+
+________________
+Editor Navigation
+Before I get into the guts of the Editor, I wanted to quickly explain how to navigate it. The actual use of the Editor is straightforward, but there are some navigation options that make life a lot easier.
+  
+
+1) The Scenario and Components button serve the same function, they open the Components menu, this menu is the most used section:
+  
+
+2) Save & Test can be used to sample your Scenario at any time. This allows you to run it as a player would see without having to save and exit. More about this later.
+3) “Tools” is self explanatory, Reorder Components is handy for organizing your tiles/tokens/etc. But generally speaking you won’t use this much.
+4) Menu - Can be used to save, etc, etc.
+
+
+While using the Editor; creating events, tokens, spawns (etc), there are some useful buttons that you can use to navigate.
+  
+  
+
+1) Back Button, this will take you to the previous item you were on.
+
+
+2) Go to Component, clicking this will take you to the Component if refers to (event, item, puzzle spawn, etc).
+
+
+3&4) Clicking the + icon for an event will give you the option to create a {new} one.
+
+
+These buttons significantly streamline navigation of your Scenario, so I would encourage you to learn how they function.
+Creating Tiles and Tokens
+I’ve grouped these together because they are very similar in the way they are placed. You create them and place them, but they won’t show in the game until “Added as a Component” in an Event (Spawn, etc).
+To add either of these to the game, you must select them from the Add Components option in the event (spawn, etc) you wish them to appear in. 
+Create a Tile
+Click Components (or Scenario) from the top to open the components menu and then Tile, then {New Tile}.
+
+
+Select a Tile by clicking on the box next to Image, you can change a tile at any time this way
+  
+
+Click X Snap and click on the screen to put it in place.
+
+
+Click Rename and give it a sensible name (all one word)
+
+
+Tip: I personally add T1_, T2_, T3_, etc to the start, so I know what order to place them in. This also helps filtering and remembering which token belongs with which tiles. Later into writing your scenario you'll see how way it is for events to get jumbled u, so a clear naming convention will save you hours later on.
+
+
+Use Rotation if you want it placed in a different orientation.  
+
+
+________________
+
+
+When you come to add subsequent tiles, you will notice some that are shaded in blue. This indicates that the tile has been placed, either face up or face down (tiles are double sided remember!).
+  
+
+I would recommend that you place all of your Tiles first, get them lined up and try to avoid as many doors facing walls as possible, we are limited on wall tokens!
+Create Tokens
+You can create and place Tokens in the same way.
+Click Components, then Token from the left hand menu and then Click {New Token}.
+
+
+Click Type and select the token you wish to use.
+
+
+Snap will fix the token to set points on the tile, as shown below:
+
+
+  
+
+
+
+
+
+________________
+
+
+However Tokens have another option to ~ Free position them, this will allow you to put the Token anywhere.
+  
+
+
+
+Tip - When placing tokens, try to use the artwork on the board. For example, if you have a search token for side table, place it on a side table that is depicted on the tile. If there is no table, reconsider using another description for your token, something that is actually on the Tile! 
+
+
+Tip - You can select tiles and tokens by right clicking on them! Handy!
+
+
+Tokens differ slightly to Tiles when it comes to use. Tiles can be placed or removed, that's it. 
+Tokens however can be interacted with, if Dialog is added. 
+
+
+Interacting with a token is when you touch (or click) a token in game.
+
+
+
+
+________________
+
+
+Enter text into the Token’s Dialog Box if you want to allow investigators to interact with it. If the Token has no dialog then Investigators will not see a dialog pop up when they select it, however the camera will still move.
+  
+
+
+
+Tip: A token that has no dialog and a button (with an event assigned) will automatically run the event when the token is clicked. This is a clever way to add tokens that change based on events. You can use variables to set when events will run, if more than one are attached to the button. See  advanced events for more information 
+
+
+Rename the Continue button to {action} Investigate
+
+
+Click the Green + to add an event to be triggered.
+
+
+When a player touches (clicks) the option it will trigger the events linked to it. 
+I will explain how this works in more detail later.
+Scenario phases
+Contributed by Anton Timmermans
+
+
+After adding tiles and tokens in the editor it is time to add a flow to the scenario that makes the scenario come alive. For this flow it is important to remember the phases of the game:
+  
+
+Some automatic triggers mark the beginning or end of a phase. These triggers can be used to activate events in your scenario.
+
+
+How that works is explained in the next chapter with an example how to place the first tile.
+
+
+Note that for Decent only StartRound and EndRound are used.
+
+
+
+
+
+
+
+
+Important for Mansion of Madness: 
+* An event triggered by the Mythos trigger does not replace the default Mythos events which are set by a variable (see chapter Mythos Events). If both the default Mythos and a user generated event with the Mythos trigger are active, the order in which they occur is also not fixed. So default Mythos can be handled before or after this trigger is set. Therefor, for predictive behaviour of your scenario, it may be better to use the BeforeMonsterActivation trigger which is ALWAYS after the mythos phase.
+* The trigger EndInvestigatorTurn is most useful in an event to check if any conditions are met to change Mythos events which are set by a variable (see chapter Mythos Events), or to determine if end of scenario contidtions are met.
+* The trigger Eliminated is activated when a full investigator turn is completed. So, if in round 15 the menu option ‘Investigator Eliminated’ is selected, a full round 16 is handled, and THEN this trigger is set. Note that if there is an event linked to this trigger, it will be called once. If the scenario is not ended after handling this event,the investigators will need to hit the End turn button again after which the EndInvestigatorTurn is called again and the game continues as normal. The menu option ’Investigattor Eliminated’ will remain grayed out.
+Basic Start Event and Placing Tiles & Tokens
+Now that we have a tile and a token placed, we need to create several events to utilise them.
+First off we want an event to place them.
+
+
+Open the Components menu and click Event, then {New Event}
+Create an Event
+Since this is our first event, we need to tell the app to trigger it.
+
+
+Click the Trigger box and select EventStart from the General List.
+  
+
+
+
+Note - Technically many events can trigger from EventStart but an order can’t be guarenteed, so it's best to only set one. Typically you will want this to be your “Setting the Scene” dialog, which is best done with UI Elements, more on this later. But for this example we’ll just trigger a basic event.
+
+
+Enter some Dialog, this will be displayed in a box to tell the Investigators what to do. 
+
+
+We will use the official app as a reference on how we want to place items, it will typically place a tile and wall as the first event, then place each interactive token (Search, Sight, Interact) one by one, Sight tokens are usually the last to be placed. 
+
+
+This Dialog should tell the investigators what tiles, tokens or monsters that should be placed, you can use {c:TileName} in the test Dialog box to have the App automatically list the tile name (and icon) to avoid mistakes.
+  
+
+
+
+Click the Unused box till it reads Camera, this will tell the event to move the camera
+
+
+Click Snap or Free then click the tile to select where the camera will move to.
+Place the Tile
+Click the green + next to Add Components and then select the tile - Lobby_T1
+Once you enter some Dialogue and Components, a button will automatically add, you can enter the text that you would like the button to have. For this example the default Continue is perfect.
+
+
+Click the green + just under the button and click {New Event} this will create a new blank event 
+
+
+Tip - You can also select an event, spawn or puzzle that you have previously created or the {new} option to create new ones, if you prefer.
+
+
+When the player clicks the Continue button, it will run the next event (in this case Event0).
+   
+Click the Blue box after Event0 to open this new event for editing.
+
+
+
+
+________________
+
+
+Place the Token
+We will use this as the event that places the Token we have created, give it a more suitable name using the Rename option (don’t worry the previous event will still point to this one, even if it has been renamed)
+
+
+Enter some Dialogue to describe to the investigators why they are placing the token.
+
+
+Click the green + next to Add Components to place the Token.
+  
+
+
+
+Tip - You can click the Blue box next to it to open the token, if you do click the Blue Back button (top left of screen) to go back to our PlaceTokenExampleToken_T1 event
+
+
+A Continue button will be added automatically. We won’t add another event or now, if a button has no actions (or triggers an action that won’t run due to tests, more on them later) then it will exit the dialog back to the Map screen.
+
+
+I will explain more advanced Events later on, I want to cover the basics here. 
+________________
+Configure Tokens
+Now we have placed the token, we can configure the token and give it buttons, which will trigger events.
+
+
+Open the Components menu and select your example token (TokenExampleToken_T1).
+
+
+Click the green + below the “{action} Investigate” button and click {New Event} then click the Blue button after the event that has just been added.
+
+
+Rename the event and add some dialog, stating you will be removing the token.
+
+
+Tip - You can click the icons above the Dialog box to enter them into the text. Here i’ve added a clue token symbol using the Clue button which adds the code {clue} that translates to the icon in game.
+
+
+Since we want to remove the Search token, we have to tell the App to remove it. This is done in a similar way to adding a component to the board.
+
+
+Click the Remove Components and select your example token from the list (TokenExampleToken_T1)
+  
+
+Leave the Continue button empty for now.
+Adding a new token and placing it
+Now we have a working event and token, let's add another token for players to interact with. 
+
+
+First off we need to create the token, using the process above.
+Create it, name it and add some dialog.
+  
+
+
+
+Create an Event to place it, using the process above but do not set a trigger (since we can only have one).
+
+
+Create it, name it, add the token (we’ve just created) as a component, set the camera position and add some dialog:
+  
+
+
+
+
+
+________________
+
+
+Open the PlaceExampleToken_T1 event we created earlier, from the Components menu. In this event under the blank Continue button, click the green + and then select this new event we have just created.
+  
+
+
+
+This event will now add the additional token in the starting event chain.
+  
+
+Feel free to Save and Test and watch it appear!
+
+
+
+
+________________
+
+
+Configuring a new token with an interact button
+The plan for this token is to use the Search token to give an option to “Investigate” the table, with an unexpected event causing us to make a simple test and tell the App if we have “Passed” or “Failed”.
+
+
+So let’s open the Token (TokenExampleToken2_T1) from the components menu.
+
+
+Rename the Continue button to {action} Investigate and click the green + to add an event.
+  
+
+________________
+
+
+Edit the created event and give it a name and some dialog, you can use the Icons in your text since we are going to ask the investigator to make a roll.
+
+
+Rename the Continue button to Passed
+
+
+Click the green + next to Buttons to create a second button and name it “Failed”
+  
+
+
+
+I have added an {agility} test, in game this code will show as   .
+
+
+We will use the Passed Button to trigger an event, and explain puzzles.
+
+
+We will use the Failed Button to trigger a Spawn and explain how monsters work.
+________________
+Puzzles
+In the created event, we will tell the player that they have successfully caught the Vase. Then we can explain that there are several ripped up shreds of paper to “piece together” and trigger a puzzle.
+
+
+Use the Green +  under the Passed button to create an event to describe that happens if the Investigator Passes.
+
+
+Edit the Event and add some dialog to explain that the investigator has caught the vase and finds several shreds of paper on the desk. 
+
+
+Add a button and rename it to Tap to attempt Puzzle using {observation}
+Click the Green + under the button and click {New Puzzle}
+  
+
+Click the Blue    to edit the Puzzle and give it a sensible name.
+
+
+There are several puzzle class types, for this one we will do an Image puzzle. Click the box next Class and select Image.
+
+
+Set the skill to Observation
+We’ll make this test a little easier than the default, so set the level to 3 and the alt level to 3.
+
+
+Tip - Always test your puzzles in game, especially the Code and Image puzzles. Some images are easier to slot together than others.
+
+
+Click Image and then the image you would like to use. For this example we’ll use the PuzzleOldJournal image.
+
+
+Tip - You can select your own custom images from here, assuming that they are in the correct format (PNG or JPEG) and copied to the Scenario folder %appdata%Valkyrie\MoM\Editor\Scenario1, (More on this in UI Elements). JPEGs are generally the most suitable format for Puzzles as they are usually smaller in file size.
+
+
+The button at the bottom will become available to the player when the puzzle is complete, otherwise they will have an option to close. Only the first button will show for puzzles, so we can only create one button
+  
+
+
+
+Enter the button text that is in context for your puzzle, for this example we’ll use “Complete”.
+
+
+Click the green + to add a completion event, give it a dialogue explaining what the papers says and give them a reward (maybe a clue or two), tell the players to remove the token and use Remove Components to remove it from the app’s board.
+  
+
+Making it flow
+Since the investigators might not pass this puzzle first time, we don’t want to make them roll an agility check each time they interact with the Search token, we need the next time they click (touch) the search token to present them with the puzzle. 
+
+
+We can do this in one of two ways, we can remove the token and add a new token in its place (without dialogue so the players won’t notice).
+
+
+Or - We can add the puzzle to the tokens “Investigate” section, putting it at the top of the list (ordered), then tell it to “Test” if a certain variable is set to “1”. Before it becomes an option for the players we would then have to assign the variable in the “EventLobbyTablePassed_T1 event” to 1, which would make the test the default option from then on, See Variables for more information on this.
+
+
+
+
+________________
+
+
+I’ll explain the former, as its a little easier to understand at this stage and the function has its uses.
+
+
+Create a new token and give it a sensible name (TokenLobbyTokenExample2a_T1 in this example).
+
+
+Add some dialogue to explain what the table looks like now we’ve interacted with it, for example there is a table with a notepad on it and the vase has been carefully placed on the floor beside it. 
+
+
+Then give it a button {action} Investigate that opens the Puzzle.
+  
+
+
+
+
+
+________________
+
+
+Open the EventTablePassed_T1 skill check, created earlier. In this event, remove the token TokenLobbyExample2_T1 using Remove Components. Then add the replacement token with TokenLobbyExample2a_T1 using the Add Components section. 
+
+
+  
+
+
+
+This is what I like to call a “Silent update” where the app changes things on the board, but the players are not aware, since they don’t need to do anything (like removing or add tokens).
+
+
+Now when a new Investigator approaches the token, they can attempt the puzzle without having to do the “vase catch” skill check for a second time.
+________________
+Spawn (a monster)
+If you remember, back in Configuring a new token with an interact button we wanted to set the events “Failed” button to trigger a spawn.
+Spawns are used to make monsters appear, they can be generic monsters, custom monsters or a mix of both. In this example I will explain a very basic monster spawn, you can find more detailed information on Spawns, including custom monsters, here.
+
+
+Open the Skill test Event (EventLobbyTableSkillCheck_T1)
+Click the Green +  under the Failed button and select {New Spawn}
+
+
+Edit Spawn0 using the Blue arrow (or select it from the Components menu).
+You’ll notice right away that the camera moves and a highlight circle pulses, this is the default action for Spawns. Its intended to direct the Investigators attention to a space and indicate where the Monster will spawn.
+
+
+Rename the Spawn event to something more sensible, to make it easier to find and edit later.
+
+
+Use the Snap button to position the highlight to the top right hand corner of the Lobby tile. This is where the monster will spawn.
+
+
+All monsters have a base health, you can adjust this using the Health and Per Hero options. 
+Under Types select Cultist from the menu. 
+In this example we’ll use a generic Cultist monster, these are pre-defined in the app. You can make more complex custom monsters of your own, i’ll explain this more later.
+
+
+Enter a Dialog for the event, explain to the players what has just happened and that they should place the monster.
+  
+
+Now we have spawned a monster (the consequence of failing a skill test!) we can let the player know about the ripped paper (puzzle) on the desk (same principle as the passed event above).
+
+
+Under Continue click the green +and add an event, give it a name and describe what's on the table.
+
+
+  
+
+
+
+Notice in this event i’ve not put a follow on event (yeh, let’s assemble a puzzle with a cultist stabbing us in the back!), this will exit the encounter and the player will have to interact with the token again (using another action) to attempt to piece the paper together (puzzle). 
+
+
+
+
+________________
+
+
+Create a token in the same way as before (TokenLobbyTokenExample2a_T1) and give it a sensible name (TokenLobbyToken2b_T1).
+  
+
+
+
+Go back to the previous event (EventLobbySmashVase_T1), add the new token and remove the previous search token.
+  
+
+
+
+
+
+________________
+
+
+Finally edit the Puzzle Complete event and make sure you remove all of the search tokens, that could be placed:
+  
+
+________________
+See it all in action!
+Now that we have the basics of an event mapped out, lets see what it looks like.
+
+
+Click the Save & Test button
+
+
+The EventStart will trigger right away and run the Lobby_P1 event:
+  
+
+Notice that it’s entered the tile name, icon and moved the camera.
+
+
+  
+
+The camera moves to the search token
+
+
+________________
+
+
+
+
+  
+
+It then places the second search token for the table.
+
+
+  
+
+If we click on the left token, we are presented with the option to investigate a slick substance on the steps.
+
+
+________________
+
+
+
+
+  
+
+If we investigate, it triggers the dialogue and removes the token
+
+
+  
+
+If we investigate the second token we are presented with the table.
+
+
+  
+
+Upon investigation we are presented with a skill test
+
+
+  
+
+Here is what happens if you pass, allows you to attempt puzzle
+
+
+
+
+
+
+________________
+
+
+  
+
+  
+
+Heres what happens if you fail, monster spawn, then description of the table
+
+
+  
+
+This is the puzzle in action, either right away if you pass agility test or for another action if you fail the agility test.
+
+
+  
+
+Puzzle complete (notice the search token is removed), click Continue
+
+
+Click Menu and then click Scenario Editor to get back into edit mode.
+
+
+Tip - You create Sight and Explore tokens exactly like this. Just trigger an event to place the adjacent tile and add the tile in the event. Remember that explore tokens usually cost and {action}, where as Sight tokens usually don't cost an action (just require the Investigator to b in the same tile as the token.
+Items
+IMPORTANT: The fields in the item editor:   ,    and   have specific behavior when used with random or a specific item selection. The article https://github.com/NPBruce/valkyrie/wiki/TutorialQItemUsage gives a detailed explanation of these fields. The rest of this chapter will guide you through the process of item selection step by step.
+Contributed by antontimmermans
+
+
+Throughout your Scenario you will want to give your Investigators Items to help them complete their mission.
+
+
+Items can be added to the game using the Add Component option and also removed using Remove Component (in events, spawns, etc).
+
+
+Like Tiles and tokens, you have to first create the item before you can add it as a component.
+Common Items, Spells and Unique items are created and given to players in the same way.
+
+
+I’ve split this into 4 categories, to try to explain the different ways of distributing items.
+Regular items - Giving a random item
+For this example we’ll create an event that gives a Random Common Item. This is your go to QItem Type for giving out items through events.
+
+
+Create the item by opening the Components menu, clicking QItem then {New QItem}.
+
+
+Set Starting Item to False, since we will give this out in the game later.
+
+
+Rename the Item, you will use this name when you use Add Component to add the item to the board or give to a player.
+
+
+
+
+________________
+
+
+Use Traits and Pool traits to specify what Type of item you want to be generated. If you select a Trait or Pool Trait and no Item then a random item that has that (Pool) Trait selected will be given to the player, this adds a level of randomness to the item distribution.
+  
+
+In this case we will select the Traits - Common, click the red - next to Weapons to remove this trait (it's added by default), and leave the Items section Blank. 
+This will give the Investigator that triggers this QItem, a random common item.
+
+
+Tip -  You can exclude items from the list by adding them in the Items list. If a Trait or Pool trait is selected, the Item section is used to exclude items. If no Trait or Pool trait is selected, then the Item section is used to explicitly give that item.
+Unique Items - Giving a single item
+In this example i’ll create a Puzzle box item, this is a unique item.
+Create a QItem as above but, give it a name and set the Starting Item to False.
+Under Item select the Puzzle Box
+  
+
+
+
+By default the Weapon Trait is selected and a red - has appeared. We don’t want to select an item with a Trait (or pool trait) so we need to remove this to ensure that only the PuzzleBox item is given. Click the red - next to Weapon to remove it.
+
+
+  
+
+
+
+Tip - You can see what items are in the list by selecting the Item Pool sections on the left hand side, items that are used will be Greyed out, be sure to add them as exclusions on random item QItems.
+  
+
+
+
+Starting Items - Giving a random Starting Item (and excluding specific items)
+You can give players specific items or a random item from a group as starting items by setting the Starting Item flag to True. Starting items don’t need to be triggered or added as components. They will just appear on the starting items screen before the scenario begins.
+
+
+Create the item as you did with the Regular Item.
+
+
+Set the Starting Item to True this will now be given to the Investigators before the Scenario Starts.
+
+
+Let's assume that we don’t want to give the Shotgun or Tommy Gun here because we have an event later to give it out (and they are OP). We will need to exclude them.
+
+
+Assuming that you’ve created the item as you did the Regular item above the Common trait will be set.
+
+
+If we add Items above this, they will be excluded from the Trait’s random pick.
+
+
+Add the Tommy Gun and Shotgun items to the Items list (for exclusion).
+  
+
+________________
+Interacting with Items
+In a previous step we created a QitemPuzzleBox item. In this step we’ll configure it to create an event to solve a puzzle.
+
+
+You can add an Inspect event to an item, so that when you interact with it in the app it will present some dialog.
+
+
+In this example we’ll give the Puzzle Box some text and add an optional Puzzle.
+Completing the puzzle will give the player the QItemRegularItem we created earlier.
+
+
+First we need to create an event with some dialog that will pop up when a player inspects the Puzzle  Box from their Item Menu.
+
+
+Tip - If you’re feeling fancy, you can trigger an event that displays some UI elements instead, to show an image and text. More on UI Elements here
+
+
+In this event add a generic description of the item and two buttons.
+The first will be {action} Attempt Puzzle
+The second will be Cancel
+  
+
+Note - The default Cancel button only appears on tokens, and since this Item inspect is an event well need to add our own cancel.
+
+
+Under the {action} Attempt Puzzle add a Slide Puzzle, then under the Guess button add another event to give the item. More on Puzzles here
+  
+
+
+
+In this event add the QItemRandomItem in the Add Components section.
+  
+
+When the dialog pops up the item cards image will be displayed next to the dialog.
+Tip - You can use the {c:ItemName} code to tell the app to print the random items name in the dialogue.
+
+
+Edit the QItemPuzzleBox and click Inspect
+Click Event and select the EventInspectPuzzleBox you have just created (the first event in the chain).
+
+
+When a player inspects the puzzle box from the Items menu option in the app, they will be presented with the opportunity to attempt a puzzle to open the box.
+Add Items using Events
+So far we have created three items, one is given as a starting item the other as a reward for completing a puzzle. The final item, the Puzzle Box has not yet been given out. 
+We will give this out using a standard event. We’ll reuse the Person for this, we can edit the default “Hello” event and have him give the player the Puzzle Box.
+
+
+Edit the TokenPerson by clicking it from the Components menu (or right clicking and selecting it).
+Click the Blue arrow next to the EventTalkDefault 
+(or just select the event from the Components menu)
+
+
+Change the dialog to explain that the person is giving you the Puzzle Box, and tell the player to remove the person token (so we don’t keep giving out the puzzle box).
+  
+
+Tip -  instead of removing the person you could use variables to make a new option to give the puzzle box, see Variables for more information on their use.
+
+
+In Add Components select the QItemPuzzleBox item
+In the Remove Components select the TokenPerson token
+
+
+Let’s see Items in action
+First of all we start the adventure, you will notice that we have a starting common item:
+  
+
+Duke or the Flux Stabilizer sometimes appear too, this is because the asave and Test function select a random investigator team and the tool seems to like selecting Ashcan Pete (it does this a lot) or the lady that has the Flux Stabilizer item (I forget her name).
+
+
+When we talk to the chap he gives us the Puzzle box:
+  
+
+
+
+We can Interact with the puzzle box in the items menu:
+  
+
+
+
+
+
+When we interact with it, we get a dialogue:
+  
+
+
+
+Attempt the puzzle:
+  
+
+
+
+Completing the puzzle gives us the random item:
+  
+
+Who puts a lantern in a Puzzle Box! Maniacs.
+Set Variables to flag that an item is obtained
+Sometimes you may want to tell the App that the player has a certain item, this could be used to unlock additional dialog or access. For example a player might need a Key to open a door, you can edit the “Open Door” button response on a door token, if the player has the key (aka the HaveKey variable is set to 1) to give them an option to open it. For more information on Variables see the guide below.
+Creating a Scenario - Advanced Functions
+If you’re here I am assuming you understand the concepts explained above. Some assumptions will be made, if you get lost go over the basics again!
+Copy an Existing Scenario
+A good way to understand a Scenario is to edit one that has already been created and that works. You may find techniques in Scenarios that someone else has used and wish to understand them more (I know I have!).
+
+
+To copy an existing Scenario download it from the New Scenario > Download section.
+
+
+From the main menu click Copy
+  
+
+
+
+
+
+________________
+
+
+Select the Scenario you wish to copy (that you have already downloaded) from the list:
+  
+
+
+
+There are some helpful demo’s try downloading these first before trying to dissect a full and scenario:
+  
+
+
+
+It will then appear in your list as editable. 
+  
+
+
+
+Please only use other published Scenarios for research purposes, don’t republish without the content creators prior consent.
+
+
+People have spent a lot of their own time making these Scenarios for free, so please treat them with respect.
+________________
+UI Elements
+Now that we have a working scenario (albeit basic!) we can create a fancy splash screen to introduce it. We’ll continue on from our current Scenario.
+
+
+First off I will refer you to the Wiki which has some really useful information on UI Elements:
+https://github.com/NPBruce/valkyrie/wiki/QuestIniUI
+
+
+Before we add a new EventStart we need to remove the EventStart trigger from the EventPlace_Lobby_P1 event. Triggering both events will get confusing!
+
+
+Open it up, click Trigger and select None
+  
+
+
+
+Now we want to create an awesome background image.
+
+
+Click the Components menu and under UI select {New}
+
+
+
+
+________________
+
+
+Give the UI a name, (such as “SplashImage”)
+
+
+Click the box next to Image and select an image from the tile list.
+
+
+Select if you want the image to display horizontally or vertically from the Units box.
+
+
+Position the image and adjust the size, you can use minus numbers and decimals here. You’ll have to fiddle with this to get it just right.
+  
+
+If you enter text into the dialog section, then it will put a dialog box in front of your image. This looks a little odd, so we’ll leave it blank for now and add the text another way.
+
+
+
+
+________________
+
+
+Create a second UI element for the Text.
+Rename the UI element, but do not select an image.
+
+
+Set the unit to Horizontal or Vertical
+
+
+Set the position and ratio, again this will take some fiddling to get it just right. 
+
+
+Tip - Size here is the size of the window that the text can go in, you can see this by clicking the border option on.
+
+
+Adjust the text size if you wish, but remember that different people will have different size screens to try to keep it well within the screens limits.
+  
+
+
+
+
+
+________________
+
+
+We’ll also create a Continue button for the players to click to trigger the adventure.
+
+
+Create another UI Element the same way as the UISplashScreenText above but this time make the size much smaller and turn the border on:
+  
+
+Add a button and have this trigger the Event that places the tiles. Since there is no dialog this event will be triggered if the player clicks anywhere inside the UISplashScreenContinue element (anywhere in the “Continue...” box).
+  
+
+
+
+Finally create an event and add the UI elements as a Components, when this event is triggered it will display the Image, Text and Box all at the same time.
+
+
+It's important to get the order right, Image first then text second, then box. This will mean that if the image is large the text will be placed on top.
+  
+
+
+
+Tip: The order is especially important in some advanced graphical events, the interactive maps in descent use these UI elements for example. You can also remove and reads UI elements in subsequent events (though removing a UI element and adding the same one in the same event will do nothing).
+
+
+Edit the EventPlace_Lobby_P1 and tell it to remove the UI components:
+  
+
+Save and Test to see what it looks like:
+  
+
+It’s soo pretty….
+
+
+You can use these UI elements all over your Scenario if you want to. Such as interacting with Items or the end game dialogs, be creative.
+Using built-in sound effects and music
+.(contributed by anton timmermans)
+
+
+Using built-in sound effects and music is not very complicated. You simply click either the box Audio or the + behind Music and you can select from the list of sounds that Valkyrie provides. Using the correct sound effects on token selection, or triggered events adds much to the suspense in your scenario, so use it frequently but also use it well.
+  
+
+Audio
+The field audio is typically used for short sound effects like shutting doors, opening gates, breaking glass. If here is background music playing or any other sounds, that sound is left undisturbed and the new sound effect is added.  Even if you have two fast events triggered in succession, and each of those events has their own sound effect, then the second sound is added to whatever sound may still be playing. Every sound selected in the audio field will continue playing until it is completed.
+Music
+The music field is typically used for background music. The main difference between the music selection and the audio field is that the selected sound in the music field is stopped (faded out) and replaced with any new sound selected in the music field of a next event.
+Example usage: This field should typically be used when you add your own narrative to the introduction text (see also Custom Audio). This allows players to stop the narrative playback if they choose not to wait for it to end and want to skip placing the starting tile. To stop the music playback, add in the next event the sound you want to replace current playback with. This can be any sound, including a custom made sound with for example 1 sec. silence.
+________________
+
+
+Custom Content
+Custom Images
+Before you use these make sure you read the Wiki, it gives some great examples:
+https://github.com/NPBruce/valkyrie/wiki/TutorialImages
+
+
+You can add custom images to your Scenario, these can be used as UI elements, Puzzle images and even Monster images.
+
+
+To add a custom image to your game, source a suitable image. Save its as a PNG or JPEG (JPEG’s work for most parts of the editor and tend to be smaller, but if you require transparency, use a PNG). 
+
+
+Tip - Try not to make it too large, although Valkyrie supports high res images, you probably won’t need images much bigger than 1920 x 1080px. As most people will be running Valkyrie on a Laptop or Tablet. Try to keep the file sizes small, to avoid large scenario packages. All that being said If you think people will be projecting their Scenario onto a wall (i’m totally doing that next game), crack out those high res images!
+
+
+You can also run the PNG through “PNG Optimizer” (thank RedWolf2 for this tip) that will compress the image lossless.
+https://psydk.org/pngoptimizer
+
+
+Once you have your image, copy it into the following folder:
+
+
+%appdata%\Valkyrie\MoM\Editor\Scenario1
+
+
+~/.config/Valkyrie/MoM/Editor/EditorScenario1
+(For MAC)
+
+
+Scenario1 is the default name of a Scenario when it’s created, you can (and should) rename this at any time.
+
+
+Tip: Do not put any spaces in the folder name. Generally speaking it's better to avoid spaces and uppercase letters in any files names, such as sound files and images.
+
+
+Once the image is copied into this location you can select it as an image in the Editor:
+  
+
+
+
+Custom Audio
+There is a section on the Wiki that explains about Audio and Music, it can be found on this page
+https://github.com/NPBruce/valkyrie/wiki/QuestIniEvent
+
+
+Custom Audio or Sounds are added in the same way as images, just drop them into the %appdata%\Valkyrie\MoM\Editor\Scenario1 folder.
+
+
+Tip: You can even best folders for images and sounds in this folder and they will be usable in the editor.
+
+
+Valkyrie only supports .ogg files for audio, this is an open container free sound format.
+
+
+Once you have a working sound file (you’ll probably only get the free ones as .MP3) you will need to convert them to .OGG and will probably need to trim them.
+There are plenty of paid and free tools for this, but below are the two I use due to ease and simplicity.
+
+
+Online Audio Convert - Convert from many formats to OGG
+https://audio.online-convert.com/convert-to-ogg
+I would advise you only use this for free content, as the website probably keeps a copy.
+
+
+Audio Trimmer - Crop and play sound files
+https://audiotrimmer.com/
+I would advise you only use this for free content, as the website probably keeps a copy.
+Language specific UI and Audio
+A feature was added to Valkyrie to allow alternate versions of Audio files and Image files to be displayed when playing a scenario in a different language. For example if you have a UI element that is a letter, you can display a different image in it's place when playing in another language (the new image being a translated version of that letter).
+
+
+
+
+First off open your scenario folder
+(%appdata%\Valkyrie\MoM\Editor\Scenario1)
+
+
+In this folder create a subfolder with the languages name (e.g. French, Polish, Chinese).
+  
+
+Note that there are two AV files (sound.ogg and image.jpg) in the main folder.
+
+
+Create your “translated” Image and Audio and give them the same name as the default languages - in this case we’ll record a new sound.ogg and create a new image.png
+  
+
+
+
+When you play the scenario in the alternate language, any translated image and audio files will be displayed instead of the files in the root directory. If there is no alternative image or audio file it will display the default.
+
+
+Tip: It is possible that you will have a voice acted introduction screen similar to the official app. If you are unable to source a voice acted introduction in a translated language, you will need to add an audio file to replace it (typically silent and short), otherwise the default audio file will play and will make it confusing for the player to read the text in a different language. 
+
+
+Triggers
+We have used these before (EventStart), but these are events that trigger on specific events. 
+The Wiki has an explanation of each of these:
+https://github.com/NPBruce/valkyrie/wiki/EventTriggers
+
+
+Triggers are useful when used in conjunction with events, to set Variables. See here for more information on using variables in Events.
+
+
+You can also use Triggers to run when a monster is defeated see this example and this.
+________________
+Variables
+Variables are detailed here:
+https://github.com/NPBruce/valkyrie/wiki/ValkyrieVars
+
+
+Variable Types
+There are three types of variables:
+
+
+$ Variables
+These are variable that turn features on or off, for example, $fire turns on the 'Fire spreads’ prompt aflt the end of each turn.
+
+
+# Variables
+These are variables that are set by the App and can vary throughout the game.
+For example #round is the turn count of the current game, #heroes is the number of investigators in the game.
+Contributed by antontimmermans :The Wiki page mentions the #<content>. The following content variable are used:
+
+
+Mansions of Madness first edition:
+#CoTWI        - Call of the Wild Investigators (  )
+#CoTWM         - Call of the Wild Monsters (  )
+#CoTWT        - Call of the Wild Tiles (  )
+#FAI                - Fatal Alchemy Investigators  (  )
+#FAM                - Fatal Alchemy Monsters (  )
+#FAT                - Fatal Alchemy Tiles (  )
+#MoM1EI        - Mansions of Madness 1st Edition Investigators (  )
+#MoM1EM        - Mansions of Madness 1st Edition Monsters (  )
+#MoM1ET        - Mansions of Madness 1st Edition Tiles (  )
+
+
+Mansions of Madness second edition figure and tile collection:
+#RN                - Recurring Nightmares (  )
+#SM                - Suppressed Memories (    )
+
+
+Mansions of Madness second edition expansions:
+#BtT                - Beyond the Threshold (  )
+#HJ                - Horrific Journeys (  )
+#PotS                - Path of the Serpent (  )
+#SoA                - Streets of Arkham (  )
+#SoT                - Sanctum of Twilight (  )
+
+
+@ Variables Contributed by antontimmermans
+These variables are special types and can be used to trigger special events. For example if the investigators made a discovery that triggers the spawn of a monster. 
+
+
+Assigning the trigger variable is done by setting the value ‘1’ to @<VariableName>. Example:
+  
+
+
+
+Once you have defined a trigger variable. It will appear in you variable type list as an extra type called Vars under the name Var<VariableName>.
+  
+
+
+
+Now it can be easily selected in you spawn monster event in your trigger field. So instead of the typically EndRound or StartRound triggers, you can simply select your variable instead:
+  
+
+
+
+Appendix chapter User Created Triggers contains advanced examples of using @Vars.
+
+
+A full list can be found on the Wiki article:
+https://github.com/NPBruce/valkyrie/wiki/ValkyrieVars
+
+
+Quest Variables
+These are custom variables that are set by players with the Assign option in the editor Elements (events, UI, Spawns, etc). 
+
+
+Quest Variables cannot contain special characters or spaces.
+How are they used
+Variables are used in the Tests and Assign sections of most elements (Events, Tokens, Spawns, etc).
+
+
+Tests
+A test can be used as criteria for an Event or Spawn (or any of the other Elements that have Tests as an option), if the criteria is met the Event or Spawn will run, if not it will be ignored.
+
+
+Contributed by antontimmermans For example if you want to increase variation on your scenario and want to use alternative monsters or conditions from an expansion, you need to check if the expansion is available. For example: You can test in the event #HJ == 1 if you want to spawn Dimensional Shambler instead of a Ghost.
+Note that if a figure and tile collection is set, also the first edition set with the corresponding symbol is set (example: #SM →  #CotWI, #CotWT, #CotWM, #FAI, #FAT, #FAM). Therefore advised to test for the 1st edition set presence in case someone has only one of those sets (example:#CotWI, #CotWT, #CotWM).
+
+
+Assign
+Assign is used in Events or Spawns (or any other element that has the Assign option), to set a variable. For example you can assign 1 to the $fire variable to toggle on the “Fire Spreads” Mythos Event.
+________________
+More advanced uses
+Variables are key to Mythos events, see here for more information.
+
+
+Another key use for variables is to “unlock” additional events and dialogs. See Advanced Events for more information.
+
+
+You may also want a Custom Monster to appear based on a turn number, the spawn could be triggered to happen at the End of each turn, then limited to a turn number (or a variable turn based on number of investigators, similar to this).
+
+
+End dialog UI elements could also be triggered in the same way, for example if the #eliminated is set to 1, it will have the same function as triggering 'investigator eliminated’ from the set menu and the end game process (one full turn then end) will begin. 
+Assigning a random number to a variable
+
+
+It is possible to assign a random number to a variable, this can be particularly useful when creating random events.
+
+
+Create a variable as normal by clicking the Green + clicking the Quest menu option then clicking {New}
+  
+
+
+
+Click the 0 (right hand box) and select Number
+Instead of a number enter the command #randX 
+(where X is the maximum number that can be generated).
+  
+
+
+
+For example #rand5 will randomly generate a number between 1 and 5.
+  
+
+Random that is picked can be seen in the log
+  
+
+Selecting a random hero and calling them later
+So I found myself recently wanting to single out a single investigator then using them later in the scenario for shenanigans.
+
+
+It turns out there is a Wiki entry on this also, but I didn’t really understand it when I read it. 
+https://github.com/NPBruce/valkyrie/wiki/QuestIniEvent#sectionnametext
+So i’ll do my best to explain it.
+(Thank you NicolaZee and Bruce for helping me understand this!)
+
+
+To do this, first create an event that selects a random hero.
+In this event you can put any dialog to and then the {rnd:hero} code (click the “Rnd” button to automatically generate this).
+
+
+Once this event runs, the text that was printed for {rnd:hero} will be saved in the event.
+  
+
+I have highlighted the event name, for clarity
+
+
+Create another event this one can then be used to print the name of the hero back again.
+Use the following code to print the Hero text from the Event component above:
+{c:EventName}
+  
+
+When the event runs the First event will randomly pick a hero:
+  
+
+
+
+The second event can run at any time and will print the same hero name.
+  
+
+
+
+Selecting a Random Hero is useful for Mythos events, but this method of identifying investigators allows for an event to effect a random investigator, then events can continue to effect this same investigator throughout the same scenario.
+
+
+Note: In the Descent editor, it is possible to manually select investigators. It is not the case for Mansions of Madness.
+Mythos Events
+There is an excellent guide on the Wiki:
+https://github.com/NPBruce/valkyrie/wiki/TutorialMythosEvents
+
+
+I will try to explain it in more detail with up to date screenshots.
+How Mythos Events work in the App
+Mythos is flavour text and events that happens in the Mythos Phase, which is after the Investigator Phase and before the Monster Phase. They are binary variables that you turn On (1) or Off (0), the default state of these variables is Off (0). 
+
+
+If at least one Mythos Event is turned on, they will begin to appear in the Mythos phase and every subsequent mythos phase until they are all turned off.
+
+
+Note: Think of this like a “flag”, if you turn on a $mythos variable you are instructing Valkyrie to run mythos events automatically. If you turn off all $mythos variables, you are instructing Valkyrie to no longer run them for you.
+
+
+In Valkyrie these variables are symbolised as “$” Vars, they can only be turned on or off.
+(we touched on this above)
+
+
+Mythos Event variables are as follows (best to worst):
+
+
+$mythoshelp - Gives helpful events for Investigators (heals, become focus, etc)
+$mythosflavour - Gives flavour text, that generally doesn’t effect the investigators.
+$mythosminor - Gives Minor mythos events, generally easy tests as bad stuff happens.
+$mythosmajor - Gives Major mythos events, generally moderate tests as bad stuff happens.
+$mythosdeadly - Gives Deadly mythos events, generally hard tests as very bad stuff happens. 
+
+
+In pretty much all elements (Events, Spawns, Tokens, UI, etc) you can Assign a number (or another variable!). For Mythos Events that would be to Assign a “1” (on) to one or more of the $MythosLevel variables.
+Create a Mythos Event
+So let's assume we want to set the Mythos level to Minor.
+
+
+The best way to do this is to create an event and trigger it at StartRound, this event will run every turn. 
+
+
+In this event we can hit the green + after Assign, select the $MythosMinor variable.
+Click the symbol between the two boxes and set it to =
+
+
+
+
+________________
+
+
+Click the right hand box and select Number, then enter “1”
+  
+
+
+
+I know what you’re thinking… We don’t want to set this variable every turn, we only want to flag it on once and leave those automatic Mythos events to run every turn until we say otherwise. Helpfully we can use variables to get around this too.
+
+
+Under Tests click the green + and select #round from the list. We know from the Variables section that # variables are set by the game. This one specifically is the current turn the investigators are on.
+
+
+So we can set the symbol between the boxes to == (is equal to) and then enter the Number 5.
+
+
+This event will compare the #round variable with the number 5 at the start of every turn, if it is turn 5 then it will assign the number 1 (on) to the $mythosminor, thus turning on Minor Mythos ready to trigger in this turns Mythos Phase.
+  
+
+
+
+
+
+
+
+Mythos Events Based on Player Numbers
+Remember that you might have 2-5 investigators, so don't flag on $mythos* variables based on static #round numbers, a 2 player team will have a much slower time devouring your content, than a 5 player team.
+
+A helpful chap on the BBG forums (thanks Howard) gave me a tip in regards to triggering Mythos Levels. 
+This was:
+
+
+Triggering Deadly Mythos at 20 - #Heroes, so round 18 for a 2 player team and round 15 for a 5 player team.
+Major should then be set to DeathlyMythos / 2, Round 9 for 2 player, Round 7.5 for 5 players)
+Minor can then be something along the lines of Major / 2, Round 4.5 for 2 players and round 3.75 for 5 players.
+
+
+So first of all we need to setup these variables, it has to be done systematically, using Quest Variables.
+
+
+So in an early event, I would suggest whichever event triggers on “EventStart”, we have to set the variables.
+
+
+DeadlyMythos will happen on round 20 - investigators. So in the event under the Assign section, create a new Quest variable called DeadlyMythos, then set it to = 1
+
+
+Then hit +  again and select DeadlyMythos again, this time tell it to  - #heroes.
+(so thats 20 - 2 =18 for a 2 player game)
+
+
+Now we can add the MajorMythos quest variable and set it to = DeadlyMythos
+(MajorMythos = 18 in a 2 player game)
+
+
+No we can add MajorMythos again and this time tell it to / 2
+(its now 18 / 2 = 9 in a 2 player game)
+
+
+
+
+________________
+
+
+We can repeat the process for MinorMythos and set it to be half of Major mythos.
+
+
+It will look like this in game.
+  
+ 
+We can now create events that trigger at StartRound and test these Quest Variables comparing them to the #round number.
+
+
+We can edit our Mythos Event above to trigger Minor Mythos at its new round (which varies based on the number of players).
+  
+
+You may wonder why we are triggering these events on >= and not ==, this is because we are dividing numbers in half multiple times. MinorMythos might end up as a decimal number (3.33333 being a worst case!). If it was set to Is Equal (==) then it might never trigger.
+
+
+By setting it to >= in this example the MinorMythos variable of 3.33333 will trigger on round 3 and above.
+________________
+
+
+We don’t want it to trigger more than once, so I have added another variable MinorMythosTriggered. If the variable is 0 - which it will be by default then run. 
+(In Hindsight it may be more sensible to set this variable to MinrMythosTriggered != 1 so that if the variable “is not” 1 it will run, but it will work either way). 
+
+
+Then set the Assign the variable to 1, meaning that next round (round 4) the event won’t run again (since MinorMythosTriggered is not set to 0 anymore). 
+Testing your Mythos events
+Now we have a working mythos event we can use Save & Test to test that it's all working.
+
+
+Run the event and click Log, this will show you all of the variables that are set.
+
+
+Notice that the #heroes is 3, Save & Test randomly picks the number of players/
+Also notice #round is 1.
+
+
+You Mythos quest variables are there, with the Deadly being 20 - 5 (#heroes) = 15.
+The others are divisions of this number, so have decimal numbers.
+  
+
+
+
+
+
+Exit the log and end the turn 3 times to get to round 4 (when Minor Mythos triggers).
+Notice that you don’t have any mythos events.
+
+
+Note in round 4 you can see that $mythosMinor has been set to 1 (On).
+  
+
+End the turn again and you’ll get a Minor Mythos event:
+  
+
+________________
+
+
+Advanced Events
+Events can be very complex if you can get your head around them.
+Single Token/Event with Random Outcomes
+For example you can have a token with a single button action that does an unlimited number of events on the button press. Each action could do something different and remove the token.
+
+
+The purpose of these events is to give replayability to your Scenarios, change it up just a little bit each time.
+
+
+To do this you can create the Token as normal, then add a Button ({“action} Investigate” for this one) .
+
+
+Set the Order to Random
+
+
+Under the Button click the green + to add an event, edit it and give the event some dialog and remove the search token.
+
+
+Repeat the process as many times as you require to add variety.
+  
+
+
+
+________________
+
+
+Example:
+Run 1:
+  
+  
+
+
+
+Run 2:
+  
+  
+
+
+
+Run 3:
+  
+  
+
+
+
+Out of the three events it’s picked Event 2 - twice, event 3 once and not picked Event 1.
+
+
+Single Event with Multiple Outcomes controlled by Variables
+You can also use Variables to create ‘Hidden’ options. For example, you could add a dialog to a person token that only triggers if a Variable is a particular number.
+
+
+I’ll explain a Situation then explain how it's created in the Editor, it's important to understand how the logic works. 
+
+
+Taking the example Scenario we are using in this Guide. We have an event where we knock over a vase. We could spawn a person that we could talk to. If we talk to them without interacting with anything else they will respond with the default response of, “Hello”.
+If we have knocked over the vase, they will say “You broke my vase!”. If the monster is still alive they will scream “Ahhh a bad guy”.
+
+
+So we need to order these dialogs to get the correct responses and we need to assign a Variable to each of the two “Hidden” dialog options so that we can control when they appear. It should be like this:
+
+
+  
+
+
+
+
+
+________________
+
+
+So now we have the logic, we can quite easily create this in the editor.
+
+
+So first off create a Token and select a Person token
+Create an event to place the Person token and chain it from the Place tile events
+  
+
+
+
+Give the token some Dialog, a description of the person
+Set the Next Events order to Ordered
+Add a Button for the Investigators to use to talk to the person
+Add Three Events, one for each conversation topic (order is important)
+  
+
+I’ve named the events to give more context.
+
+
+The events will trigger in this order, so at present only the Monster dialog will show (every time).
+We will need to set Tests to hide the Monster and Vase events until a certain event happens to enable them.
+
+
+Let’s start with the Monster Event, edit the first event and give it a relevant name (i’ve used EventTalkMonster).
+
+
+Give the event the dialog “Ahhh a bag guy”
+
+
+Add a Test and in the Quest section click {New}
+
+
+Name the Variable MonsterAlive 
+Set the Test type (middle) to >= (is equal or greater) and then the right box to 1
+
+
+Whenever this event is checked to be run, it will check the MonsterAlive variable to see if it is 1 or above. If it isn’t 1 or above, it will ignore the event and try the next event in the ordered list, if it is 1 or higher it will run the event.
+  
+
+
+
+Now we need to change the event that spawns the monster to Assign the variable.
+
+
+________________
+
+
+We know that when the vase is knocked from the table on the failed agility test, that a monster is spawned.
+
+
+So let’s edit this event to say that the monster has spawned.
+
+
+Tip - You can right click the token from the map and select - TokenExampleToken2 then use the blue arrows to go through events until you find the monster spawn. This is a good way to test the logic of your events, without testing them.
+
+
+Select the SpawnLobbyMonster_T1
+
+
+In this event click the green + next to Assign select the MonsterAlive variable from the list (refine the list by clicking the Quests sub menu item)
+
+
+Change the Assign type to + and then enter the number 1 to the right field.
+
+
+When this monster spawns it will add 1 to the MonsterAlive variable (first spawn will make it 1)
+  
+
+
+
+
+
+
+
+Now that the Monster is alive, the variable is set to 1 if another monster spawns the same way it will be 2. This variable is a count of the number of monsters alive.
+
+
+We need to create an event now to tell the app that a monster has died. 
+
+
+So create a new event and give it a name (EventCultistDies).
+
+
+Do not add any Dialog to make the event “Silent” to the players
+
+
+Click the box next to Trigger and select DefeatMonsterCultist
+
+
+Assign the variable MonsterAlive and set it to - 1
+  
+
+Every time a Cultist Monster dies, this “silent” event will be triggered and subtract 1 from the MonsterAlive variable, thus tracking how many cultists are alive on the board. Now the person will know if there is a monster alive or not!
+
+
+
+
+________________
+
+
+We can add the Variable VaseSmashed to the event that triggers after the Monster spawns (the one which details the puzzle, EventLobbyTableSmash_T1).
+
+
+Note - I don’t like to add too many quest style variables to monster spawns because I like to re-use the spawns in multiple eventualities, they also tend to be tied to “Defeat Monster” triggered event, so the less variables on them the less confusing it gets. However it's perfectly valid to do so, if it makes sense (or you can keep track!).
+
+
+Add the new variable VaseSmashed as above, but this time set it to = 1   
+We will only trigger this event once, so we can just set the variable directly to a number.
+
+
+
+
+________________
+
+
+Right click the Person from the map (or select it from the Components menu)
+
+
+Edit the second Event (EventTalkVase) and enter the dialog “You broke my vase”
+
+
+Add a Tests to check that VaseSmashed == 1 
+  
+
+
+
+This event will now only trigger when the VaseSmashed is set to 1, i.e. if the Investigator fails to catch the vase.
+
+We will leave the default one empty, this will trigger if neither of the other variables are set. 
+
+
+
+
+________________
+Let us see it in action
+  
+
+The person is placed and we can interact with him.
+
+
+  
+
+Without doing anything else we talk to him and get the “default” dialog
+
+
+Now lets re-test and smash that vase and talk to him, without defeating the monster
+  
+
+Notice the monster on the right, the person knows it's alive because MonsterAlive is set to 1
+________________
+
+
+Now lets defeat the monster and talk to him again
+  
+
+Apparently forgetting that you saved him from the Cultist, he complains about his broken vase.
+
+
+Tip - You can hit the Log button during your Save & Test to see what variables are set to. This is extremely useful when testing whether events are working. We explained this when Testing the Mythos Events. You can also do this in game by pressing Alt + d - thanks for the tip Bruce!
+
+
+________________
+
+
+Single Event with outcome based on test.
+Contributed by antontimmermans
+
+
+Some actions in the game may require a check of a skill (strength, agility, ...) to determine the result. For example: to break open a door (test strength) or to catch a piece of paper fluttering around in a dust-devil (agility or observation). The players should then check the appropriate skill on their investigator card, roll the dice and enter the number of successes. 
+Part of the fun is not knowing exactly which skill is required or which score will lead to success. Based on the story text that is shown to the investigators upon token selection, they should decide if they want to take the action or not.
+
+In the following example the investigators discover a heavy crate in the ally. Something interesting may be hidden under the crate but they will only find out if they move it.
+Selecting the Search token will display the story text that the crate is heavy and hinting that a test may follow:
+  
+If the investigator commits to the action ‘Move crate’ he/she has to test their strength:
+  
+
+
+
+In the editor it looks like this:
+First the event TokenSearchCrate (see below: left image) that gets activated when the token is selected. Explain the investigators that moving the crate might not be that easy.
+When the action is committed you run the actual check event EventMoveCrate (see below;right image). 
+Note: variable CrateCheck which will hold selected value that was entered using the + and -.
+                    
+
+
+The event ‘...Pass’ (see below: left image) will only be active when the value of CrateCheck is equal or higher then(>=) 3 and will display the success text and remove the Token. 
+
+
+If the value is lower then 3 the ‘...Fail’ (see below: right image) event will be called informing the investigator of the result. You could also add the test ‘lower then’ (<) 3 to this event, but make sure that when you add more tests that always one of the results is valid. To mimic the FFC-App’s behavior, you should set the test variable (CrateCheck in this example) back to zero in the ...Fail event. The next time you want to do the same tests, the check displays 0. Do not change it if you want to ‘remember’ the value on the next roll.
+
+
+  
+                
+Person Token with Several questions
+This one was requested on the Valkyrie GitHub.
+FASTNAVi wanted a way to create a person and have multiple questions that you can ask them. Each time a question is asked it should be removed.
+
+
+I touch on it in this section, but you need to extrapolate it out to get what you want:
+
+
+https://docs.google.com/document/d/1Gi5gTwKkw84Px0Lvk-bJ3Aml_vF3ZoljjB6a8FjWGt8/edit#heading=h.xz3hn391u18p
+
+
+So we start off with an event to place our guy: image 
+
+
+
+
+________________
+
+
+In the token we do not add any dialog at all. We just create events for each set of options. You need an event for each possible variable of questions, I have used online permutations calculators in the past to work out what I need.
+
+
+So in your example we need events for every possibility of:
+
+
+Talk - How are you?
+Cost - What is the cost?
+Time - What is the time?
+
+
+These are (forgive me if I get it wrong, its late!) 7 permutations, then we need another "catch all".
+
+
+1 - Talk, Cost, Time
+2 - Talk, Time
+3 - Cost, Time
+4- Talk, Cost
+5 - Talk
+6 - Cost
+7 - Time
+8 - No questions - catch all.
+
+
+We need an event for each of these 7 permutations + 1 catch all (8 events): image 
+
+
+Notice that the token has no dialog. This means it will pick one of those talking points. Because it is set to "Ordered" it will go down the list one at a time.
+
+
+Now we need to set up the events with their questions, and set Variables to hide them.
+
+
+
+
+________________
+
+
+So the first event - Talk, Cost, Time (all questions)
+
+
+I set a test on the event that checks a variable for each question, if they are all not = to 1, it will run. image  image 
+
+
+
+
+So the first time we run it, we should expect to see this event.
+
+
+We repeat the process for the next event, this time we are only asking 2 questions:
+Talk, Time
+(The idea being that the cost question has already been asked).
+
+
+Note: I forgot to mention, in these events the "Cancel" button is not automatically added like the Tokens are, so you have to add it yourself. Just add another button called "Cancel" with no event, this will exit the event if the player clicks it.
+
+
+So here is what that event will look like:
+ image 
+
+
+
+Notice I have highlighted a variable. Because we are assuming "Asking the cost" has been done, we only want to show this event, if the variable has been set (this will become clear in a moment). The questions asked are exactly the same as the variables that have != 1 next to them.
+
+
+
+
+________________
+
+
+Here is how the rest will look:
+Cost & Time
+ image 
+
+Talk & Cost
+ image 
+
+
+
+Talk Only
+ image 
+
+
+
+Cost only
+ image 
+
+
+
+
+
+________________
+
+
+Time Only
+ image 
+
+
+
+Ok now we have all of our questions ready, we need to make the events that are triggered by the question, then flag the variables (Trader_*** = 1) for each one.
+
+
+So lets do them one at a time, I will do this from the start event (Talk, Cost, Time).
+
+
+I have created an event for each question, these same events will be used in every permutation event:
+ image 
+
+So one for the answer to "Talk":
+ image 
+
+
+
+We put in the dialog, from the man (I would do it as a series of event usually. But one is fine for this example).
+Then we flag the variable "Trader_Talk = 1"
+
+
+This variable signifies that we have talked to the trader, and when we click the trader token the next time, the talk options will not trigger.
+
+
+
+
+________________
+
+
+Now one for the answer to "Cost":
+ image 
+
+Same process.
+
+
+Now one for the answer to "Time":
+ image 
+
+Go through all of the events and fill in the events under the corresponding questions:
+ image 
+
+
+
+Here is an example of the second one, im sure you can figure out the rest!
+ image 
+
+
+
+________________
+
+
+Finally create that catch all event, this should be at the bottom of the list: image 
+
+
+Don't give it any variables, so it will always trigger if all of the above 3 variables get set to 1 (Trader_Talk/Cost/Time). In my example this event will also remove the trader person: image 
+
+
+________________
+
+
+Ok so lets run it and see the fruits of our labour!
+Start game, trader is placed:
+ image 
+ image 
+
+
+
+________________
+
+
+We click the trader. Here are my variables:
+Trader_Talk = 0
+Trader_Cost = 0
+Trader_Time = 0
+
+
+(you can check variables by clicking the log if you've done a"save&test" or clicking log and then pressing Alt+d (I think, or is it Ctrl+d? Try both!)
+ image 
+
+As you can see we have all 3 questions! Good start.
+
+
+We we click and ask about the "Cost".
+ image 
+
+
+
+
+
+________________
+
+
+Now we re-click the person, and we should expect the variables to be:
+Trader_Talk = 0
+Trader_Cost = 1
+Trader_Time = 0
+ image 
+Boom, the "Cost" question is no longer there!
+
+
+So we click on "Time" worried that we don't have time to finish talking to this guy (but of course we don't intent to buy from a crazy man running into a mansion to sell bolts!?!). image 
+
+
+So we click on the trader again, we expect the variables to be:
+Trader_Talk = 0
+Trader_Cost = 1
+Trader_Time = 1
+ image 
+
+
+
+
+
+Nice, so we got what we expected. We ask him how he is!
+ image 
+
+
+
+At this point, I might consider putting an event after all three of the "TraderDIALOG_/Cost_Used/Time_Used/Talk_Used, which trigger the no dialog option. This would run after the final question was asked, and remove the token. But I haven't here.
+
+
+So we click on the token again, expecting the variables to be:
+Trader_Talk = 1
+Trader_Cost = 1
+Trader_Time = 1
+
+
+All questions gone, so we should expect to see the "No Options" dialog and remove the guy.
+ image 
+And there, he goes. Crazy bolt salesman.
+________________
+Event Loops
+A user posted an issue on the Valkyrie GitHub about how to “force” investigators. While this is not possible and it would have to be requested in the opening Dialogues.
+However, I knew it was possible to create a kind of “CheckSum” to prevent players from picking the wrong investigators before starting.
+
+
+This example contains a “Loop” which uses a repeating chain of events, until a certain objective is met and the chain is broken (in this case, a counter is filled up). Be very careful when creating these events, because it is possible to stick the scenario into an infinite loop! Anyway here goes.
+
+
+In this example I'll use 3 investigators.
+Jenny Barnes
+Bob jenkins
+Ritta young
+
+
+________________
+
+
+Create an event that triggers from Startevent (EventStart). In this event set up some variables using "assign"
+
+
+LoopEnd = #heroes
+ image 
+
+
+
+This variable will be used to control the number of times the "Loop" will run.
+________________
+Create an event in EventStart to act as the start of your "loop" (EventLoop).
+ image 
+
+________________
+
+
+Create an event under the EventLoop that will break the loop (EventBreakLoop)
+In this event set a test:
+
+
+CheckLoop == LoopEnd
+
+
+ image 
+
+Set the continue event for this to a new event called EventValidation (exiting the loop).
+
+________________
+Under the "Loop" (EventLoop), set the event order to "ordered" (default). Then create an event for each "valid" investigators.
+EventJennyBarnes
+EventBobJenkins
+EventRittaYoung
+
+
+In each of these events set a test checking if the investigators in question has been selected. And add a section test to stop the event from triggering a second time.
+Tests:
+EventJennyBarnes
+#herojennybarnes = 1
+JennyBarnesChecked ! 1
+
+
+Then create an assign variable to add one to "CheckLoop" and a second one to fill in the investigators "checked" variable .(stopping it running more than once). Finally add an event to add one to a variable called "ValidInvestigator".
+Assign":
+CheckLoop + 1
+JennyBarnesChecked = 1
+ValidInvestigator + 1
+
+
+________________
+
+
+At the end of each of these events set the next event to the loop event (EventCheckLoop).
+ image 
+
+Note: You will need to create custom variables for "Hero" here then use find and replace in the Event.ini file to replace them with #Hero. I believe the next version of Valkyrie will have the option to select #hero variables in the app. There is a section on this just below this one
+________________
+
+
+Add a "catch all" event under the loop event (EventLoop), under the other investigators events. This event will have no test and simply add one to the CheckLoop variable.
+Event catch all
+Assign:
+CheckLoop + 1.
+
+
+At the end of this event point it back to the loop event (EventLoop).
+ image 
+
+________________
+
+
+Go back to the EventValidation event created earlier (in the EventBreakLoop) and in it create two events:
+EventValidationPassed
+EventValidationFailed
+
+
+
+
+Under EventValidationPassed set a test:
+ValidInvestigators = #heroes
+Then set the continue event to be your scenario chain, such as intro text etc. image 
+Under the EventValidationFailed do not create any tests, this is a catch all. In here put some text to say that the players didn't pick valid investigators.
+________________
+
+
+See it in action
+Correct Investigators:
+ image 
+
+ image 
+
+ image 
+
+ image 
+
+________________
+
+
+Two of the correct investigators (None wrong)
+ image 
+
+ image 
+
+ image 
+
+ image 
+
+Two correct and one wrong investigatosr:
+ image 
+
+ image 
+
+ image 
+
+You get the point!
+________________
+Creating Custom Puzzles using UI
+It's possible to create your own custom puzzles by placing and removing UI elements. Just think of any interactive puzzle as a series of removing and replacing images. You can use Event Loops to achieve this.
+
+
+This section is quite complex and even writing this I am struggling to simplify it into an overview.. So here goes.
+
+
+You want your events to do the following things:
+
+
+* Place a pretty background
+* Set some variables, the position of objects and the ultimate goal of the puzzle (aka a lock combination or an order of objects).
+* Place some movable objects (Using an event loop to give multiple positions)
+* Place some buttons (using transparent UI elements, with a temporary border so you can see where they are). Laying these over the already placed objects means you can always click them.
+* Create event loop ends to clean up temporary tracking variables.
+
+
+The idea here is to place some objects and lay over some buttons. The buttons can be clicked to remove UI elements and/or update variables to make the puzzle interactive.
+
+
+Each time a button is clicked you want to change some tracking variables and rerun the loop. For example you may click Object_1’s button (lets assume it's in position 1), which removes all UI elements of Object_1 and then adds +1 to the variable Object_1_Position. When the event loop is rerun, Object_1 is now in position 2, since it's position variable is now 1 higher.
+
+
+Right now that is out of the way, lets code a combination lock! It should look something like this.
+  
+
+
+
+________________
+Create your puzzle images
+With any good puzzle you will first need some good images, I would recommend that before you even get to Valkyrie coding that you build your puzzle in GIMP. This is a free “photoshop” alternative that can be used to create your PNG images and each part of your puzzle.
+
+
+I won’t go into the full details of how to use GIMP, but the core feature you need to understand is Layers.
+You can use the right hand bar to make layers and then use the little “eye” to hid them. This is a very useful function, but for puzzles it allows you to create each “object” and then duplicate it to move it slightly. 
+  
+
+  
+
+You can then Export whatever is visible on your screen, using the File > Export option, here you can select a PNG.
+
+
+Don’t forget when creating your project to select a transparent background, if you forget you can add transparency to any layer by right clicking the layer and clicking Add Alpha Channel.
+  
+
+
+
+Use the layers to create your background and any objects (in their own layers), hide layers to work on each object's position (duplicating what you need).
+
+
+You should be able to simulate your puzzle and how it works using the hide layer function, since what we will be doing in Valkyrie is just coding how to control which of these layers are visible.
+
+
+For this example I will just export the entire lock including green arrows to an image file.
+  
+
+Notice that it does not have any numbers, we’ll do this in Valkyrie!
+
+
+Creating a Combination Lock Puzzle
+In the previous step I used GIMP to create a background image for my puzzle, I have chosen this puzzle because it doesn’t require many UI elements. Once you understand the concepts of creating puzzles you’ll be able to create more graphically rich puzzles.
+
+
+Note: I’ve made the first part a little more complicated than it needs to be to better explain how event loops work in a puzzle context, if you are removing and replacing UI elements with rich images you want to do so as efficiently as possible, so having the granularity to remove just one image and place a new one, will save on processing power and help avoid crashes.
+
+
+Open Valkyrie and create a trigger event for your puzzle. I tend to prefix all of my puzzle events with a prefix, in this example i’ll use CP (combination puzzle). 
+
+
+I’ll call my event CP_START.
+In this event create two UI Elements in this order:
+
+
+CP_BG_Black, in this UI element you want to make a black background that you can lay the image over. In the UI element, set the Size to 2, Units to Vertical and then the UI’s background to Black.
+  
+
+
+
+
+
+CP_BG_Image, then set it as the combination lock image.
+  
+
+
+
+Note: When laying UI elements I would always use “Vertical” unit scaling, this will stretch the image (at size 1) to the top and bottom, this will ensure that your images don’t clip off the top when using widescreen resolutions.
+
+
+In the Continue button, then create two events:
+
+
+* CP_SetVars - One off event, used to set the combination for the lock and initialise all the variables required.
+* 0_CP_Code_CHAINSTART - The first event loop to place the combination locks displayed numbers. 
+
+
+Note: I have prefixed a “0_” in this event so that when sorting events I can bring this to the top. I use this technique a lot in event loops, as after every event in a loop, you need to reference back to the first event in the loop. Once complete you can always remove the prefix without breaking anything.
+
+
+Open CP_SetVars in here Assign the following variables.
+
+
+CP_Answer_n1 = 9
+CP_Answer_n2 = 8
+CP_Answer_n3 = 7
+CP_Answer_n4 = 6
+These are the numbers required in the combination lock to open it.
+CP_Code_n1 = 1
+CP_Code_n2 = 1
+CP_Code_n3 = 1
+CP_Code_n4 = 1
+These are the numbers that will display on the lock.
+
+
+CP_SetVars = 1
+This variable signifies that you have Set the Variables and not to run this again.
+
+
+Create the following test in the Event to prevent it from running again.
+
+
+CP_SetVars ! 1
+Finally leave the dialogue text empty and add the CP_Code_CHAINSTART even in the Continue button. It should look like this:
+  
+
+
+Click 0_CP_Code_CHAINSTART, to open the start of the Object Loop.
+This event should stay empty, it is the landing event for every other event in the chain so will run multiple times and we don’t want it doing anything recursively without reason.
+
+
+________________
+
+
+In the Continue button add 4 events, named as follows:
+
+
+CP_Code_n1
+CP_Code_n2
+CP_Code_n3
+CP_Code_n4
+CP_Code_CHAINEND
+
+
+These events will place the numbers of the combination lock,from left (n1) to right (n4). We initialised variables earlier (CP_Code_nX) to 1, therefore on the first run we can expect them each to read “1”. The last event will end the loop and clean it up, ready to run the next one.
+  
+
+
+
+
+
+________________
+
+
+Open each of the CP_Code_nX events and add the following (where X denotes the number of the event, eg CP_Code_n1):
+
+
+Tests:
+Z_CP_Code_nX ! 1
+
+
+Assign:
+Z_CP_Code_nX = 1
+
+
+Set the continue button to 0_CP_Code_CHAINSTART.
+
+
+In each of the events add a UI Element, this will be the number on each combination that will be displayed. 
+It should look like this:
+  
+Note: If you don’t add any dialogue in an event it will run without prompt, this way we can run complex event chains without having to click through each step.
+
+
+Now we have all of the events running, lets configure each of the 4 UI elements you just created.
+
+
+Open up the UI Elements (CP_Code_nX) and position them.
+
+
+This part is a bit of an artform, as you will have to place your UI element in the correct place on the screen. It may take a bit of fiddling to get correct. 
+You may want to bring up the CP_BG_Image UI element first, then place a finger on the screen where you want the code UI and then open the code UI and enter X and Y until you’re close. Another option is to use a second program that has the “always on top” feature. I use PNGOptimizer for this, but there are loads of tools.
+  
+
+This way when you change to the CP_BG_Image UI element you can line it up to your other app. 
+Note: You may realise now why it is crucial to use the same scaling method (vertical) and that all of the images line up to the same measurements, regardless of resolution.
+
+
+Set the Unit scaling to “Vertical” and leave the image box empty.
+
+
+In the UI Element (first) box enter the following code, substituting the X for the number of the event.
+
+
+{var:CP_Code_nX}
+
+
+Now enter the co-ordinates (X and Y) and change them until you line up the number to the correct position.
+
+
+Finally set the size to 0.5, you may need to enable the border to get the sizing right. You don’t want to overlap the other buttons.
+
+
+Also set the text colour, for now you may want to set it to any colour other than white, to line it up correctly.
+
+
+Repeat the process for each of the 4 UI Elements, they should look like this!
+  
+
+Notice how the number is lined up with the other application window, it’ll save time in the long run doing something like this! Also remember your Y value here, this should be the same for each one.
+
+
+Now go back to the CP_Code_CHAINEND event and lets close off this loop.
+
+
+Leave this event empty.
+
+
+Note: In some event loops you may want to clean up the temporary variables (Z_CP_Code_nX), however in this example we need them to stay in place until we exit the puzzle.
+
+
+________________
+
+
+Now let's test this out. Before we do this, you’ll need to link the puzzle to an event or token. In this example I just created a token and then as the token action set the CP_START event.
+
+
+Assuming you now have this linked to a working scenario (with EventStart, etc) you can run & test the event. When run, it should put up the combination lock and the 4 numbers all set to 1.
+  
+
+
+
+Lets go back to the editor and add another event to place the buttons.
+
+
+In the CP_Code_CHAINEND event, add another event, this will be an event to add the buttons - CP_PlaceButton.
+  
+
+Open the new event, this time we need 9 UI Elements, 8 for the buttons (4 top, 4 bottom) and 1 for an exit button.
+
+
+CP_Button_nt1
+CP_Button_nt2
+CP_Button_nt3
+CP_Button_nt4
+CP_Button_nb1
+CP_Button_nb2
+CP_Button_nb3
+CP_Button_nb4
+CP_Button_EXIT
+
+
+Open the CP_Button_nXY UI elements and position the buttons, use the same technique to place them correctly as above. You will want to give these UI elements a border for now to position them. (X denotes t - top and b - bottom, n - donates the visible number (1-4)).
+Set the Size box to something lower, like 0.5, you may want to scale this up a little bit to cover your “button”.
+Leave the text box empty for this UI element, we just want it to be an “invisible” button.
+
+
+Note: They should have a similar X position as the code numbers we created earlier, but you’ll need to use the Y position to line them up over the background images green arrows. When you use the puzzle you’ll be “clicking” these invisible buttons, but the user will feel like they are actually clicking the static image (the green arrows) behind.
+
+
+It should look something like this, notice that the X position is the same as the previous UI elements, but the Y is slightly less (as it's higher on the screen). Also I've used the application window to line this up.
+  
+
+Repeat the process for all of the other UI buttons, remembering that 4 should be above the combination number (around the up arrows) and 4 should be below the number (around the down arrows).
+Open the CP_Button_EXIT event, in the first text box enter the text EXIT, then give it a border, a background colour and change the size/position/aspect to move it away from the puzzle. 
+
+
+I tend to put these buttons at the top, but place it wherever is suitable for your puzzle.
+  
+
+Leave the rest of this event for now, we’ll configure it later.
+
+
+________________
+
+
+Use Run & Test to see your puzzle now:
+  
+
+Notice the UI boxes over the arrows, we can now configure these buttons to do something!
+You may also notice that some of the green boxes are misaligned, you can use the X & Y numbers in the UI elements to fine tune this, but remember we’ll be removing the box and making the buttons invisible later so it doesn’t have to look perfect, it only has to act as you’d expect when clicked.
+
+
+Ok go back to the editor and create an event (not linked to anything yet) called CP_Button_Clicked, set the events Continue button to 0_CP_Code_CHAINSTART. We’ll use this event later!
+
+
+________________
+
+
+Now open CP_PlaceButtons, it will be easier from here to configure the buttons.
+
+
+Here is the complicated part, so i’ll explain the premise before we work on it.
+When you click an up button you want it to increase the number by 1 and clicking the down arrow should reduce the number. We also need a bit of logic here to only let a player click if it will increase the number to one below 10 and decrease the number to one above 0, we don’t want strange numbers on our lock! While all these numbers are changing you also need a “check” to see if they combination is correct, something like this:
+
+
+CP_Code_n1 = CP_Answer_n1
+CP_Code_n2 = CP_Answer_n2
+CP_Code_n3 = CP_Answer_n3
+CP_Code_n4 = CP_Answer_n4
+
+
+When the code is correct you want it to break out of the puzzle and complete.
+
+
+Note: Sometimes you also may want a click to register as a try for the purpose of limiting the puzzle to a stat. Here you might want to have a UI element that ticks up with each click. We won’t use it for this one.
+
+
+Ok lets work on those buttons, i’ll talk you through a pair of button creations and you can just repeat the process for each other pairs.
+
+
+Open CP_Button_nt1 UI and add a new event called  CP_Button_nt1_Clicked to the continue button.
+  
+
+
+
+In this event we are going to set some variables, we need to add a test to prevent the event from running if the number is at 9 and then if it runs add 1 to the code number 1 variable. We also need to clear the number in Z_CP_Code_nX to tell the app that we have removed the UI from the screen for now and want it placed again.
+
+
+Test:
+CP_Code_n1 < 9
+
+
+Assign:
+CP_Code_n1 + 1
+Z_CP_Code_n1 = 0
+
+
+In the Remove Components box add the following UI elements:
+
+
+CP_Code_n1
+CP_Button_nt1
+CP_Button_nb1
+
+
+Note: We want to remove the UI element and replace it to update the variables number. However doing so may overlay the buttons, I purposefully made the UI elements for the number larger, so if this is incorrectly coded the buttons will not work. If this happens, it will be a good lesson to learn, when you come to do more complicated overlapping puzzles. If you don’t make this mistake, then well done!
+
+
+Finally in the continue button add the CP_Button_Clicked event, this will make the loop run again to add the Code number UI element and it's buttons (since it calls 0_CP_Code_CHAINSTART, you’ll see why we added this extra event later).
+
+
+It should look like this:
+  
+
+
+
+
+
+________________
+
+
+Hit Run & Test and lets see this in action!
+  
+
+
+
+
+
+Click the Up arrow above the left combination and it should increase. 
+  
+
+You’ll notice you can add numbers until 9 but it won’t let you go any higher! 
+
+
+Ok now lets do the bottom button!
+
+
+Open CP_Button_nb1, create a new event CP_Button_nb1_Clicked for the bottom (subtract) button. Repeat the steps above with these subtle changes:
+
+
+Test:
+CP_Code_n1 > 1
+
+
+Assign:
+CP_Code_n1 - 1
+Z_CP_Code_n1 = 0
+
+
+In the Remove Components box add the following UI elements:
+
+
+CP_Code_n1
+CP_Button_nb1
+CP_Button_nb1
+
+
+Finally in the continue button add the CP_Buttons_Clicked event to make the loop run again to add the Code number UI element and it's buttons.
+  
+
+We don’t Need to test it again, but it's fun! Go ahead! Hit Run & Test and marvel at your combination going up and down and up and down:
+
+
+  
+
+Notice that you can’t go below 1, what clever pickles we are!
+
+
+Ok repeat the two processes above to complete the rest of the CP_Button_nbX buttons. Give it another run & test to make sure that they all function. 
+
+
+Note: If you find that only one of your combinations is working, a different one each time (based on the combination you clicked first) you will probably have made the mistake I made while making this puzzle - Your CP_Code_nX UI elements are too large. Remember when clicking a button we remove the number and the buttons above and below it, if any UI element overlaps (in this case CP_Code_nX was set to size 1!) it will lay over the top of the other buttons. You can fix this by setting the UI size of each to “0.5” or you can just remove all of the buttons (CP_Button_nbX and CP_Button_ntX) on the click actions.
+
+
+Note: Remember that for each number you need to set the correct variables and remove the correct UI elements. CP_Button_nt2_Clicked should remove/change the CP_Button_n2 UI and variables, for example! So many times I mix these up and it is hella confusing!
+
+
+________________
+
+
+Now that it's all working, we have two more steps. The first is to check if the code is correct, the second is to give the players a clean exit. We’ll do them all here, since we always want the cleanup to be in a single event to avoid having to remove UI elements in multiple events, it's a pain!
+
+
+First off the Clean up, we’ll make this now and then we can use it later for the “puzzle validation” step.
+
+
+Open up the CP_Button_EXIT UI element we created earlier. 
+Add an Event on the Continue button called CP_Button_EXIT_Clicked. 
+  
+
+
+
+Open the new event and under the Continue button create a new event called CP_Cleanup.
+  
+
+Open the CP_Cleanup event and add all of the “CP_” UI elements to the Remove Components section.
+  
+
+The idea of this is that when you click EXIT it will run the cleanup and remove all of the UI elements, returning the players back to the game.
+
+
+Also assign the following variables, so that the app knows that you no longer have the Code numbers placed!
+
+
+Z_CP_Code_n1 = 0
+Z_CP_Code_n2 = 0
+Z_CP_Code_n3 = 0
+Z_CP_Code_n4 = 0
+
+
+________________
+
+
+Now that we have the cleanup, we just need the “puzzle complete” validation.
+
+
+Open the CP_Button_Clicked event we created earlier, this is the event that runs and then loops back round to place buttons.
+
+
+Click the green + next to the Event0_CP_Code_CHAINSTART event and add a new event above it. Name the new event CP_CorrectCode.
+  
+
+
+
+________________
+
+
+Open the event and add the following:
+
+
+Test:
+CP_Code_n1 == CP_Answer_n1
+CP_Code_n1 == CP_Answer_n2
+CP_Code_n1 == CP_Answer_n3
+CP_Code_n1 == CP_Answer_n4
+(they should all be AND)
+
+
+Assign:
+CP_CorrectCode = 1
+
+
+Under the Continue button add the CP_Cleanup event.
+  
+
+
+
+This event will now run after the correct code is entered, it will flag the Code as correct and then run the cleanup to remove all the UI elements. Now we just need to create an event after cleanup to continue with the completion (as we don’t want to have events explaining what we found with all that combination lock junk on the screen behind!)
+Open up the CP_Cleanup event and add another event called CP_CorrectCode_EXIT
+  
+
+
+
+________________
+
+
+Open this new event and set the following:
+
+
+Test:
+CP_CorrectCode == 1
+
+
+You also want to enter some dialogue here, this may be what happens when you complete the puzzle, such as triggering other events to explain what you found in the locked thing!  
+
+
+________________
+
+
+Ok lets do one last run and test:
+
+
+Run the combination puzzle and enter some numbers. We know the code is 9876:
+  
+
+
+
+Click EXIT to come back out, when you open the puzzle again it should have the same numbers in it.
+________________
+Now enter the correct combination (9876, come on it's not been that long… Has it?!) and you should see the completion notice!
+  
+
+
+
+Note: With every good scenario you should have variation on replays, you don’t want players memorising the combination from play to play. So I would recommend setting the variables CP_Answer_nX to variables, and then either random generate these at the start of the scenario or set them based on “variations”. Maybe have 3 combinations that are set at the start and then have 3 sets of clues (maybe in different places!) to find out the combination to open it. I won’t get into the weeds of that now, but keep it in mind when writing your own puzzles.
+
+
+The last thing to do here is to remove the green borders from each of the CP_Button_nXY UI elements. Just set the “border” option to “No border”.
+  
+
+Well done! You’ve created your own custom puzzle!
+________________
+
+
+Singling out an Investigator
+This may be very useful if you wish to create an event that only triggers if a specific investigator is in play.
+
+
+For example in a Scenario I wanted to give the Duke Item to the party if “Ashcan” Pete was not in play.
+
+
+Investigator variables have been added in Valkyrie 2.1. So you can now add these directly from the Test/Assign functions within the editor.
+This is possible in Valkyrie however it is not supported directly in the UI in version 1.6.1, I believe the enhancement is coming in a later version.
+
+
+So here is a way to get it to work.
+
+
+Create an Event to give Duke, then add a Test to check  for a placehold variable for askcan pete.
+Ashcanplaceholder = 1
+
+
+  
+
+
+
+Save the Scenario and Exit.
+
+
+Now we need to identify the Investigator.
+Load any scenario and select the investigator in question (AshCan here).
+
+
+Once in the scenario, open the Log and press Alt + D to enter the debug log. LOok down the list for #hero<name> (in this case #HeroAshcanPete)
+  
+
+
+
+Note down the hero’s name (#HeroAshcanPete)
+Navigate to the scenario folder and open the Events.ini file using Notepad.
+
+
+%appdata%\Roaming\Valkyrie\MoM\Editor\Scenario1
+
+
+Find the event with the placeholder variable (find function will do this quickly)
+  
+
+
+
+Copy the place holder name “ashcanplaceholder” and then open “Find and Replace”.
+
+
+Note: Doing it this way will ensure you didn’t type anything incorrectly.
+
+
+Paste the placeholder name into the “Find” section and then enter the hero variable into the Replace field.
+
+
+  
+
+Click Replace All.
+Save the changes and close the text file.
+
+
+Open up the scenario and navigate to your event, you should see the variable has been replaced:
+  
+
+
+
+This event will only run if if Ashcan Pete is selected as an investigator.
+________________
+
+
+I can now set that variable to not equal (!=) to tell it not to run if Ashcan Pete is a selected investigator.
+
+
+  
+
+
+
+________________
+
+
+Tile Placement and Planning 
+This section was kindly written and submitted by Anton. (thanks Anton!) 
+It gives some tips on how to pre-plan and organise tile placement chains.
+Start-up behavior of a scenario
+How to start creaton of a new scenario is nicely explained in the chapter Creating a Scenario - The Basics. While creating the initial events you should consider that from the official FFG application we are (getting) used to start up in a default behaviour. In Valkyrie you have a lot of freedom in the scenarios behaviour, but if you wish to mimic the standard application flow then this sequence of events is suggested:
+
+
+1. QStartEvent  - triggered by EventStart
+   1. Can be a ‘silent event’ and used to initialize your variables.
+   2. Calls the event(s) to hand out Clue(s).
+2. QHandOutCluex - called by QStartEvent
+   1. To mimic the standard Mansions of Madness application’s behavior you should hand-out your Clue tokens 
+   2. If you wish to tune your scenario difficulty a little you can do it in this step by handing out a more clue tokens for 3 or less players. Example: Each of the following events is called by QStartEvent and puts up a dialogue instructing to hand out 1,2 or 3 clue(s). Each of the events has a Continue button and will call the QIntroduction.
+      1. QHandOutClues1 (test #heroes >= 4)
+      2. QHandOutClues2 (test #heroes == 3)
+      3. QHandOutClues3 (test #heroes <= 2)
+3. QIntroduction - called by QHandOutCluex 
+   1. Build-up your Introduction UI and story as explained in UI Elements
+Systematic and robust tile placement.
+To make the in-game-tile-placement-flow-experience a bit easier and faster for player to handle, the order placement of a room tile and items on it should always be the same. The players will get into the ‘rhythm’ of which type of tokens to place next. Therefore I would suggest to always have a basic placement scheme in place.
+This standard placement scheme may look a bit elaborate, but for me it has proved useful. Especially when you have a lot of conditional placements like: “place the Secret Door Token only if the secret door is found”, “place a Search Token if a secret door is not found yet”, “Place an explore token only if the tile to which it connects is not revealed yet”, “place a person token only in round 3”
+The standard placement scheme also makes it easier to find the event in your event list while you are programming/debugging your scenario (assuming you alphabetically sort the list).
+ 
+I found the following sequence to be most practical. For example:
+ 
+EventOfficePlaceTile                         (Place the Office tile including dialogue)
+->EventOfficePlaceDecoration           (Place walls and doors - no dialogue)
+->EventOfficePlaceConnections         (Place Explore and/or Sight Tokens - no dialogue)
+->EventOfficePlaceItems                  (Place Search and/or Interaction tokens - no dialogue)
+->EventOfficePlacePeople                (Place person tokens or spawns - no dialogue)
+->EventQMoveOneSpace                 (Special event handling the "move one space dialogue" that will be explained in a separate chapter)
+ 
+Each placement event would always call the next placement event phase to make the flow robust. This means that the second event in will call the third etc.:
+ 
+EventOfficePlaceTile                         (Place the Office tile including dialogue)
+->EventOfficePlaceDecoration  
+ 
+EventOfficePlaceDecoration
+->EventOfficePlaceConnections
+ 
+EventOfficePlaceConnections
+->EventOfficePlaceItems
+Etc…
+ 
+Now this sequence only places the Office tile with some dialogue, but all other placement events do not place anything YET. Let us say I want to place a Wall Token and a Secret Door Token (only if the secret door is discovered).
+Then the sequence would look like:
+ 
+EventOfficePlaceDecoration          (no dialogue)
+->EventOfficePlaceWall                     (Place Wall Token including dialogue)
+->EventOfficePlaceSecretDoor           (Place Secret Door Token including dialogue)
+->EventOfficePlaceConnections         (always call the next placement phase)
+ 
+EventOfficePlaceWall                       (Place Wall Token including dialogue)
+->EventOfficePlaceSecretDoor        
+->EventOfficePlaceConnections         (always call the next placement phase)
+ 
+EventOfficePlaceSecretDoor           (Place Secret Door Token including dialogue; add the test if the secretdoor is found.)
+->EventOfficePlaceConnections         (always call the next placement phase)
+ 
+The sequence above would only execute the event EventOfficePlaceSecretDoor if the test on the variable were successful. If TRUE, then the placement and dialogue take place and the next event will be called (EventOfficePlaceConnections). If the test is FALSE, then this event will not be executed but the calling event EventOfficePlaceWall will then call EventOfficePlaceConnections.
+ 
+This might look as if EventOfficePlaceDecoration is an empty and useless event, but it is a placeholder for placement of these type of items. If you later decide to add more decoration (an extra door for example), or want to find a particular event for debugging your scenario, you will know where to look without much thinking.
+Calling the next standard placement event phase (in this case EventOfficePlaceConnections) at the end  of each placement even will guarantee proper handling of placement and has low chance of programming mistakes.
+  
+________________
+EventQMoveOneSpace
+When writing the scenario “disturbance at the Docks” that gave a lot of freedom to players to move around however they would like, I stumbled upon the problem that a tile could be entered via different entrances. The problem is then, to make a simple (single) tile placement event sequence with a consistent behavior, that allows the players to “move one additional space”
+My specific example uses the Yard4 tile that can be reached via the market tile or from the root cellar. When entering from the market you would use a Sight Token, which should not allow you to move one additional space. When entering from the root cellar you would use an explore token, which should allow the player to move one additional space.
+That is how I came up with the EventQMoveOneSpace  (I typically use ‘Q’ to identify all generic Quest events that are not connected to tiles, tokens or rounds). This event is ALWAYS called at the end of placing ANY tile.  (see also my description of Systematic and robust tile placement)
+The EventQMoveOneSpace does the following:
+1.       Displays the dialogue “You may move one additional space in the revealed area”.
+2.       Has a test: MoveOneSpaceAllowed != 0
+3.       Assign: MoveOneSpaceAllowed = 0
+4.       Continue
+ 
+This means that the text is only displayed if the variable is set to 1 (or any other value then 0). And then flips the variable back 0 so that you don’t accidentally display the text then next time it is called. Make sure initialize this MoveOneSpaceAllowed to 0 in your start event (which I would call EventQStart).
+ 
+Now the trick is to set the variable before the EventPlaceYard4Tile is called. This happens when you select to tokens connecting to this tile:
+ 
+TokenSightMarketYard4:
+1.       Dialogue: “The busy market next to the quiet small city park are quite in contrast. An Investigator adjacent to this token may reveal the next area”
+2.       Button “Continue”: EventPlaceYard4Tile
+3.       Button “Cancel”: <nothing>
+4.       Assign: MoveOneSpaceAllowed = 0
+TokenExploreRootcellarYard4:
+1.       Dialogue: “Moss is covering this rotten door”.
+2.       Button {action} Open: EventPlaceYard4Tile
+3.       Button “Cancel”: <nothing>
+4.       Assign: MoveOneSpaceAllowed = 1
+ 
+ 
+ 
+________________
+
+
+Multiple entry possibilities to a tile
+When allowing Investigators to move around freely you will bump into the puzzle of how to deal with tile placement when investigators explore from tile A to tile B, but also have the option to go the other way around. The trick to solve this is to add a test to tile placement. The connecting explore (or sight) token would then have to call both tile placement events but the tile placement events would have to test if they are not already revealed.
+Example:
+Players may have discovered the RootCellar tile and want to open a door to the Yard4 tile, or the other way around. The connecting explore token would then look something like this:
+ 
+TokenExploreRootCellarYard4:
+1.       Dialogue: “Moss is covering this rotten door”.
+2.       Button {action} Open: EventYard4PlaceTile, EventRootCellarPlaceTile
+3.       Button “Cancel”: <nothing>
+4.       Assign: MoveOneSpaceAllowed = 1  (<- see chapter on EventQMoveOneSpace)
+ 
+The tile placement events will then have to include a test if it is not already revealed:
+EventRootcellarPlaceTile
+1.       Tile placement actions (see also Systematic and robust tile placement)
+2.       Test: RootcellarRevealed == 0
+3.       Assign: RootcellarRevealed = 1
+EventYard4PlaceTile
+1.       Tile placement actions (see also Systematic and robust tile placement)
+2.       Test: Yard4Revealed == 0
+3.       Assign: YardRevealed = 1
+ 
+A consequence of investigators moving around freely, is that when you place a tile you need to test if a connection token (explore- or sight token) must be placed or not. Use the <tile>Revealed variable to test the conditional placement of these connection tokens.
+Make sure to initialize all <Tile>Revealed variables to 0 in your start event.
+________________
+Organizing your events
+Contributed by antontimmermans
+
+
+All your events will be stored in %appdata%Valkyrie\MoM\Editor\<ScenarioName>\event.ini. As your scenario grows you might want to group events related to each other: There are two ways of doing that:
+1. Use a systematic naming convention.
+2. Group the events into separate *.ini files
+
+
+I found the best way to deal with events in large scenarios is to apply both methods.
+
+
+Systematic naming convention
+A systematic naming convention of your events give the advantage that you can find your event faster in the list of events when you sort the list alphabetically. 
+  
+
+A nice example of naming convention can be found in in the chapter “Tile placement and Planning” . Obviously the same applies to token naming, item naming, etc..
+Multiple event*.ini files
+When you want to group related events, you can also place them in a separate file. The advantage is that if you have the non alphabetical sorted view, the related events will still be close together in the list:
+  
+
+Second advantage is that you can narrow down the search list by selecting the related file in the Source list, making it easier to find your event:
+  
+
+To move events to a separate source file all you need to do is click the ‘events.ini’ at the Source:, select {NEW:File} and give it a new filename (or select a file you might have created earlier). 
+  
+
+________________
+
+
+Custom Monsters
+Bruce’s Wiki has two sections on this
+https://github.com/NPBruce/valkyrie/wiki/QuestEditorGuideCustomMonster
+https://github.com/NPBruce/valkyrie/wiki/QuestIniCustomMonster
+
+
+Think of a custom monster like a set of events that are automatically triggered each monster phase.
+Create framework of the monster
+Click “New Custom Monster” and give it a suitable name.
+
+
+Select a similar monster as the Base, it will use this monster for anything you don’t set for it. (i.e. if you leave activation, it will use the Base monsters activations).
+
+
+Give the Monster a name, select traits select something similar to the monster. (not 100% sure what this does, suspect it’s similar to “Base” for things that are not set).
+
+
+Enter a health, or a health per investigator, then Horror and Awareness.
+
+
+Remember how Horror and Awareness works, players have to choose the highest horror to trigger, so if this is your big bad guy, make sure it’s horror is high enough to trigger (would be boring in the final fight to find that a normal monster is “more terrifying” in the game’s eyes!)
+
+
+A good rule for awareness is to keep it low for high horror monsters; this gives players a chance to dodge away and live a bit longer. 
+  
+
+
+
+
+
+Activations
+This is the meat and bones of your monster. If you leave this blank, it will use the activations of the base. Custom Monsters that use the base have their place, see use cases.
+
+
+For this example I’ll detail some very basic activations.
+
+
+Custom Monsters can only have one activation, think of this as a trigger event. It will happen every single monster phase, while the monster is active. Make it simple and generic. If the monster moves the same way every activation, put it in here.
+
+
+Create an event (see above for more details) to act as the first activation of the monster:
+
+
+“Monster moves 2 spaces towards the nearest Investigator, and attacks the Investigator in its space with the highest {strength}” for example.
+
+
+If you want the creature to do a variety of attack activations (like a ranged activation, horror activation and a melee activation) make this first event very simple and descriptive; You can also leave the dialog box blank to skip right to the randomised attack.
+
+
+That trigger Event can then be used to trigger other Events, this will be your attacks or your move actions (followed by attacks).
+
+
+I’ll give you an example of a monster that has 2 random move events and 2 random attack events:
+
+
+Create a new event for the monsters activation and give it a suitable name.  
+________________
+
+
+In this event I’ve left the dialog empty, this means that the event will run “silently” (no dialog pop up) and pick a random event automatically.   
+(although these are button actions, no button will be presented)
+
+
+Add a “Continue” button and three events, these are its move/target events. 
+Set “Next Event” to “Random”, each activation it will randomly pick its move and target actions.
+
+
+
+
+
+
+________________
+
+
+Edit the Move/Target events, and give them dialog box text. This is what the monster is doing on it’s the action. 
+  
+
+  
+
+
+
+I will start with the second action, because it is quite simple. If there are no investigators to attack we need an event for “No Investigators in Range”. This button will then move the monster one more space, and end the monster activation.
+  
+
+
+
+________________
+
+
+Here is the event, leave the continue button empty to end the monster activation.
+  
+
+  
+
+
+
+The first button action is the meat and bones of the monsters attack.
+From the target/move event the monster will move 2 spaces and attack the investigator in it's space with the highest Lore. If an Investigator is in the space then we have it attack with the “Monster Attacks” button.
+
+
+This is a melee activation, so an investigator must be in the space (if not the player would click “No Investigators in Range” instead).
+
+
+Under the “Monster Attacks” button we need events to to describe what the monster does.#
+
+
+Note: If you’re wondering what all the other attack events are (MonsterAttack2&3), these are similar events to MonsterAttack1 but with different dialog’s and skill tests. This is to add variety to the monsters attacks. 
+Because MonsterAttack3 is much more powerful that monster attack 1 or 2, I have linked MonsterAttack1&2 an additional time, decreasing the likelihood that MonsterAttack3 is selected (to ⅕ chance).
+
+
+________________
+
+
+Create an event for the melee attack:
+  
+
+
+
+Go back to the Monster Activation Event and create another Target/Move activation event, this will be a ranged attack. Use the blue back button (top left) to go back to previous events. It saves time!:
+  
+
+This time it will move 2 spaces to be in range (range is within 3 spaces)
+    
+Same as above “No investigators in range” is linked to the move event, so the monster will move a space then end its activation.
+
+
+If the “Monster Attacks” (i.e. is within 3 spaces of at least one investigator), it will trigger the RangedAttack1 event:
+  
+
+
+
+You can scale these events as much as you like. Select “Next Event” as “Random” and keep adding moves and their attacks! Variety is the spice of life.
+You could even create events to attack all investigators in range! If you do, be sure to make it a little less destructive than attacking a single target to keep the damage output balanced.
+
+
+Evade
+Evade works exactly the same way as Activations:
+In this example I’ll just do one event, but you can use the method above to make it as complex as you like:
+  
+
+
+Horror
+This works exactly like Activations and Evade, I won’t repeat myself. I’ll leave this as base (will use the Shoggoth horror text).
+
+
+________________
+
+
+Spawn the monster:
+
+
+Create a spawn event, this will be used to spawn the monster. Use the Highlight, to indicate where the monster will spawn. You can use this descriptive to detail the rules or engagement - does it walk through walls? What horrible thing happens when it arrives?
+  
+
+Trigger the Monster
+Technically not part of the monster, but linked to it, so i’ll explain how it can be used.
+You can find more information on Triggers here
+
+
+Now trigger the monster
+Triggers are used to start events, in this case we are going to use it to trigger the monster spawn above based on the round number.
+
+
+In the spawn event above, set it to “EndRound”, this event will attempt to run at the end of every round. (Note: you can also create your custom trigger variable as described in the chapter  @ Variables, Contributed by antontimmermans )
+  
+
+(see more about triggers above!)
+
+
+
+
+Add a Test to stop it from spawning every round!
+In this example i’ll put in a test to check the round and run the event if it’s round 10:
+  
+
+
+
+(See more about variables above - they are crazy useful)
+
+
+Completed Monster:
+  
+
+
+
+It will spawn at the end of round 10 with a spawn event.
+
+
+
+
+________________
+
+
+How the monster looks in game
+Let’s see this bad boy in action!
+
+
+Spawn 
+  
+
+
+
+.Attacking the monster:
+  
+
+Generic attack actions for investigators:
+  
+
+
+
+Random move triggers a ranged attack:
+  
+
+The attack
+  
+
+Evading the monster (#nicetypo)
+  
+
+
+
+
+
+
+
+
+
+
+
+________________
+
+
+Use cases
+There are several use cases for Custom Monsters, they are not just for “the big bad guy”.
+
+
+You could have events that turn NPC’s to monsters, ohh double cross.
+
+
+You could use the custom monster which triggers to drop an item, even if it’s just a lowly zombie. You’d want this Zombie to be a custom one, because you don’t want every single zombie that dies dropping the item!
+
+
+Also remember, monster attacks don’t have to always be attacks. They could be events to spawn more monsters or even to attack other monsters (maybe to regain health! :D). Your imagination is your limits when it comes to creating custom monsters.
+________________
+
+
+Custom Monster Images
+This would be a JPG or PNG of the monster (I would always advise using PNG’s)
+(remember to keep it small ~200x200px as you’ll only see it as a tile on the monster tray)
+  
+
+I’d suggest always using PNG’s as some sections of the editor will not load a JPG.
+I personally used GIMP (a free photoshop) to cut the border from an existing monster and paste it over my image, then add transparency to the background.
+  
+
+There are some handy tutorials for using GIMP online, I won’t go into it here.
+
+
+________________
+Interactive System / Puzzles
+
+
+First off you need to build your Images, bare in mind that they will need to be layered over each other, so must be PNG’s with transparency.
+
+
+Personally I use GIMP 2 layers to create each aspect of the Image:
+
+
+Base and A Page
+  
+  
+
+
+
+The two combined (page layered over the book)
+  
+
+In this example I have created 6 images:
+(The book, 2 heading buttons, two pages and a blank image)
+  
+  
+  
+
+  
+  
+  
+
+You’ll notice that the “Blank Image” has a nice green box around it, this is intentional. We can’t place a button we can’t see, once the work is completed, we can replace this image with a blank counterpart (of the same name).
+
+
+These images will make up our book.
+
+
+If you are interested you can find the GIMP Template here:
+https://github.com/scrubbless/Scenario-Media/tree/master/Template%20XCF/Example
+
+
+(Feel free to check the other folders in that Repo, but be aware that there are spoilers for my scenarios in them)
+
+
+________________
+
+
+Ok now we have these images, we can move back to Valkyrie and implement the in game event chains to display them.
+
+
+Create the QItem:
+  
+
+
+
+On this QItem, create an activation event, this will be the first event in your chain to place the Journal.
+
+
+In this event, put some flavour text and buttons to tell the players what they are interacting with, create a button to initiate the book chain and a cancel button (since it's not a token so won’t have one automatically.
+  
+
+Here I am telling the players they can interact with the book without using an action.
+
+
+On the “Read” button add an event to start your book chain, in this event place a UI element for your book “the background”, since this image will show for every page of the book.
+  
+  
+
+Note: Remember the size of the UI element and it's “Units” we’ll need this when placing the pages. We are intentionally using images of the same size and dimensions, so we will want to scale them to the same as this one to line up. This means that in any screen resolution the images will always line up. If they are cut off the side of the screen or scale strangely they will all do the same thing so still be legible.
+
+
+
+
+
+
+________________
+
+
+Now we come to the tricky part, we need to use variables to control what information is displayed.
+
+
+First of all I will explain the logic of the Event chain.
+
+
+We’ll place the image, then create an event that will act as a Start point for placing other UI elements that will act as buttons.
+
+
+This event will have two “Ordered” events in it that will only run if certain variables are set. If the game has not set the variables as the event expects it will ignore them.
+
+
+We can use these events to place our Journal topics based on if we have discovered them or not.
+
+
+The flowchart below explains this logic:
+  
+
+
+
+Ok now we should create these Events.
+________________
+First off we Create the “Loop Start” event as a follow on even from the “Place Journal” event above. 
+
+
+Then create three buttons, two “PlacePage” events and an End Loop event. The “Continue” Button order should be “Ordered”.
+  
+
+
+
+The first two events will place the UI elements that will act as graphics for some “invisible buttons” we will create later. The final event will end the event loop and also the event chain to continue to the next phase.
+
+
+Note: You may notice that I have added “1_” to the start of this events name. The reason behind this is that if I filter events by Name it will show at the top of the list. This can save a lot of time when working with loop events like this. You’ll begin to realise how useful this is as progress through this tutorial.
+
+
+________________
+
+
+In the first “PlacePage” event, we’ll need to configure a couple of variables.
+
+
+Test - Clue1Found == 1 
+Is a Test to see if the variable is set, the variable itself will be set in token event outside of this item. The variable will persist for the entire Scenario once set.
+
+
+Test - Page1Placed ! 1
+Is Test to make sure that this variable is not set, this is a way to track what buttons are on the UI and prevent the loop from getting stuck in an endless cycle. This variable will only be used in this Journal Event Chain. 
+
+
+Assign - Page1Placed = 1
+This Assign action will set the variable to identify that the UI has been placed (therefore when this event is attempted to be run again, it will not pass it's variable requirements and be skipped). This will prevent the UI from being placed again and causing an endless cycle.
+  
+
+
+
+Also set the next event to the “Loop Start” event.
+________________
+The UI will look like this, notice the text on the right side over the tile, you’ll see why this transparency is important later:
+  
+
+Note: The Image size and Y coordinate are the same at the background.
+
+
+Repeat this process for the Page 2 Event we created, be sure to use the following variables:
+
+
+Test - Clue2Found == 1
+Test - Page2Placed ! 1
+Assign - Page2Placed = 1
+
+
+  
+
+Ok now that this loop is completed, we can go onto the “Loop End” event we created earlier.
+In this event we want to validate what was placed and act accordingly. For example:
+
+
+If no clues have yet been found in the scenario, we need an event to state that nothing has been found and exit - removing the UI.
+
+
+If clues have been found, we should expect to have at least one page header appearing. We will then want to proceed (in this case we’ll run another loop to place some invisible buttons, before we exit the event chains and let the players interact with it).
+
+
+We’ll start with the “nothing found” event first. We can approach this in a couple of ways:
+
+
+1. The easiest, just create an event that checks the variables “Clue1Found ! 1 & Clue2Found ! 1. This would work for this event chain but in my experience does not scale very well.
+2. The second option is to run a calculation to add up the “PageXPlaced” then have the “nothing found” event check to see if that variable is higher than 0.
+
+
+We’ll use option 2 as it is a very good technique to start thinking about.
+
+
+In the event, create a new variable (CluesFound) and add the values of Clue1Found and Clue2Found into it.
+  
+________________
+
+In the “Nothing Found” event, we want to set a test to check if “CluesFound” is greater than 0.
+
+
+  
+
+
+
+Add a clean event, we will use this one whenever we come to exit the scenario. In this one event we’ll remove all UI elements and non static variables that we may (or may not) be placing. 
+
+
+Note: This will be used a lot so I have prefixed it with “1_” again for easy access later on.
+
+
+I’ll come back to the clean up event later. It will be the last thing to configure so that we can ensure that we have added all possible UI and variables that are used in this Item function. Go back a level to the loop end.
+________________
+
+
+Now that we have an event for if we didn’t find anything, we can proceed to the “A clue was found” event we created earlier.
+
+
+We will start another event loop, this one will now place some invisible buttons on top of the journal page entries that we have just found.
+
+
+Now I bet you’re wondering “Why didn’t we just make smaller images for the “Page X” UI images earlier and make these the Buttons?”
+
+
+It is a valid question, you could absolutely do it that way and save some time and complexity.
+The reason I am showing you this way, is so that you can adapt the concept to create a multitude of useful puzzles and systems when you get more comfortable with it. For example, this would be very useful when creating Descent style campaign maps (which is something I really want to do in MoM at some point).
+
+
+The next question you’ll ask is “Why didn’t we just add these buttons in the event chain above?!”
+
+
+This is also a valid question, however there is a very subtle reason why it would not work.
+
+
+The reason we are doing these in two event chains is that “UI Elements” will lay sequentially. If more than one UI element overlaps another, the last one laid will be “on top” therefore if you click, that UI’s action will run. This has it's advantages and disadvantages and is what makes this method complicated. Laying the buttons sequentially above would lay them in this order:
+
+
+Full screen BG Image
+Full Screen Page 1image
+Smaller Page 1 Button
+Full Screen Page 2 image
+Smaller Page 2 Button
+
+
+If you click the Page 2 button it will trigger it's action, because it's on top and small. If you try to click the Page 1 button, it will do nothing because the full screen image “Full screen Page 2 image” is actually placed on top, despite Page 1 being a small button.
+
+
+This simple order is what means we have to lay the buttons separately, it's also a nice habit get into, drop all your pretty pictures all perfectly aligned, then slap some haphazardly placed invisible buttons on top.
+________________
+Here is the event logic in a flow chart, tacked on to the one above:
+  
+________________
+
+
+
+So lets create a new “Loop 2 Start” event (“Button Loop”), just like we did for the first Loop we created:
+  
+
+We’ll add Buttons for each of the two pages we may have found and an end loop like we did before.
+
+
+Note: Notice that I added the “1_” prefix again! We’ll use this one a lot too!
+
+
+________________
+
+
+Open up the first “Place Button” event, we can use the same logic as we used before. If “Clue 1 is found”, then place Button 1.
+
+
+Variables:
+
+
+Test - Clue1Found == 1
+Test - Button1Placed ! 1
+Assign - Button1Placed = 1
+
+
+  
+
+
+
+Remember to add the “Loop Start” event to roll us around to place the next button.
+Also add the Page 1 Button UI, we’ll configure those in a moment as they can get a little fiddly.
+________________
+
+
+Repeat the process for the Page 2 Button:
+
+
+  
+
+
+
+
+
+________________
+
+
+Now that we have created our event loop, lets open up those two UI elements and configure those to act as buttons.
+
+
+Open the Page 1 Button and assign the “Blank.png” image to it. You’ll notice the Green box appear. Now you can see why it's important to have this boarder, we can see it to position it!
+
+
+Use the X and Y coordinates and the Size options to move and resize the UI element to position it correctly.
+
+
+Note: Getting the position right is really tricky, so you can see why we’d rather place a blank button, and not stress with getting an image to perfectly align and be sized perfectly.
+A tip I have for aligning this stuff, is to use an app that is “Always on top” I personally use PNGOptimzer (which I use to compress my PNG’s anyway), resize the window to simulate how you want your button to look (all UI elements are rectangles remember, even if they have transparency). Open the image you want to lay a button for in Valkyrie. Drag the App over the text or part of the image that you want to be a button. Then open up the button without moving the Valkyrie or “App always on top” windows and position your button. 
+
+
+  
+
+
+
+
+
+________________
+
+
+On this UI element create a follow on event, this event will run when the button is clicked:
+  
+
+
+
+In the follow on event put in the dialogue “Page 1 Clicked”
+
+
+Repeat this process for the Page 2 button.
+
+
+Now we have our second loop working we can wrap it up by placing an exit button and run the clean up script so we can rerun it again in the future.
+
+
+________________
+
+
+Open up the “Button Loop End” event and add a UI Element “Exit” button.
+
+
+  
+  
+
+
+
+In this UI element just enter the text ”Exit” into the first box, then align it.
+
+
+Note: At present in 2.1.5 the UI buttons have no backgrounds, so be sure to take it into account when placing it over your images. Also use your overlay app to position this correctly as explained above.
+
+
+________________
+
+
+On this UI element, add an event that will be triggered when this button is clicked.
+  
+
+Link the “Clean up Event” to this new event.
+
+
+________________
+
+
+Open up the Clean up event. The purpose of this is to remove all UI elements and set certain Variables to 0, so that we can rerun the event
+Add all of the UI elements we have created, then set the following assigns.
+  
+
+Note: When removing components you can plan for every eventually, it will still run cleanly if the event runs but there are no UI elements to remove.
+
+
+________________
+
+
+Finally, not really part of this event. Create a token, that we can click to give us the clues we need.
+
+
+You’ll do this naturally in your scenario, but for the pupose of this Example i’ll create a token in the center of the tile and add the following buttons to it:
+
+
+
+
+“Give Clue 1”
+“Give Clue 2”
+(it's a token we don’t need a manual cancel button)
+  
+
+
+
+You should know how to create and add a token with buttons by now! In the events on each button i’ve entered the dialogue and set the assign variable as follows:
+Clue1Found = {var:Clue1Found}
+Assign - Clue1Found = 1
+________________
+
+
+We are not completely done, but the framework is there… SO lets run this and see how it looks!
+  
+
+Here is our Journal, there are many like it but this one is ours!
+
+
+  
+
+We can read the journal, how neat!
+
+
+  
+
+WTF, where is my stuff?! Oh yeah I didn’t find any clues. Lets try that again
+________________
+  
+
+Lets click the get a clue token and find clue 2! This will prove a point.
+
+
+  
+
+Look at me, I’ve got a clue!
+
+
+  
+
+Ok lets read what we have now!
+
+
+  
+
+Cool we have text for page 2 now… Is that the clue?
+
+
+  
+
+If we click it we get the prompt that we’ve clicked it
+
+
+  
+
+If we now click Continue and Exit, we are kicked out to the board as expected.
+
+
+Good Job Team, that's the first part complete!
+
+
+Now to put something on those pages and get it so that it can loop back round to re-read.
+________________
+
+
+The last thing we need to do is create a navigation system, to read the pages of your journal.
+
+
+There are many ways to do this but the cleanest (I feel) is to cause all button clicks to run the “cleanup” script as if exiting. We can then flag on Variables for what button we have clicked to then run a follow on event.
+
+
+For example
+  
+
+
+
+________________
+
+
+Ok lets begin, open your scenario and find the “Page 1 Button” UI Element, in my example above it was “Journal_Button_1”:
+  
+
+
+
+Open the “Button Clicked” event that we created earlier and remove the text.
+
+
+Now add an Assign to set the PageClicked variable to 1.
+  
+
+On the follow on event, select the “Clean Up” event
+________________
+Repeat the process for the “Button Clicked” on the “Page 2 Button” UI Element, but set the PageClicked variable to “2”.
+  
+
+
+
+Now open the “Clean Up” event, all button clicks so far (exit, page1 page2) all point to this event and this event just clears everything from the screen an exits. This means we have one cleanup event that all events land on before we either exit, or run follow on events. This will ensure a consistent experience for the player and avoid code bloat (from multiple events clean up UI elements.
+________________
+In the “Clean Up” event add two “Open Page” events, one for when Page1 is click and the other for when page 2 is clicked. 
+  
+
+
+
+________________
+
+
+Open the first “Open Page” event, add the Background UI (already created) and create a new UI element for the “Page Text”. Also set an assign for PageClicked to set it back to 0.
+
+
+  
+
+
+
+Note: I am going to add the exit button here for simplicity, but you could add Next Page, Previous Page or Index Page buttons if you prefer.
+
+
+Repeat this for Page 2, substituting the PageClicked variable to “2”.
+________________
+
+
+Finally Open the “Clean Up” event and add the two new UI elements.
+  
+
+
+
+Note: Once you are confident that your system works or just before you publish your scenario, replace the “Blank” image (the one that currently has a green border) with a completely blank image. You may tempted to leave them in place, but from experience I have found it's better to use more thematic flair on the images below the blank button, this will ensure you do not get any alignment issues (or cause you to waste too much time lining up these buttons perfectly).
+________________
+Lets see how it looks now, this time i’ll click and give myself both clues from the token!
+  
+
+As expected
+
+
+  
+
+Ohh two buttons
+
+
+  
+
+Great! Page 1 works!
+
+
+
+
+Special Symbols
+You can use special symbols in any Dialog within the Valkyrie App. A full list of special symbols can be founds on the Wiki:
+https://github.com/NPBruce/valkyrie/wiki/SpecialSymbols
+
+
+Using Special symbols for components
+When placing tiles and Items you will have to tell the Investigator in the Dialog what item to take or what tile to place. 
+
+
+We can’t manually type out item names for random items, so we need to refer to the component's name and let Valkyrie do this.
+
+
+You can do this by entering the code {c:ItemName}
+  
+
+
+
+This will pull the Item name from the QItem’s randomly generated item and display it:
+  
+
+The same can be done when placing tiles (I spent ages looking for the  symbol code to add my tile, only to find out the app would do it for me!).
+  
+
+
+
+When the event dialog displays and a component is added, it will enter the components (tiles) name in place of the code:
+  
+
+________________
+Translating a Scenario
+First of all, reach out to the scenario owner and ask their permission to translate. It will be a wasted effort if you translate it only to find that the Author is inactive or not willing to apply your translation. All of the Scenario writers I have spoken to are awesome.
+
+
+The best place to find out the owner is to post an Issue on the Valkyrie GitHub, it's highly encouraged for the community to use this as a base for all dialogue, be it bug reports for Valkyrie (and Scenarios) or just asking questions relating to the app and homebrew scenarios as a whole.
+https://github.com/NPBruce/valkyrie/issues
+Set Language
+Set your Valkyrie language to the one you want to translate to. On the main Mansions of Madness menu, this can be found in Options.
+  
+  
+
+
+
+
+
+________________
+Download and Copy the Scenario
+Go back to the main menu (back!) and then click Scenario, click Download and select the Scenario that you want to translate. 
+
+
+Tip: Be sure to update any scenarios that you already have downloaded, as if the versions don’t match the translation might have parts missing.
+
+
+Hit back to go to the main menu and click Scenario Editor, then click Copy.
+  
+
+
+
+This will list all of the scenarios you have downloaded:
+  
+
+
+
+Click the one you want to translate and it will make an editable copy and you will notice it in your list!
+  
+
+
+
+Note: What this is doing in the background is extracting the Scenario Package file and putting it in %appdata%\Valkyrie\MoM\Editor
+
+
+Click the Scenario to open it in the editor. You can then start translating the text. 
+Translation Tips
+Contributed by antontimmermans
+
+
+I usually find the event with the StartEvent trigger and work through the options as if I was playing, translating as I go. It's hard to find, but usually the Event names give it away:
+In the case of Exotic Materials the start event is “EventMinCam”
+  
+
+  
+
+I expected it to be EventStart!
+
+
+You can then use the Buttons at the bottom of each event to navigate as the Scenario would play out. Follow the blue links next to Components and Buttons to follow as the scenario unfolds:
+  
+
+
+
+You can also editor the text directly in the Localisation File, this is a file that contains all story text. It uses references to the .ini files that contain all of the background data that you won’t want to change for the scenario, such as button coordinates or tile selections.
+
+
+This file can be found in:
+%appdata%\Valkyrie\MoM\Editor\<scenario name>
+
+
+There will usually be just one localisation file that follows this name format:
+localisation.<language>.txt
+E.g. localisation.english.txt
+
+
+  
+
+Exotic Materials has 5!
+
+
+Important: If you decide to edit the localisation file, be very careful not to change the event references, it's easy to completely break your translation if you are using find and replace or accidently delete these references:
+  
+
+Once you have finished all of your translation, save it. Your localisation file will appear in the Editor folder (%appdata%\Valkyrie\MoM\Editor\<scenario name>\). 
+
+
+Copy this out and give it to the author to add. If they are not sure how to add the translation file, refer them to the guide below!
+________________
+
+
+Alternative Translation Method (Advanced)
+Instead of using the editor to translate a scenario, you could do the work all in the Localisation.<language>.txt files. Make use of a source code editor (like Notepad or vscode, freeware). Do not use editors that add hidden formatting attributes (like MSWord).
+
+
+The high level steps are as follows:
+localization.xxx.txt → Translation sheet.
+* Copy the Localisation file that is to be translated (this should be the default language) and rename the copied file reflect the translated language 
+* Modify the copied file using CTRL + H, click regular expression. Enter ,(.*) into the find field and  \t$1 into the replace field.
+* Select all (File Select All) of the text in the newly edited file and copy it to the clipboard
+* Create a Spreadsheet (I would recommend a google spreadsheet)
+* In the Spreadsheet click in the A1 box and paste the contents of the clipboard.
+* Once verified, delete the content from the NotePad file you just copied from (you could just cut the text into the spreadsheet if it's easier)
+* Translate the text (optionally use the google translate formula for this, example translate from English to French: =googletranslate(<celreference>;"en";”fr”))
+Translation sheet → localization.xxx.txt
+* Copy all of the cells in the spreadsheet and paste it back into the empty (copied) localisation file.
+* Modify the file using CTRL + H with the regular expression \t and replace all it with the regular expression , .
+* Save the file, follow the rest of the process below to add the translation file to the quest.ini and then test it in the editor using your chosen language.
+
+
+________________
+
+
+Full explanation:
+
+
+First of all download the scenario and copy its Localisation.<default>.txt file.
+In this example i’ll show you 22:30 in the bird shop.
+  
+
+
+
+Rename the file to Localisation.<newlanguage>.txt
+  
+
+
+
+Open the file in a text editor, I would recommend Notepad++ (free and very good)
+  
+
+
+
+Hit CTRL + H (find and replace) and enter this regular expression into the “Find What” field (.*) 
+
+
+Hit Replace All it with the regular expression \t$1  
+
+
+________________
+
+
+Click Replace All, this should be a high number
+  
+
+
+
+Select All of the text in the document using CTRL + A (or Edit > Select All) then copy the text into the clipboard using CTRL + C 
+
+
+Note: You can use CTRL+ X to cut the text if you prefer, since we will need to replace all of the text with the translated text later.
+
+
+Create a Spreadsheet (I would recommend google, as it's free and you can easily share and collaborate if required).
+Click the A1 field and paste the data in using CTRL + V (or Edit > Paste, or right click Paste)
+  
+
+________________
+
+
+Note: Once pasted in I adjust the columns and turn on text wrap so that the text is visible on one screen.
+  
+
+
+
+Translate the text with your chosen method.
+
+
+Note: I would recommend translating the text the next column so that you can refer back to the original text during translation. But if you are confident you can translate in line to save some copy/paste later.
+  
+
+
+
+Tip: Personally I don’t speak a second language, so I have deployed the use of translation tools. I can rough translate the text then proofread the translation and make it fit context, while it adds a little but of work with playtesting to find the context to a confusing translation, it allows me to contribute without being multilingual. My method involves using the translate function built into google sheets. Please note that this function seems to only work on a desktop machine, it didn’t work when I tried it in Android.
+
+
+In the C2 Column (the column next to my first line of text to be translated) enter the following formula:
+
+
+        =GoogleTranslate(B2, “es”, “en”)
+
+
+Note: es in this example is the source language and en the destination. You can look up the supported languages online - here is one I found
+
+
+Hit Enter it will show a message Loading… then the translated text should appear.
+  
+
+
+
+Click the Cell, then in the bottom corner you’ll see a blue box, click and drag this down to the bottom of your sheet (be sure to keep it in the one column). If you prefer you can copy the cell then highlight the cells below and paste.
+  
+
+
+
+Proof read the translated text and be very aware of the embedded MoM code. Translator programs do strange things with the Valkyrie code, such as {rnd:hero}, \n, etc.
+
+
+________________
+
+
+Once the translation in completed we need to clean it up and turn the syntax back into something Valkyrie understands.
+
+
+Cut your C Column  and Paste Special… Values Only  it over the B Column (if you edited in line you can ignore this step)
+  
+
+Note: The reason we use paste values, is if we did the google translate above it will just copy the formula across.
+
+
+Highlight Columns A and B and copy using CTRL + C
+
+
+Open the Localisation.<newlanguage>.txt file that we were using earlier. Use CTRL + A to Select All and hit the delete key to clear the file (if you didn’t use the CTRL + V method)
+
+
+Paste the data you copied from the spreadsheet into the NotePad file using CTRL + V 
+  
+
+
+
+________________
+
+
+Now that the translated text is back in the file, we need to Find and Replace the regular expressions we changed earlier back into their original format.
+
+
+Press CTRL+ H in the NotePad++ file and select regular expression as we did above.
+In the Search What field enter \t and in the Replace field enter , 
+
+Click Replace All and you should see a similar number of changes as we did previously.
+
+
+Save the file, follow the rest of the process below to add the translation file to the quest.ini and then test it in the editor using your chosen language.
+
+
+Thank you very much to BenRQ for providing the steps to this translation method. It will save us all a huge amount of time!
+
+
+Making your scenario ready for translation
+Contributed by antontimmermans
+
+
+To make future translation of you scenario more easy it will help if you make some texts that you use often (like the text “Continue” on a button) a standard text.Standard text definitions must be placed in  %appdata%\Valkyrie\MoM\Editor\localization.<language>.txt and referenced to in the rest of the file (or valkyrie editor). With this mechanism, a translator only has to translate a word (or sentence) once. 
+
+
+Note: when you edit these types of files you must use a ‘source code’ editor like for example Notepad++ or atom (both freeware). These editors won’t add any markup code that can mess up your file but do have some spellings checking capabilities.
+
+
+A standard text definition contains a (unique) reference word and the text it refers to separated by a comma (,). Syntax: <unique reference word>,<display text>
+
+
+In the standard text examples below, the text in capital letters is the reference word. And the text behind the comma (,) is what will be displayed in the game:
+ATTACK,Attack
+CANCEL,Cancel
+CONTINUE,Continue
+EXPLORE,{action} Explore
+INSPECT,{action} Inspect
+NEVERMIND,"<i>""Nevermind""</i>"
+OPEN,{action} Open
+PICKUP,{action} Pick-up
+SEARCH,{action} Search
+To refer to the standard texts you have to use the following syntax {qst:<reference word>}.
+Example reference:
+EventTESTLightsOn.button1,{qst:CONTINUE}
+Important: if you edit this text in a source code editor, do not change anything upto and including the comma (,) or you will lose the reference to the event.
+You can also use this reference syntax directly in the valkyrie editor:
+  
+
+Note: that when you type the text in the editor it will initially display the {qst:CONTINUE} syntax, but when you leave the event and then go back to it you will see that Valkyrie automatically shows the button text in your chosen language (provided that you put the standard definition text in the localization.<language>.txt file.
+Combining multiple standard text to generate a longer description is also possible.
+Example:
+Default text to be shown when inspecting the item:
+ONECLUE,You receive 1 Clue.
+CONCLUSIVE,You notice some dried blood on the knife..
+The first time you inspect this item you wish to show the text and hand out one clue:
+EventQItemConclusiveEvdInspectFrstClueA.text,{qst:CONCLUSIVE} {qst:ONECLUE}
+Will show:
+You notice some dried blood on the knife. You receive 1 Clue..
+The second time you inspect the same item, you only wish to repeat the information but NOT hand out a clue again:
+EventQItemConclusiveEvdShowFrstClueA.text,{qst:CONCLUSIVE}
+Will show:
+You notice some dried blood on the knife..
+________________
+
+
+
+
+
+
+
+
+General Tips
+Alternate Endings
+Have a think about different ways that the players can complete the game. Do they have to kill a big monster, can they disrupt the ritual before it is summoned, can they burn down the mansion instead? Use your imagination, it will add a lot of flavour to your Scenario.
+Late game events
+One thing I found when play testing an earlier Scenario, was that late game the board looked very empty. Try adding events that trigger based on the #round number (using the StartRound trigger), this could trigger events that happen in another part of the board that the Investigators may have already investigated. You can use this to remove board tokens, add tokens or spawn monsters. You can also trigger events to remove components like tokens and even tiles.
+
+
+Story is Key
+A general useful tip is not to get precious or hung up about any element of the story. Every element of the story can (and probably will) get changed as long as the core of the story and the horror that arises from it are kept.
+
+For example, let's imagine “The Thing” is your favourite movie and you're all fired up to create an epic Mansions scenario based on the film. Well for a start there are no snowy wastes tiles or ice station rooms or for that matter a 'Thing' monster figure but change the monster to be a Thrall, change the setting to be an abandoned house in say the wilderness and it starts to look more feasible. The key question is what is the essential core of the movie? Well, I think the horror comes not from the scariness of the creature in or of itself but relating to the stress of the characters desperately trying to determine who is infected. Add a mechanism in the app for this and things start to look more interesting - and the randomness has arisen from the core of the story and the horror.
+
+
+- Contributed by NicolaZee (Thank you!)
+
+
+Useful Tools
+
+
+Audio trimmer - Online tool to Trim sound files
+https://audiotrimmer.com/
+
+
+Online tool to convert MP3 to OGG (MP3’s are not usable in Valkyrie, but OGG are)
+https://audio.online-convert.com/convert-to-ogg (has not been working lately)
+https://convertio.co/mp3-ogg/
+
+
+PNG Optimiser - Great tool, download. Run the exe and drag the PNG in. It’ll rename the old file to _file.png and then spit out a shrunk lossless PNG of your image (shout out to redwolf2 for this tip)
+https://psydk.org/pngoptimizer
+
+
+A couple of useful open sources for gaming art can be found below:
+https://opengameart.org/
+https://game-icons.net/
+
+
+(Thanks for the tip MilesTeg81!)
+________________
+Publishing your Scenario
+Before you think about publishing your scenario I will give one bit of advice (outside of tip text no less!).
+
+
+PLAY TEST!
+
+
+Play it through, get the board pieces out, set it up and play it over and over. Clear out the spelling mistakes, fix the event sequencing bugs, get it perfect.
+
+
+Then invite your friends over and invite them to give brutal feedback… Play it, letting them lead so you don’t spoil the Scenario and suck up all of their ideas.
+
+
+Take the criticism back to your Scenario and add, adjust where you need to to abate their concerns.
+
+
+I was going to Publish my own Scenario. Play tested with my Wife and that put it right back on the drawing board. You’ll be surprised how linear a Scenario can feel when playing it, compared to writing it.
+
+
+Only when you and your gaming group are happy, should you proceed to publish! 
+
+
+Publishing your scenario is the act of uploading it to a persistent (will always be available), publically accessible website. Once it is online, it can be added to the “Download” list on the Valkyrie app.
+
+
+There is a Wiki entry on this that explains it in detail:
+https://github.com/NPBruce/valkyrie/wiki/QuestPublish
+https://github.com/NPBruce/valkyrie/wiki/QuestIniQuest
+
+
+I will detail how I personally intend to publish my Scenario’s.
+
+
+________________
+GitHub
+Bruce has suggested using GitHub to publish scenarios. As it's a free and very stable platform (and is what the Valkyrie team uses to develop the application itself!)
+
+
+It also has many more benefits and is free to use.
+
+
+Anyway, GitHub comes with many useful features that allow you to manage your scenario code. 
+
+
+But I will just explain the very basics to get your Packaged Scenario on the internet and ready to be included into Valkyrie.  (If you are interested in using GitHub to it's full potential, there are loads of great guides on their website and youtube channel).
+
+
+To keep this as simple as possible I will use the Windows GitHub Desktop Client. There are 4 simple concepts to understand before using Git(Hub).
+
+
+Repositories - Is a folders that exist on your computer that you synchronize to a Repository on GitHub.com.
+Commit - Is an action where you confirm the changes you have made to files in your local repository (folder on your PC) to be approved to be uploaded to GitHub. I.e you update your Scenario and want to update it on GitHub.com.
+Push - Is a command that will mirror your local “commited copies” (see above) to the online GitHub.com repository. Basically “upload the things I have said are OK for upload” (committed).
+Pull - This will pull down any changes from GitHub.com to your local PC (imagine you have two PC’s and work on your scenario from different machines, this is a way to keep those two PC’s and GitHub.com in sync).
+
+
+This is the bare bones that you need to understand to use GitHub, I would encourage you to check out the guide above, if you are curious.
+
+
+
+
+
+
+________________
+
+
+Create an Account
+First of all create an account with GitHub:
+https://github.com/
+
+
+I won’t explain this step, the register feature takes you through it step by step. 
+
+
+Note: Remember that you don’t need to pay anything to use it, it will probably try to sell you extra features you probably don’t need.
+Install the Windows GitHub Desktop Application
+Go to and hit the download link 
+https://desktop.github.com/
+ 
+Follow the installer, it should auto run the application. If not you can find it in your start menu under the name “GitHub Desktop”.
+
+
+Follow the steps (sign in with your GitHub account) to link the desktop application with your GitHub account.
+Create a Local and Remote Repository
+In this example I will create a local repository on my desktop, then publish it to GitHub.com using the GitHub Desktop application.
+
+
+In the GitHub Desktop application click File then New Repository  
+
+
+
+
+________________
+
+
+A window will pop up asking you where you want to save the Repository, this action will create a folder in the selected “Local path”, I have selected the Desktop (since Valkyrie Package files are created directly on the desktop anyway).
+  
+
+
+
+Click Create Repository you will notice a new folder empty folder on your desktop, if you show hidden files you will see the GitHub configurations files, used to run it. Don’t delete these!
+  
+
+
+
+
+
+________________
+
+
+In the GitHub Desktop Application you will see your local repository.
+  
+
+
+
+Click the Publish repository to create the GibHub.com repository under your account. 
+Untick the Keep this code private option (unless you have signed up for private repositories)
+Then click Publish Repository
+  
+
+
+
+________________
+
+
+Create a Valkyrie Package for your Scenario
+Now that you have a place to put your Scenario, you need to export it to a “Package”.
+
+
+A package is simply a renamed .zip file which contains all of your Scenario data and the “logo” image.
+
+
+Before we go into Valkyrie we will change the default folder name of the scenario. To do this open the following location:
+%appdata%\Valkyrie\MoM\Editor
+
+
+In this folder you will see your scenario folder and it will have the default name “EditorScenario1”
+  
+
+Right click this folder and click Rename, give it a suitable name - it cannot have any spaces. 
+  
+
+
+
+Note: Personally I just give the folder the same name as the scenario without any spaces, capitalising the first letter of each word. But it honestly doesn’t matter what name you give it, as long as it has no spaces.
+
+
+________________
+
+
+Note: Another great tip here, even if your scenario is in a subfolder it will still show in the editor. This means that you can organise your scenarios or even create GitHub repositories directly in your Editor Folder. Personally I have two GitHub repo’s directly in my Editor folder, this means I can keep version controlled backups of my scenarios editor code. 
+
+
+  
+
+Now that we have renamed the scenario, lets create a package to upload.
+
+
+Open Valkyrie and Edit your Scenario.
+Click the Tool menu button and click Create Package
+  
+
+
+
+Minimise or Exit Valkyrie and open your desktop, you should see a folder with the scenario name.
+
+
+It will include the .valkyrie package file (renamed zip) the Logo image (mine doesn’t have a logo) and a .ini file:
+  
+
+________________
+Add your Scenario to your Repository
+Simply drag your Scenario file into the Local Repository (in this example “ExampleScenario”).
+  
+
+
+
+Open the GibHub Desktop application and it will show that some files have been added (under changes).
+  
+
+
+
+
+
+________________
+
+
+In the bottom left is a comments section where you can “Commit” the changes you have made. This will authorise the changes and give context.
+
+
+If you need to later change your Scenario, you can copy over the files with the new package and commit it with a comment here. GitHub will keep versions for you automatically (which will help if you break your scenario by accident with an update!).
+
+
+Enter a title and a comment then click Commit to Master
+  
+
+
+
+The changes will disappear, and you will notice a number next to Push
+
+
+This indicates that there are changes in your local repository that need to be pushed to the GitHub.com repository.
+  
+
+Click the Push Origin to upload the changes to your GitHub repository (it may take some time based on your scenario size and internet speed).
+
+
+
+
+________________
+
+
+Open your GitHub account and you will see your new repository and the scenario files:
+  
+
+  
+
+Note: You won’t find this, as I have moved it to my “PublishedScenarios” repository - https://github.com/scrubbless/PublishedScenarios
+
+
+
+
+You can view the files or download them from GitHub.com. You can also download the GitHub Desktop App to other PC’s and download/clone the repositories to those machines.
+Request that your Scenario be linked to the Valkyrie Application
+Create an issue on the Valkyrie Issue tracker:
+https://github.com/NPBruce/valkyrie/issues
+
+
+With the name “New Scenario” and put the URL into the issue.
+
+
+The Valkyrie team can then link it in the Valkyrie App, so that you Scenario becomes available in the “Downloads” section of the Valkyrie App.
+
+
+________________
+
+
+Adding a Translation file
+This process explains how to link a Localization.<language>.txt file to your Scenario.
+
+
+Copy Localization.<language>.txt the Scenario file to your Scenario’s folder.
+%appdata%Valkyrie\MoM\Editor\<ScenarioName>
+
+
+Open the directory and edit the Quest.ini file.
+
+
+You will notice a section that lists you localization files and the default language:
+  
+
+The default language will automatically be set to whichever language your client was set to when you created the scenario. If you wish to change the default language, it can be done here.
+
+
+Add a new line under the [QuestText] and type the name of the extra Localization.<language>.txt
+
+
+Save and Exit the file.
+
+
+Open Valkyrie > Scenario Editor > Your Scenario
+Click Tools and Create Package
+
+
+The new package will now contain the additional language.
+Copy these files to your online repository (copy to local repository and commit changes if you are using GitHub).
+
+
+________________
+
+
+Appendix; Advanced tips and tricks, Code Snippets, and Templates
+Contributed by antontimmermans
+
+
+Advanced scenario programmers may choose to edit the source code files directly to save time. Files like %appdata%Valkyrie\MoM\Editor\<ScenarioName>\event.ini and %appdata%Valkyrie\MoM\Editor\<ScenarioName>\localization.<language>.txt.
+
+
+If you plan to edit those files make sure that you do not use an editor that adds additional markup which could mess up your files. You should use a source code editor like for example Notepad++ or atom which are both free to use. After editing the files you can reload the scenario in valkyrie and see the result.
+
+
+IMPORTANT: Any typo in the syntax may result in loss of (part off) your work or unexpected application behavior. Make sure to make regular back-ups. If you are uncertain how this works, you should continue using the valkyrie editor only.
+3 Question Dialogue template:
+Instructions to add a 3 question dialogue to a person token. In the following instruction you can rename "Person" to whatever token you want to link it and start filling the dialogue with story text. Without any further editing it will look like this:
+  
+
+Copy this text into the file %appdata%Valkyrie\MoM\Editor\<ScenarioName>\event.ini 
+[EventPersonDialogue]
+display=false
+buttons=1
+event1=EventPersonDialogueABC EventPersonDialogueAB EventPersonDialogueAC EventPersonDialogueBC EventPersonDialogueA EventPersonDialogueB EventPersonDialogueC EventPersonDialogueNone
+
+
+[EventPersonDialogueABC]
+vartests=VarOperation:PersonAnswerA,==,0 VarTestsLogicalOperator:AND VarOperation:PersonAnswerB,==,0 VarTestsLogicalOperator:AND VarOperation:PersonAnswerC,==,0
+buttons=4
+event1=EventPersonAnswerA
+event2=EventPersonAnswerB
+event3=EventPersonAnswerC
+event4=EventPersonDialogueEnd
+
+
+[EventPersonDialogueAB]
+vartests=VarOperation:PersonAnswerA,==,0 VarTestsLogicalOperator:AND VarOperation:PersonAnswerB,==,0 VarTestsLogicalOperator:AND VarOperation:PersonAnswerC,==,1
+buttons=3
+event1=EventPersonAnswerA
+event2=EventPersonAnswerB
+event3=EventPersonDialogueEnd
+
+
+[EventPersonDialogueAC]
+vartests=VarOperation:PersonAnswerA,==,0 VarTestsLogicalOperator:AND VarOperation:PersonAnswerB,==,1 VarTestsLogicalOperator:AND VarOperation:PersonAnswerC,==,0
+buttons=3
+event1=EventPersonAnswerA
+event2=EventPersonAnswerC
+event3=EventPersonDialogueEnd
+
+
+[EventPersonDialogueBC]
+vartests=VarOperation:PersonAnswerA,==,1 VarTestsLogicalOperator:AND VarOperation:PersonAnswerB,==,0 VarTestsLogicalOperator:AND VarOperation:PersonAnswerC,==,0
+buttons=3
+event1=EventPersonAnswerB
+event2=EventPersonAnswerC
+event3=EventPersonDialogueEnd
+
+
+[EventPersonDialogueA]
+vartests=VarOperation:PersonAnswerA,==,0 VarTestsLogicalOperator:AND VarOperation:PersonAnswerB,==,1 VarTestsLogicalOperator:AND VarOperation:PersonAnswerC,==,1
+buttons=2
+event1=EventPersonAnswerA
+event2=EventPersonDialogueEnd
+
+
+[EventPersonDialogueB]
+vartests=VarOperation:PersonAnswerA,==,1 VarTestsLogicalOperator:AND VarOperation:PersonAnswerB,==,0 VarTestsLogicalOperator:AND VarOperation:PersonAnswerC,==,1
+buttons=2
+event1=EventPersonAnswerB
+event2=EventPersonDialogueEnd
+
+
+[EventPersonDialogueC]
+vartests=VarOperation:PersonAnswerA,==,1 VarTestsLogicalOperator:AND VarOperation:PersonAnswerB,==,1 VarTestsLogicalOperator:AND VarOperation:PersonAnswerC,==,0
+buttons=2
+event1=EventPersonAnswerC
+event2=EventPersonDialogueEnd
+
+
+[EventPersonDialogueNone]
+vartests=VarOperation:PersonAnswerA,==,1 VarTestsLogicalOperator:AND VarOperation:PersonAnswerB,==,1 VarTestsLogicalOperator:AND VarOperation:PersonAnswerC,==,1
+buttons=1
+event1=EventPersonDialogueEnd
+
+
+[EventPersonAnswerA]
+operations=PersonAnswerA,=,1
+buttons=1
+event1=EventPersonDialogueEnd
+
+
+[EventPersonAnswerB]
+operations=PersonAnswerB,=,1
+buttons=1
+event1=EventPersonDialogueEnd
+
+
+[EventPersonAnswerC]
+operations=PersonAnswerC,=,1
+buttons=1
+event1=EventPersonDialogueEnd
+
+
+[EventPersonDialogueEnd]
+display=false
+buttons=0
+
+
+Copy the following into the file %appdata%Valkyrie\MoM\Editor\<ScenarioName>\localization.<language>.txt
+
+
+CONTINUE,Continue
+NEVERMIND,"<i>""Nevermind""</i>"
+PERSONASKA,"{action} <i>""Question A""</i>"
+PERSONASKB,"{action} <i>""Question B""</i>"
+PERSONASKC,"{action} <i>""Question C""</i>"
+EventPersonDialogueABC.text,Dialogue ABC.
+EventPersonDialogueAC.text,Dialogue AC.
+EventPersonDialogueAB.text,Dialogue AB.
+EventPersonDialogueBC.text,Dialogue BC.
+EventPersonDialogueA.text,Dialogue A.
+EventPersonDialogueB.text,Dialogue B.
+EventPersonDialogueC.text,Dialogue C.
+EventPersonDialogueNone.text,Dialogue None.
+EventPersonAnswerA.text,Answer A.
+EventPersonAnswerB.text,Answer B.
+EventPersonAnswerkC.text,Answer C.
+EventPersonDialogueAll.button1,{qst:PERSONASKA}
+EventPersonDialogueAll.button2,{qst:PERSONASKB}
+EventPersonDialogueAll.button3,{qst:PERSONASKC}
+EventPersonDialogueAll.button4,{qst:NEVERMIND}
+EventPersonDialogueAB.button1,{qst:PERSONASKA}
+EventPersonDialogueAB.button2,{qst:PERSONASKB}
+EventPersonDialogueAB.button3,{qst:NEVERMIND}
+EventPersonDialogueAC.button1,{qst:PERSONASKA}
+EventPersonDialogueAC.button2,{qst:PERSONASKC}
+EventPersonDialogueAC.button3,{qst:NEVERMIND}
+EventPersonDialogueBC.button1,{qst:PERSONASKB}
+EventPersonDialogueBC.button2,{qst:PERSONASKC}
+EventPersonDialogueBC.button3,{qst:NEVERMIND}
+EventPersonDialogueA.button1,{qst:PERSONASKA}
+EventPersonDialogueA.button2,{qst:NEVERMIND}
+EventPersonDialogueB.button1,{qst:PERSONASKB}
+EventPersonDialogueB.button2,{qst:NEVERMIND}
+EventPersonDialogueC.button1,{qst:PERSONASKC}
+EventPersonDialogueC.button2,{qst:NEVERMIND}
+EventPersonDialogueNone.button1,{qst:NEVERMIND}
+EventPersonAnswerA.button1,{qst:CONTINUE}
+EventPersonAnswerB.button1,{qst:CONTINUE}
+EventPersonAnswerC.button1,{qst:CONTINUE}
+
+Change the text after PERSONASKx, into the text you wish to display on the buttons.
+Change the text after PERSONDIALOGUExxx, into the dialogue text you wish to display when the person token is selected. Note: that ...All is visible when all questions can be asked, ...None is visible when there is nothing more to ask, and (for example) ...AC is visible when question B is asked but A and C are still available. 
+
+
+And finally link  the EventPersonDialogue to the person token in your scenario.
+Introduction UI - the prologue
+(contributed by Anton Timmermans with thanks to EwinDC for his example and explanation)
+This chapter will give you the images, positions and sizes of the UI elements to mimic the opening screens of the FFC application. Obviously, it is not mandatory to use these settings and images, you can use your own imagination to make whatever you want. However, you must take into account that the game will be played on big AND small screens, and with aspect ratios of 16*9 AND 16*10.
+This layout does not add the frame around the picture like in the FFC app. This is to allow for more variety in sizes of images and not to be limited to the rectangular shape. And I found it near impossible to get the frame around my chosen image without making my own frame.
+Prologue Layout
+These two images show the result of the chosen settings in a 16*10 ratio (left image with yellow numbers) and a 16*9 ratio.
+  
+  
+
+Let’s start with identifying the elements that make up the prologue screen. The numbered elements in the layout correspond with the order and numbered items in the picture and list below. The order of placement is important as UI elements are placed on top of eachother.
+  
+
+1. UIntroductionBackground
+2. UIIntroductionTextTop
+3. UIIntroducitonContinueBackground
+4. UIIntroductionContinueText
+5. UIIntroductionImage
+6. UIIntroductionText
+
+
+Note: in the following chapters the placement of the elements is always done from the center position and Units set to vertical. This ensures that the scaling and positioning of the UI elements works with any aspect ratio. 
+UIIntroducitonBackground  
+First, I start with placing the green background. I choose the ImageGreenBG from the built-in images because it completely fills the screen and allows for any shape and format introduction image. 
+
+
+Note: chapter UIIntroductionImage contains an alternative for the background. 
+
+
+
+
+
+
+
+
+
+
+UIIntroductionTextTop  
+The second element I place, is the curly bar that decorates the top of the text. I choose the ImageCutsceneTextTopper image from the built-in images, which is the same as used in the standard FFC app. The chosen size and position will align it with the textbox that will be placed later.
+
+
+
+
+
+
+  
+
+UIIntroductionContinueBackground  
+Third placement is the frame that will outline the ‘Continue’ button. The image that is from the build-in images: ImageInvestigatorSelectTile. It’s location and size are important because they have to align perfectly with the text ‘Continue’ that will be placed on top of it later. The FFC app uses a different image, but I haven’t discovered that one yet in Valkyrie.
+  
+
+UIIntroductionContinueText  
+The fourth element to place is the ‘Continue’ button.
+This will be the active button that will be clicked to continue the scenario. The placement, size and aspect aligns this button with the white area of the  UIIntroductionContinueBackground image that was placed earlier. The text size should be 1 and the colour Black to make it nicely readable with the light background.
+
+
+Note: It is also the active element on the Prologue screen which should clean up the UI elements (as shown in the images) and place the initial start tile to get the scenario started.
+  
+  
+
+UIIntroductionImage  
+Fifth element to place, is the picture to illustrate the story. The position makes it fit nicely next to the text on the page. You can choose your own image or a built-in image. The location is strongly advised, but the size depends on your chosen image. I found it easiest to first remove the ‘-’ on the x position, size the image and then put the ‘-’ back.
+  
+
+
+
+Note that if you want to mimic the FFC app more, then you should place this image BEFORE UIIntroducitonBackground and choose image ImageCutsceneBG from the built-in images as background. The image that you choose should than be rectangular in shape or placed in such a way that the ‘window’ in this background image shows the correct part of your image.
+
+
+UIIntroductionText  
+Last but not least I add the prologue text. The displayed position, size and aspect will create a text box that aligns between the UIIntroductionContinueBackground and UIIntroductionTextTop. You can play a little with the Text Size depending on how much text you have. Just make sure it fits in the box.
+
+
+  
+
+
+
+________________
+
+
+
+
+User Created Triggers
+Contributed by Nicola Zee after some encouragement.
+Valkyrie is event driven.  The first event is triggered by the EventStart trigger and the next event follows on from the first event (either automatically or when the specified button is clicked).  The next event follows on from the second event and so on and so on until the scenario ends.  As the saying goes, “it’s just one damn thing after another”.   This is the heart of how Valkyrie works and in nearly all cases it works great.
+Doing more than one thing at the same time.
+Very occasionally, having more than one event trigger at the same time is useful.  This can be done using triggers created by the user.  How to create such triggers is covered earlier in the manual in the section on Variable Types and @Variables.  Instead I will provide some examples of advanced usage of user created triggers.
+Example 1: Assigning Roles to Allies
+Imagine two Allies (A and B).   One Ally is set to Role 1 and the other Ally is set to Role 2.
+This can be done by using 2 events (called randomly by another event).  The first event sets Ally A to Role 1 and Ally B to 2 and the second sets Ally A to 2 and Ally B to 1....
+Event_AllyAsetRole1_AllyBsetRole2
+Event_AllyAsetRole2_AllyBsetRole1
+
+
+An alternative way of doing this is to use two triggers.  Both triggers fire off at the same time.  In the following code, the two triggers are @SetRole1 and @SetRole2.   Setting @SetRole1 and @SetRole2 causes both events to happen at about the same time.  When one of the allies is set to a role, the ally’s role will not be set again because a variable prevents the event from being called again.  The variable tempRole is set to a number 1 for setting a random Ally to Role 1.
+ 
+[EventSetRoles]
+display=false
+buttons=1
+event1=
+trigger=EventStart
+operations=@SetRole1,=,1 @SetRole2,=,1
+ 
+[EventSetRole1]
+display=false
+buttons=1
+event1=EventSetRoleAllyA EventSetRoleAllyB
+trigger=VarSetRole1                               <-- Triggered by setting @SetRole1 to 1
+operations=tempRole,=,1
+randomevents=true
+ 
+[EventSetRole2]
+display=false
+buttons=1
+event1=EventSetRoleAllyA EventSetRoleAllyB
+trigger=VarSetRole2                       <-Triggered by setting @SetRole2 to 1
+operations=tempRole,=,2
+randomevents=true
+ 
+[EventSetRoleAllyA]
+display=false
+buttons=0
+operations=AllyASet,=,1 AllyARole,=,tempRole
+conditions=AllyASet,==,0
+ 
+[EventSetRoleAllyB]
+display=false
+buttons=0
+operations=AllyBSet,=,1 AllyBRole,=,tempRole
+conditions=AllyBSet,==,0
+
+
+The Event Combination Explosion Problem
+The solution using triggers is clearly worse than the first when there are only two combinations.  It is more code, more complicated and may be subject to strange and hard to track down bugs.  But what about if the number of Allies increases to 5?  Well, the number of combinations increases by a lot more than 5 and the script becomes confusing.
+         Event_AllyAsetRole1_AllyBsetRole2_AllyCsetRole3_AllyDsetRole4_AllyEsetRole5
+          Event_AllyAsetRole1_AllyBsetRole2_AllyCsetRole3_AllyDsetRole5_AllyEsetRole4
+         Event_AllyAsetRole1_AllyBsetRole2_AllyCsetRole4_AllyDsetRole3_AllyEsetRole5
+And so on for several more lines!  The problem occurs because every combination must be scripted as a separate event.
+
+
+ 
+The trigger solution needs just 10 events because each event is fired off at the same time.
+ 
+[EventSetRoles]
+display=false
+buttons=1
+event1=
+trigger=EventStart
+operations=@SetRole1,=,1 @SetRole2,=,1 @SetRole3,=,1 @SetRole4,=,1 @SetRole5,=,1
+ 
+
+
+[EventSetRole1]
+display=false
+buttons=1
+event1=EventSetRoleAllyA EventSetRoleAllyB EventSetRoleAllyC EventSetRoleAllyD EventSetRoleAllyE
+trigger=VarSetRole1                               <-- Triggered by setting @SetRole1 to 1
+operations=tempRole,=,1
+randomevents=true
+
+
+[EventSetRole2]
+display=false
+buttons=1
+event1=EventSetRoleAllyA EventSetRoleAllyB EventSetRoleAllyC EventSetRoleAllyD EventSetRoleAllyE
+trigger=VarSetRole2                              <-- Triggered by setting @SetRole2 to 1
+operations=tempRole,=,2
+randomevents=true
+
+
+[EventSetRole3]
+display=false
+buttons=1
+event1=EventSetRoleAllyA EventSetRoleAllyB EventSetRoleAllyC EventSetRoleAllyD EventSetRoleAllyE
+trigger=VarSetRole3                               <-- Triggered by setting @SetRole3 to 1
+operations=tempRole,=,3
+randomevents=true
+
+
+[EventSetRole4]
+display=false
+buttons=1
+event1=EventSetRoleAllyA EventSetRoleAllyB EventSetRoleAllyC EventSetRoleAllyD EventSetRoleAllyE
+trigger=VarSetRole4                               <-- Triggered by setting @SetRole4 to 1
+operations=tempRole,=,4
+randomevents=true
+
+
+[EventSetRole5]
+display=false
+buttons=1
+event1=EventSetRoleAllyA EventSetRoleAllyB EventSetRoleAllyC EventSetRoleAllyD EventSetRoleAllyE
+trigger=VarSetRole5                               <-- Triggered by setting @SetRole5 to 1
+operations=tempRole,=,5
+randomevents=true
+
+
+
+
+The rest of the code has been left as an exercise for the reader.  It is mostly just cut and paste of the existing script with some minor renaming of event names and variables.
+________________
+Example 2: Multiple Door\Sight Tokens
+The second example involves checking if a door\sight token needs to be placed depending upon whether the tile being placed is visible.  Imagine there is a bedroom tile, a hall tile and a door between the two.  Doors from the foyer lead into the hall and the bedroom.  There are four pathways.
+1.      Enter the hall from the foyer and, then, the bedroom from the foyer.
+2.      Enter the bedroom from the foyer and, then, the hall from the foyer.
+3.      Enter the hall from the foyer and, then, the bedroom from the hall.
+4.      Enter the bedroom from the foyer and, then, the hall from the bedroom.
+This problem can be solved by using standard events using an event per pathway.   This is described in the section Multiple entry possibilities to a tile.   An important part of the solution is that multiple combinations can occur and must be scripted for.  An alternative solution to the problem is provided by using user-created triggers.  On placing a tile, the doors going into the room are removed.  The doors going out are placed only if the tile is visible.
+ 
+[EventPlaceBedroom]
+buttons=1
+event1=
+add=TileBedroom
+remove=TokenFoyerToBedroom TokenHallToBedroom
+operations=BedroomVisible,=,1 @PlaceBedroomToHall,=,1
+ 
+[EventPlaceHall]
+buttons=1
+event1=
+add=TileHall
+remove=TokenFoyerToHall TokenBedroomToHall
+operations=HallVisible,=,1 @PlaceHallToBedroom,=,1
+ 
+[EventPlaceBedroomToHall]
+display=false
+buttons=0
+add=TokenBedroomToHall
+trigger=VarPlaceBedroomToHall             <-- Called by setting @PlaceBedroomToHall to 1
+conditions=HallVisible,==,0
+ 
+[EventPlaceHallToBedroom]
+display=false
+buttons=0
+add=TokenHallToBedroom                    
+trigger=VarPlaceHallToBedroom        <-- Called by setting @PlaceHallToBedroom to 1
+conditions=BedroomVisible,==,0
+ 
+If an investigator enters the Hall, the event EventPlaceHall runs.  The event removes all tokens for ways into the Hall and the event @PlaceHallToBedroom is triggered.  The triggered event checks if the door from the Hall to the Bedroom needs to be placed.   The critical part of the logic is that (if the Bedroom is already visible) the door from the Hall into the Bedroom is not placed.
+ 
+The Event Combination Explosion Problem Again
+ 
+The use of triggers in the second example is elegant but it is not essential.  It really starts to pay off when there are multiple pathways.   Once again imagine a door between the hall and the bedroom and doors from the foyer leading into these two rooms.   Now imagine that the hall and the bedroom can be accessed from a room which is not the foyer and the foyer can be accessed from another pathway.  With triggers, adding the extra doors is trivial because all that is needed is to add a trigger for each door.  For example, all that is needed for the door from the Bedroom to the Foyer is another trigger.
+ 
+[EventPlaceBedroom]
+buttons=1
+event1=
+add=TileBedroom
+remove=TokenHallToBedroom TokenFoyerToBedroom
+operations=BedroomVisible,=,1 @PlaceBedroomToHall1,=,1 @PlaceBedroomToFoyer,=,1
+
+
+Then all that is needed is that the triggered event checks if the tile is visible.  In effect, we have created a way to only place a door if the tile the door leads into is visible.
+
+
+[EventPlaceBedroomToFoyer]]
+display=false
+buttons=0
+add=TokenBedroomToFoyer
+trigger=VarPlaceBedroomToFoyer             <-- Called by setting @PlaceBedroomToFoyer to 1
+conditions=FoyerVisible,==,0
+ 
+Example 3: Placement of Multiple Optional Tokens
+Imagine there are 6 Allies that move around the rooms of a map.  Once again we can try to script using standard events the various possible combinations of placements.  But, by using triggers we can make an elegant solution.  The solution is similar to checking for the placement of door tokens but, instead of checking if a tile is already visible, we need to check if the ally will be visible in the room to be placed.
+
+
+
+
+User Defined Triggers Conclusion  
+User defined triggers should be used rarely.  Most problems do not need them and they can lead to strange and hard to track down bugs.   But if you find your solution involves scripting a large number of very similar events for a large number of combinations, consider if you can avoid the combination explosion by creating your own triggers.
+
+
+________________
+Monster Statistics 
+(contributed by Anton Timmermans)
+
+
+The tables below contain the base values for monsters in Mansions of Madness.If you the values in the ‘Health:” and ‘Per Hero:’ set to zero in the Spawn monster interface, the default values from the table below are used. For example: Base value of a cultist is 1 and adds 1 per hero. With 2 players, the cultist will have a health of 3.
+   
+Note: If you add a value in the field, it will be added to the default values. For example: ‘Health” is set to 2 and ‘Per Hero is set to 1. With 2 players, the cultist will have in this case a health of 7. 
+Base
+Mansions of Mansions 2nd Edition base game
+Name
+	Traits
+	Health
+	Per Hero
+	Awareness
+	Horror
+	Brawn
+	Child of Dagon
+	Humanoid
+	1
+	1
+	4
+	3
+	2
+	Cultist
+	Small Humanoid
+	1
+	1
+	3
+	1
+	2
+	Deep One
+	Humanoid
+	2
+	1
+	3
+	4
+	2
+	Deep One Hybrid
+	Humanoid
+	2
+	1
+	3
+	1
+	2
+	Ghost
+	Spirit
+	1
+	1
+	2
+	5
+	1
+	Hunting Horror
+	Beast
+	3
+	1
+	5
+	6
+	3
+	Priest of Dagon
+	Humanoid
+	2
+	2
+	4
+	3
+	2
+	Riot
+	Humanoid
+	5
+	3
+	7
+	4
+	4
+	Star Spawn
+	Beast
+	9
+	3
+	5
+	8
+	5
+	Call of the Wild
+CotW   : 1st Edition, or Suppressed Memories 2nd edition figure and tile collection
+Name
+	Traits
+	Health
+	Per Hero
+	Awareness
+	Horror
+	Brawn
+	Child of the Goat
+	Humanoid
+	1
+	1
+	3
+	1
+	2
+	Dark Druid
+	Humanoid
+	2
+	1
+	3
+	2
+	2
+	Dark Young
+	Beast
+	4
+	2
+	4
+	7
+	5
+	Dunwich Horror
+	Horror
+	2
+	3
+	7
+	9
+	5
+	Goat Spawn
+	Humanoid
+	1
+	2
+	4
+	3
+	2
+	Night Gaunt
+	Beast
+	1
+	2
+	6
+	5
+	3
+	Wizzard
+	Humanoid
+	2
+	1
+	4
+	3
+	2
+	Fatal Alchemy
+FA   : 1st Edition, or Suppressed Memories 2nd edition figure and tile collection
+Name
+	Traits
+	Health
+	Per Hero
+	Awareness
+	Horror
+	Brawn
+	Byakhee
+	Beast
+	1
+	2
+	4
+	3
+	2
+	Crawling One
+	Beast
+	3
+	1
+	2
+	4
+	4
+	Mansions of Madness 1st Edition
+MoM1   : 1st Edition, or Recurring Nightmares 2nd edition figure and tile collection.
+Name
+	Traits
+	Health
+	Per Hero
+	Awareness
+	Horror
+	Brawn
+	Cthonian
+	Beast
+	3
+	2
+	4
+	7
+	5
+	Cult Leader
+	Humanoid
+	8
+	4
+	4
+	3
+	2
+	Hound Of Tindalos
+	Beast
+	1
+	2
+	6
+	5
+	5
+	Maniac
+	Humanoid
+	2
+	1
+	5
+	1
+	2
+	Migo
+	Beast
+	3
+	1
+	6
+	4
+	3
+	Shoggoth
+	Beast
+	4
+	2
+	4
+	6
+	4
+	Witch
+	Humanoid
+	2
+	1
+	3
+	2
+	2
+	Zombie
+	Undead Small Humanoid
+	2
+	1
+	2
+	4
+	2
+	Beyond the Threshold
+BtT   : 2nd Edition Expansion.
+Name
+	Traits
+	Health
+	Per Hero
+	Awareness
+	Horror
+	Brawn
+	Thrall
+	Humanoid
+	2
+	1
+	3
+	4
+	2
+	Horrific Journeys
+HJ   : 2nd Edition Expansion.
+Name
+	Traits
+	Health
+	Per Hero
+	Awareness
+	Horror
+	Brawn
+	Dimensional Shambler
+	Beast
+	6
+	2
+	4
+	5
+	2
+	Hunting Deep One
+	Humanoid
+	3
+	1
+	4
+	5
+	4
+	Formless Spawn
+	Beast
+	48
+	1
+	4
+	6
+	4
+	Warlock
+	Humanoid
+	1
+	1
+	4
+	3
+	2
+	Path of the Serpent
+PotS   : 2nd Edition Expansion.
+Name
+	Traits
+	Health
+	Per Hero
+	Awareness
+	Horror
+	Brawn
+	Ancient Basilisk
+	Beast
+	20
+	1
+	6
+	5
+	5
+	Feathered Serpent
+	Beast
+	2
+	1
+	3
+	2
+	2
+	Serpent Person
+	Humanoid
+	2
+	1
+	4
+	3
+	3
+	Temple Guardian
+	Beast
+	3
+	2
+	4
+	5
+	5
+	Streets of Arkham
+SoA   : 2nd Edition Expansion.
+Name
+	Traits
+	Health
+	Per Hero
+	Awareness
+	Horror
+	Brawn
+	Hired Gun
+	Humanoid
+	2
+	1
+	2
+	1
+	2
+	Lloigor
+	Beast
+	1
+	2
+	7
+	9
+	5
+	Skeleton
+	Fleshless
+	1
+	1
+	2
+	4
+	2
+	Star Vampire
+	Beast
+	9
+	3
+	4
+	6
+	3
+	Sanctum of Twilight
+SoT   : 2nd Edition Expansion.
+Name
+	Traits
+	Health
+	Per Hero
+	Awareness
+	Horror
+	Brawn
+	Wraith
+	Spirit
+	2
+	2
+	2
+	6
+	1
+	
+
+
+
+________________
+
+
+
+
+Finishing comments and Shout Outs
+
+
+Anyway I hope this was educational and not a laborious read. 
+I had a fair bit of fun writing this, it's always good to test your knowledge with an audience. 
+
+
+Feel free drop an issue into my GitHub repository if you find any issues or want to make any suggestions https://github.com/scrubbless/MoM2ndTutorial/issues.
+
+
+I look forward to seeing all the awesome content that you guys create.
+
+
+I wanted to thank Alex and Bruce for spending the time to proofread this, I appreciate the help!
+Thank you to LordPyrex for explaining how to add translation files!
+
+
+A massive thanks to Joan (EtiCarasoft) for translating this guide to Spanish!
+
+
+Thanks NicolaZee for your comments and general tips! Always good to bounce ideas off you!
+Thank you Anton for your guide on Tile Placement/Planning.
+
+
+Thank you antontimmermans for joining me in maintaining this document and keeping it up to date with all the latest and greatest tips!

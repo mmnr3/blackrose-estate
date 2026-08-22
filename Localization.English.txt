@@ -18,7 +18,7 @@ Token_explore_lobby_kitchen.button1,Enter
 Token_explore_lobby_lounge.button1,Open door {action}
 Event_Place_Lounge_Door.button1,Continue
 Event_Intro_Greta_Introduction.button1,Continue
-Event_Viktor_Moves_To_Painting.text,Viktor goes up and stands before a big painting of his uncle. You put down your luggage and look around.
+Event_Viktor_Moves_To_Painting.text,Viktor goes up and stands in silence before a big painting of his uncle. You put down your luggage and look around.
 Event_Intro_Greta_Introduction.text,A door opens and a woman walks in. When Viktor sees her he lights up and runs over and gives her a big hug. “Greta! How good it is to see you again, it has been too long” he says happily, releasing the woman from his embrace. “Goodness grace Viktor, you certainly have not changed. ” Viktor laughs and turns to you. “Friends, this is Greta the housekeeper. She was like a mother to me when I grew up.” He introduces you to her with great enthusiasm. “Well” Greta says, “You are a bit early, the dinner is not ready. But there is a bar in the lounge if you want to have a drink before dinner and relax. The guest rooms are upstairs. You have to take the luggage yourself, William would do it but I’m afraid he is a bit under the weather of late. Now, If you excuse me, I will go get things ready”. Greta quickly leaves for the kitchen.
 Event_Viktor_Moves_To_Painting.button1,Continue
 Event_Place_Investigator.text,Place investigators
@@ -35,7 +35,7 @@ Event_Place_Lounge_Door.text,A heavy dark and beautifully ornamented oak door is
 quest.authors_short,Magnifico
 Event_Viktor_Blackrose_Dialogue_Painting.button1,Continue
 Event_Viktor_Painting_Token_Remove.button1,Continue
-Event_place_starting_tile.text,"You enter the estate through the main entrance.\nThe hall was once lavishly decorated, but years of neglect have faded the furniture and left the wooden floors scuffed and worn.\nPlace the {c:Tile_T1_Entry} tile and walls."
+Event_place_starting_tile.text,"You enter the estate through the main entrance.\nThe hall was once lavishly decorated, but years of neglect have lefter the furniture faded and the wooden floors are scuffed and worn.\nPlace the {c:Tile_T1_Entry} tile and walls."
 Event_act1_place_explore_lobby_kitchen.text,This is the door to the kitchen. You can hear Grete humming a tune in there.
 Token_explore_lobby_kitchen.text,This is the door to the kitchen. You can hear Grete humming a tune in there.
 Token_explore_lobby_stairs.button1,Explore
@@ -104,3 +104,35 @@ Event_act1_bathroom_search_mirror_pass.text,"You blink and the feeling passes.\n
 Event_act1_bathroom_search_mirror_pass.button1,Continue
 Token_act1_bathroom_search_mirror.text,The mirror is slightly clouded, and the cabinet door stands just a little ajar.
 Event_act1_bathroom_search_mirror_fail.button1,Continue
+Event_place_explore_bathroom.text,A plain wooden door bears a small carved sign: Guest Bathroom.
+Event_place_explore_bathroom.button1,Continue
+Token_explore_bathroom_guestroom.text,A door leading to the guest rooms.
+Token_explore_bathroom_guestroom.button1,Explore
+Event_place_tile_guestrooms.text,"The mansions guestrooms.\nAdd {c:Tile_guestrooms}"
+Event_place_tile_guestrooms.button1,Continue
+Event_act1_place_explore_viktors_room.text,This is Viktor's old boy room.
+Event_act1_place_explore_viktors_room.button1,Continue
+Event_act1_place_explore_guestrooms_small.text,Your guestrooms that Greta mentioned.
+Event_act1_place_explore_guestrooms_small.button1,Continue
+Event_place_explore_guest_bedrooms.text,A door leading to the guest rooms.
+Event_place_explore_guest_bedrooms.button1,Continue
+Event_move_into_room.text,You may move 1 space into the room.
+Event_move_into_room.button1,Continue
+Token_explore_guestroom_viktors_bedroom.text,This is victors old childhood bedroom.
+Token_explore_guestroom_viktors_bedroom.button1,Explore {action}
+Event_place_tile_viktors_bedroom.text,"This is Viktors old childhood bedroom. It looks like it has been left alone sins he left all those years ago.\nPlace {c:Tile_viktors_bedroom}"
+Event_place_tile_viktors_bedroom.button1,Continue
+Event_place_tile_viktors_bedroom.button2,Continue
+Event_viktors_bedroom_place_viktor.text,"You find Viktor collapsed across the bed, still fully dressed. Returning to the mansion has clearly taken more out of him than he wanted to admit, and the whiskey has finished what the memories began.\nFor now, he is fast asleep.\nPerhaps dinner will do him some good."
+Event_viktors_bedroom_place_viktor.button1,Continue
+Tokenviktors_bedroom_search_small_desk.button1,Search {action}
+Event_viktors_bedroom_search_small_desk.text,A small desk with some pappers and drawings.
+Tokenviktors_bedroom_search_small_desk.text,A small desk with some pappers and drawings.
+Event_viktors_bedroom_search_small_desk.button1,Continue
+Event_viktors_room_search_small_desk_action.button1,Success
+Event_viktors_bedroom_search_small_desk_success.text,"You notice a torn journal page tucked beneath the blotter. The handwriting is uneven, as if written in haste.\n\n“I heard her again last night. The crying from the guest room. I was told it was only the pipes, or the wind moving through the old walls.\n\nBut pipes do not whisper my name.”\n\nGain 1 Clue."
+Event_viktors_room_search_small_desk_action.text,"The small writing desk is cluttered with old stationery, an empty glass, and a half-burned candle. Among the scattered papers, one page seems newer than the rest.\nTest {observation}."
+Event_viktors_bedroom_search_small_desk_success.button1,Continue
+Event_viktors_room_search_small_desk_action.button2,Fail
+Event_viktors_bedroom_search_small_desk_failure.text,"You search the desk, but most of the papers are old household notes, faded invitations, and meaningless scraps.\n"
+Event_viktors_bedroom_search_small_desk_failure.button1,Continue
